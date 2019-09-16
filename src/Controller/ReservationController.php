@@ -2,6 +2,9 @@
 
 namespace App\Controller;
 
+use Paydunya\Checkout\CheckoutInvoice;
+use Paydunya\Checkout\Store;
+use Paydunya\Setup;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Request;
@@ -86,10 +89,7 @@ class ReservationController extends AbstractController
         }
 
         $form = $this->createForm(ParticipantFormType::class, $participant);
-        
-        
         $form->handleRequest($request);
-        
 
         if($form->isSubmitted() && $form->isValid()){
             
@@ -114,7 +114,7 @@ class ReservationController extends AbstractController
     public function delete($id)
     {
         $entityManager = $this->getDoctrine()->getManager();
-        $product = $entityManager->getRepository(Participant::class)->find($id);
+        $participant = $entityManager->getRepository(Participant::class)->find($id);
 
         if (!$participant) {
             throw $this->createNotFoundException(
@@ -122,7 +122,85 @@ class ReservationController extends AbstractController
             );
         }
 
-        $entityManager->remove($product);
+        $entityManager->remove($participant);
         $entityManager->flush();
     }
+
+
+    /**
+     * @Route("/participant/process_payement/{id}", name="process_payement")
+     */
+    public function processPayement($id)
+    {
+        $entityManager = $this->getDoctrine()->getManager();
+        $participant = $entityManager->getRepository(Participant::class)->find($id);
+
+        if (!$participant) {
+            throw $this->createNotFoundException(
+                'No participant found for id '.$id
+            );
+        }
+
+        Setup::setMasterKey("hmJ2xtPC-kED4-IRrC-ACJq-STiKu7xU74yc");
+        Setup::setPublicKey("test_public_NrOpIYh0A9o8uIjiSxfnCge89wI");
+        Setup::setPrivateKey("test_private_ffPBZhuRyTMQ8XBczl2oNohCxFb");
+        Setup::setToken("Kta4Xit4wB0snCLvMPXs");
+        Setup::setMode("test"); // Optionnel. Utilisez cette option pour les paiements tests.
+
+        // configuration des informations vendeurs
+        Store::setName("CODI Services"); // Seul le nom est requis
+        Store::setTagline("Codi services pour le congrès bpi 2019");
+        Store::setPhoneNumber("0022376893434");
+        Store::setPostalAddress("Bamako - Mali");
+        Store::setWebsiteUrl("http://www.codi-mali.com");
+        Store::setLogoUrl("http://www.codi-mali.com/logo.png");
+        Store::setCallbackUrl("http://localhost/participant/callback_payement");
+
+        // creation de la commande
+        $invoice = new CheckoutInvoice();
+
+    }
+
+    /**
+     * @Route("/participant/callback_payement/{id}", name="process_payement")
+     */
+    public function callbackPayement($id, Request $request)
+    {
+        try {
+
+            $form = $this->createFormBuilder()
+                ->add('data', 'text')
+                ->getForm();
+
+            if ($request->getMethod() == 'POST') {
+                $form->bindRequest($request);
+                // data is an array with "name", "email", and "message" keys
+
+                $data = $form->getData();
+            }
+
+
+            //Prenez votre MasterKey, hashez la et comparez le résultat au hash reçu par IPN
+            if($data['hash'] === hash('sha512', "hmJ2xtPC-kED4-IRrC-ACJq-STiKu7xU74yc")) {
+
+                if ($data['hash']['status'] == "completed") {
+                    //Faites vos traitements backoffice ici...
+
+                    $entityManager = $this->getDoctrine()->getManager();
+                    $participant = $entityManager->getRepository(Participant::class)->find($id);
+
+                    if (!$participant) {
+                        throw $this->createNotFoundException(
+                            'No participant found for id '.$id
+                        );
+                    }
+                }
+            } else {
+                die("Cette requête n'a pas été émise par PayDunya");
+            }
+        } catch(Exception $e) {
+            die();
+        }
+    }
+
 }
