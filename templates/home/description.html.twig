@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription {% endblock %}
+
+{% block stylesheets %} 
+<link rel="stylesheet" type="text/css" href="{{ asset('styles/contact.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('styles/contact_responsive.css') }}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+
+{% endblock %}
+
+{% block body %}
+
+<style>
+    .text-color{
+        color: #4867c0;
+    }
+</style>
+    <div class="home">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{{ asset('images/events.jpg') }}" data-speed="0.8"></div>
+
+        <!-- header -->
+        {% include 'layout/header.html.twig' %}
+
+		<div class="home_content_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="home_content d-flex flex-row align-items-end justify-content-start">
+							<div class="current_page">Informations</div>
+							<div class="breadcrumbs ml-auto">
+								<ul>
+									<li><a href="index.php">Accueil</a></li>
+									<li>Informaitons</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+
+    <div class="main-content mt-5"  >
+        <!-- Basic Form area Start -->
+        <div class="container">
+            <div class="row justify-content-md-center">
+                
+                <div class="col-lg-10 col-md-12 mb-3">
+                            <div class="card bg-boxshadow full-height">
+                                <div class="card-body">
+                                    <h4 class="card-title text-color">Bienvenue sur le site du congrès du Barreau Pénal International au Mali</h4>
+                                    <p>Vous trouverez toutes les informations nécessaire sur le congrès et l'organisation du Barreau</p>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('js/contact.js')}}"></script>
+{% endblock %}

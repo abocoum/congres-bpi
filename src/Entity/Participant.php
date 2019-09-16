@@ -62,14 +62,14 @@ class Participant
     private $estPresentateur;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $titrePresentation;
 
     /**
-     * @ORM\Column(type="boolean")
+     * @ORM\Column(type="array", nullable=true)
      */
-    private $galaOption;
+    protected $frais;
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Civilite", inversedBy="participants")
@@ -202,18 +202,6 @@ class Participant
         return $this;
     }
 
-    public function getGalaOption()
-    {
-        return $this->galaOption;
-    }
-
-    public function setGalaOption(bool $galaOption): self
-    {
-        $this->galaOption = $galaOption;
-
-        return $this;
-    }
-
     public function getCivilite(): ?Civilite
     {
         return $this->civilite;
@@ -222,6 +210,18 @@ class Participant
     public function setCivilite(?Civilite $civilite): self
     {
         $this->civilite = $civilite;
+
+        return $this;
+    }
+
+    public function getFrais(): ?array
+    {
+        return $this->frais;
+    }
+
+    public function setFrais(?array $frais): self
+    {
+        $this->frais = $frais;
 
         return $this;
     }

@@ -13,11 +13,28 @@
 
 	{% include 'layout/header.html.twig' %}
 
+
     <!-- Calendar -->
 
 	<div class="calendar" style="margin-top:150px">
+
 		<div class="container reset_container">
-            
+            <div class="row">
+                
+                <div class="col-lg-12 col-md-12 mb-3" >
+                            <div class="card bg-boxshadow full-height" style="background-color:#4867c0">
+                                <div class="card-body">
+                                    <h4 class="card-title text-color" style="color:#FFFFFF">AGENDA</h4>
+                                    <p style="color:#FFFFFF">Bienvenue sur site du congrès international du BPI <br/> Vous trouverez toutes les informations sur le programme de la journée du 14 Novemebre et l'organisation du Barreau
+										Vous trouverez toutes les informations nécessaire sur le congrès et l'organisation du Barreau
+										Vous trouverez toutes les informations nécessaire sur le congrès et l'organisation du Barreau
+										Vous trouverez toutes les informations nécessaire sur le congrès et l'organisation du Barreau
+										Vous trouverez toutes les informations nécessaire sur le congrès et l'organisation du Barreau
+									</p>
+                                </div>
+                            </div>
+                        </div>
+            </div>
 			<div class="row">
                 
 				<div class="col-xl-12 calendar_col">
@@ -87,12 +104,12 @@
 							</div>
 
                             <!-- Calendar Item -->
-	<div class="calendar_item d-flex flex-row align-items-center justify-content-start">
-	<div style="width:310px"><div class="calendar_item_image">
+								<div class="calendar_item d-flex flex-row align-items-center justify-content-start">
+									<div style="width:310px"><div class="calendar_item_image">
                                     </div>
                                 </div>
 								<div class="calendar_item_time" style="width:310px">
-									<div class="button header_button"><a href="#">S'inscrire au programme</a></div>
+									<div class="button header_button"><a href="{{ path('reservation') }}">S'inscrire</a></div>
                                     <div class="button header_button"><a href="{{path('agenda')}}">Retour à la liste</a></div>
 								</div>
 								<div class="calendar_item_text" style="width:310px">
