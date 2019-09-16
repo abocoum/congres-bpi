@@ -10,6 +10,9 @@
 		.dropdown:hover>.dropdown-menu {
 			display: block;
 		}
+		a{
+
+		}
 	</style>
 
 {% endblock %}
@@ -58,19 +61,39 @@
 												<ul>
 													<li><a href="{{ path('home')}}">Accueil</a></li>
 													<li><a href="{{ path('agenda')}}">Agenda</a></li>
+
 													<li class="dropdown">
 														<a style="    padding: ;" class="nav-link dropdown-toggle" href="{{ path('reservation') }}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 															Inscriptions
 														</a>
 														<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-															<a class="dropdown-item" href="#">Action</a>
-															<a class="dropdown-item" href="#">Another action</a>
-															<div class="dropdown-divider"></div>
-															<a class="dropdown-item" href="#">Something else here</a>
+															<a class="dropdown-item" href="{{ path('reservation') }}">Formulaire</a>
 														</div>
 													</li>
-													<li><a href="{{ path('hotel')}}">Reservations</a></li>
-                                                    <li><a href="{{ path('information')}}">Informations</a></li>
+
+													<li class="dropdown">
+														<a style="    padding: ;" class="nav-link dropdown-toggle" href="{{ path('reservation') }}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+															Reservations
+														</a>
+														<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+															<a class="dropdown-item" href="#">Hotels</a>
+															<a class="dropdown-item" href="#">Locations de vehicule</a>
+														</div>
+													</li>
+
+													<li class="dropdown">
+														<a style="    padding: ;" class="nav-link dropdown-toggle" href="{{ path('reservation') }}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+															Informations
+														</a>
+														<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+															<button class="dropdown-item"></button>
+															<a class="dropdown-item" href="#">Mali</a>
+															<a class="dropdown-item" href="#">Barrau pénal international</a>
+															<a class="dropdown-item" href="#">Cour pénal international</a>
+															<div class="dropdown-divider"></div>
+															<a class="dropdown-item" href="#">Barreau du Mali</a>
+														</div>
+													</li>
 													<li><a href="{{ path('contact')}}">Contactez-nous</a></li>
 												</ul>
 											</nav>

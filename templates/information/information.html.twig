@@ -1,18 +1,25 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Information!{% endblock %}
+{% block title %}Inscription {% endblock %}
 
 {% block stylesheets %} 
-<link rel="stylesheet" type="text/css" href="{{ asset('styles/speakers.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('styles/speakers_responsive.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('styles/contact.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('styles/contact_responsive.css') }}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+
 {% endblock %}
 
 {% block body %}
 
-<div class="home">
-		<!-- <div class="home_background" style="background-image: url(images/index.jpg)"></div> -->
-		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/speakers.jpg" data-speed="0.8"></div>
+<style>
+    .text-color{
+        color: #4867c0;
+    }
+</style>
+    <div class="home">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{{ asset('images/events.jpg') }}" data-speed="0.8"></div>
 
+        <!-- header -->
         {% include 'layout/header.html.twig' %}
 
 		<div class="home_content_container">
@@ -20,11 +27,11 @@
 				<div class="row">
 					<div class="col">
 						<div class="home_content d-flex flex-row align-items-end justify-content-start">
-							<div class="current_page">Hotels/Reservations</div>
+							<div class="current_page">Informations</div>
 							<div class="breadcrumbs ml-auto">
 								<ul>
-									<li><a href="index.html">Accueil</a></li>
-									<li>Hotels</li>
+									<li><a href="index.php">Accueil</a></li>
+									<li>Informaitons</li>
 								</ul>
 							</div>
 						</div>
@@ -33,50 +40,26 @@
 			</div>
 		</div>
 	</div>
+    
 
-	<div class="speakers" style="margin-top:100px; margin-bottom:100px">
-		<div class="container reset_container">
-
-			<!-- Speaker -->
-			<div class="row row-lg-eq-height">
-				<div class="col-lg-6 speaker_col reset_col">
-					<div class="speaker_image" style="background-image:url(images/sheraton.jpg)"></div>
-				</div>
-				<div class="col-lg-6">
-					<div class="speaker_content d-flex flex-column align-items-start justify-content-center">
-						<div class="speaker_title">Hotel Sheraton</div>
-						<div class="speaker_subtitle">Lieux du congrès</div>
-						<div class="speaker_text">
-							<p>Donec quis metus ac arcu luctus accumsan. Nunc in justo tincidunt, sodales nunc id, finibus nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce nec ante vitae lacus aliquet vulputate. Donec scelerisque accumsan molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras sed accumsan neque. Ut vulputate, lectus vel aliquam congue, risus leo elementum nibh, sed faucibus nisi tortor sed ante.
-                            Donec quis metus ac arcu luctus accumsan. Nunc in justo tincidunt, sodales nunc id, finibus nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce nec ante vitae lacus aliquet vulputate. Donec scelerisque accumsan molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras sed accumsan neque. Ut vulputate, lectus vel aliquam congue, risus leo elementum nibh, sed faucibus nisi tortor sed ante.
-                            </p>
-						</div>
-						<div class="button speaker_button"><a href="https://www.marriott.com/hotels/hotel-rooms/bkosi-sheraton-bamako-hotel/" target="_blank">Reservez</a></div>
-					</div>
-				</div>
-			</div>
-
-			
-		</div>
-	</div>
-
-	<!-- Call to action -->
-
-	<div class="cta">
-		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/ae.jpg" data-speed="0.8"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="cta_content text-center">
-						<div class="cta_title">Inscrivez-vous</div>
-						<div class="button cta_button"><a href="#">Plus de details</a></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="main-content mt-5"  >
+        <!-- Basic Form area Start -->
+        <div class="container">
+            <div class="row justify-content-md-center">
+                
+                <div class="col-lg-10 col-md-12 mb-3">
+                            <div class="card bg-boxshadow full-height">
+                                <div class="card-body">
+                                    <h4 class="card-title text-color">Bienvenue sur le site du congrès du Barreau Pénal International au Mali</h4>
+                                    <p>Vous trouverez toutes les informations nécessaire sur le congrès et l'organisation du Barreau</p>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
 
 {% block javascripts %}
-    <script src="{{ asset('js/speakers.js')}}"></script>
+    <script src="{{ asset('js/contact.js')}}"></script>
 {% endblock %}
