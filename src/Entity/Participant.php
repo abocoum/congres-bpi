@@ -52,7 +52,7 @@ class Participant
     private $pays;
 
     /**
-     * @ORM\Column(type="boolean", nullable=true)
+     * @ORM\Column(type="boolean")
      */
     private $estMembreBpi;
 
@@ -171,7 +171,7 @@ class Participant
         return $this->estMembreBpi;
     }
 
-    public function setEstMembreBpi(boolean $estMembreBpi): self
+    public function setEstMembreBpi(bool $estMembreBpi): self
     {
         $this->estMembreBpi = $estMembreBpi;
 
@@ -183,7 +183,7 @@ class Participant
         return $this->estPresentateur;
     }
 
-    public function setEstPresentateur(boolean $estPresentateur): self
+    public function setEstPresentateur(bool $estPresentateur): self
     {
         $this->estPresentateur = $estPresentateur;
 
@@ -207,7 +207,7 @@ class Participant
         return $this->galaOption;
     }
 
-    public function setGalaOption(boolean $galaOption): self
+    public function setGalaOption(bool $galaOption): self
     {
         $this->galaOption = $galaOption;
 
