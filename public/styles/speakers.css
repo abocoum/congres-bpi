@@ -718,7 +718,7 @@ section
 {
 	opacity: 1;
 }
-.main_nav ul li a
+.main_nav ul li > a
 {
 	display: block;
 	position: relative;
