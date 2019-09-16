@@ -122,16 +122,22 @@
                                             <label for="exampleInputCity1" class="text-color">Date limite d'inscription (frais de congrès et titre / résumé de la présentation, le cas échéant) </label>
                                             <input type="text" class="form-control" id="exampleInputCity1" placeholder="15 October, 2019" disabled>
                                         </div>
-                                        
+                                
                                         <div class="form-group">
-                                            <label for="exampleInputCity1" class="text-color">Inscription gratuite</label>
-                                            <input type="text" class="form-control" id="exampleInputCity1">
+                                            <label for="exampleInputCity1" class="text-color">Frais d'inscription au congrès : </label>
                                         </div>
-                                        
+
                                         <div class="form-group">
-                                            <label for="exampleInputCity1" class="text-color">Frais d'inscription</label>
-                                            {{ form_widget(form.frais) }}
+                                            <label for="exampleInputCity1" class="text-color">Frais supplémentaires :</label>
                                         </div>
+
+                                        <div class="form-group">
+                                            <label for="exampleInputCity1" class="text-color">Dîner de gala - 30 Euro ?</label>
+                                            {{ form_widget(form.galaOption) }}
+                                        </div>
+
+                                        
+                                        
                                         
                                         <div class="form-group">
                                             <div class="form-check">

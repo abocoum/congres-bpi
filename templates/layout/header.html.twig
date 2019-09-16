@@ -6,13 +6,13 @@
 			display: block;
 			padding: 0 .1rem;
 		}
-
 		.dropdown:hover>.dropdown-menu {
 			display: block;
 		}
-		a{
-
+		.dropdown:hover>.dropdown-menu>a:hover {
+			background-color: #0056b3;
 		}
+		
 	</style>
 
 {% endblock %}
@@ -29,7 +29,7 @@
 												<div class="logo_image"><div><img src="{{ asset('images/logo-bpi.png') }}" alt="" style="background-color:#0077bb"></div></div>
 												<div class="logo_content">
 													<div class="logo_text logo_text_not_ie">Congrès du barreau pénal international au Mali</div>
-{						<div class="logo_sub">14-16 Novembre, 2019 - Bamako à l'Hotel Sheraton</div>
+													<div class="logo_sub">14-16 Novembre, 2019 - Bamako à l'Hotel Sheraton</div>
 												</div>
 											</div>
 										</a>	
@@ -63,7 +63,7 @@
 													<li><a href="{{ path('agenda')}}">Agenda</a></li>
 
 													<li class="dropdown">
-														<a style="    padding: ;" class="nav-link dropdown-toggle" href="{{ path('reservation') }}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<a style="    padding: ;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 															Inscriptions
 														</a>
 														<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -72,12 +72,12 @@
 													</li>
 
 													<li class="dropdown">
-														<a style="    padding: ;" class="nav-link dropdown-toggle" href="{{ path('reservation') }}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<a style="    padding: ;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 															Reservations
 														</a>
 														<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-															<a class="dropdown-item" href="#">Hotels</a>
-															<a class="dropdown-item" href="#">Locations de vehicule</a>
+															<a class="dropdown-item" href="{{ path('hotel') }}">Hotels</a>
+															<a class="dropdown-item" href="{{ path('hotel') }}">Locations de vehicule</a>
 														</div>
 													</li>
 
