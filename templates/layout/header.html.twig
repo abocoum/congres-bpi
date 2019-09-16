@@ -1,6 +1,15 @@
 <!-- Header -->
 
-		<header class="header" id="header">
+{% block stylesheets %}
+	<style>
+		.nav-link {
+			display: block;
+			padding: 0 .1rem;
+		}
+	</style>
+
+{% endblock %}
+	<header class="header" id="header">
 			<div>
 				<div class="header_top">
 					<div class="container">
@@ -13,7 +22,7 @@
 												<div class="logo_image"><div><img src="{{ asset('images/logo-bpi.png') }}" alt="" style="background-color:#0077bb"></div></div>
 												<div class="logo_content">
 													<div class="logo_text logo_text_not_ie">Congrès du barreau pénal international au Mali</div>
-							<div class="logo_sub">14-16 Novembre, 2019 - Bamako à l'Hotel Sheraton</div>
+{						<div class="logo_sub">14-16 Novembre, 2019 - Bamako à l'Hotel Sheraton</div>
 												</div>
 											</div>
 										</a>	
@@ -45,7 +54,17 @@
 												<ul>
 													<li><a href="{{ path('home')}}">Accueil</a></li>
 													<li><a href="{{ path('agenda')}}">Agenda</a></li>
-													<li><a href="{{ path('reservation') }}">Inscriptions</a></li>
+													<li class="dropdown">
+														<a style="    padding: ;" class="nav-link dropdown-toggle" href="{{ path('reservation') }}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+															Inscriptions
+														</a>
+														<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+															<a class="dropdown-item" href="#">Action</a>
+															<a class="dropdown-item" href="#">Another action</a>
+															<div class="dropdown-divider"></div>
+															<a class="dropdown-item" href="#">Something else here</a>
+														</div>
+													</li>
 													<li><a href="{{ path('hotel')}}">Reservations</a></li>
                                                     <li><a href="{{ path('information')}}">Informations</a></li>
 													<li><a href="{{ path('contact')}}">Contactez-nous</a></li>

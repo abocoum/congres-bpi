@@ -69,7 +69,7 @@ class ParticipantFormType extends AbstractType
                     'Non' => false,
             ]])
             ->add('save', SubmitType::class, [
-                'attr' => ['class' => 'save'],
+                'attr' => ['class' => 'btn btn-primary mr-2'],
             ]);
         ;
     }
