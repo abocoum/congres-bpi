@@ -1,0 +1,82 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Information!{% endblock %}
+
+{% block stylesheets %} 
+<link rel="stylesheet" type="text/css" href="{{ asset('styles/speakers.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('styles/speakers_responsive.css') }}">
+{% endblock %}
+
+{% block body %}
+
+<div class="home">
+		<!-- <div class="home_background" style="background-image: url(images/index.jpg)"></div> -->
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/speakers.jpg" data-speed="0.8"></div>
+
+        {% include 'layout/header.html.twig' %}
+
+		<div class="home_content_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="home_content d-flex flex-row align-items-end justify-content-start">
+							<div class="current_page">Hotels/Reservations</div>
+							<div class="breadcrumbs ml-auto">
+								<ul>
+									<li><a href="index.html">Accueil</a></li>
+									<li>Hotels</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="speakers" style="margin-top:100px; margin-bottom:100px">
+		<div class="container reset_container">
+
+			<!-- Speaker -->
+			<div class="row row-lg-eq-height">
+				<div class="col-lg-6 speaker_col reset_col">
+					<div class="speaker_image" style="background-image:url(images/sheraton.jpg)"></div>
+				</div>
+				<div class="col-lg-6">
+					<div class="speaker_content d-flex flex-column align-items-start justify-content-center">
+						<div class="speaker_title">Hotel Sheraton</div>
+						<div class="speaker_subtitle">Lieux du congrès</div>
+						<div class="speaker_text">
+							<p>Donec quis metus ac arcu luctus accumsan. Nunc in justo tincidunt, sodales nunc id, finibus nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce nec ante vitae lacus aliquet vulputate. Donec scelerisque accumsan molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras sed accumsan neque. Ut vulputate, lectus vel aliquam congue, risus leo elementum nibh, sed faucibus nisi tortor sed ante.
+                            Donec quis metus ac arcu luctus accumsan. Nunc in justo tincidunt, sodales nunc id, finibus nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce nec ante vitae lacus aliquet vulputate. Donec scelerisque accumsan molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras sed accumsan neque. Ut vulputate, lectus vel aliquam congue, risus leo elementum nibh, sed faucibus nisi tortor sed ante.
+                            </p>
+						</div>
+						<div class="button speaker_button"><a href="https://www.marriott.com/hotels/hotel-rooms/bkosi-sheraton-bamako-hotel/" target="_blank">Reservez</a></div>
+					</div>
+				</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<!-- Call to action -->
+
+	<div class="cta">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/ae.jpg" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="cta_content text-center">
+						<div class="cta_title">Inscrivez-vous</div>
+						<div class="button cta_button"><a href="#">Plus de details</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('js/speakers.js')}}"></script>
+{% endblock %}

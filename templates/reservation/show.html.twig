@@ -1,0 +1,136 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Participant {% endblock %}
+
+{% block stylesheets %} 
+<link rel="stylesheet" type="text/css" href="{{ asset('styles/contact.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('styles/contact_responsive.css') }}">
+{% endblock %}
+
+{% block body %}
+
+
+    <div class="home">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{{ asset('images/events.jpg') }}" data-speed="0.8"></div>
+
+        <!-- header -->
+        {% include 'layout/header.html.twig' %}
+
+		<div class="home_content_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="home_content d-flex flex-row align-items-end justify-content-start">
+							<div class="current_page">Participant/congrès</div>
+							<div class="breadcrumbs ml-auto">
+								<ul>
+									<li><a href="index.php">Accueil</a></li>
+									<li>Participant</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+    {% if participant is not null %}
+    <div class="main-content" style="margin-top:50px; width:900px; margin:50px auto">
+        <!-- Basic Form area Start -->
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-12 mb-3">
+                            <div class="card bg-boxshadow full-height">
+                                <div class="card-body">
+                                    <h4 class="card-title text-color">Informations participant</h4>
+                                    {# <button type="submit" class="btn btn-primary mr-2">Soumettre le formulaire</button> #}
+                                    <form class="forms-sample">
+                                        <div class="form-group">
+                                            <label for="exampleSelectGender" class="text-color">Civilité :</label>
+                                             <input type="text" class="form-control" id="exampleInputCity1" placeholder="{{ participant.civilite.name }}" disabled>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputName1" class="text-color">Nom :</label>
+                                            <input type="text" class="form-control" id="exampleInputCity1" placeholder="{{ participant.nom }}" disabled>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputName1" class="text-color">Prénom :</label>
+                                            <input type="text" class="form-control" id="exampleInputCity1" placeholder="{{ participant.prenom }}" disabled>                                    
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputName1" class="text-color">Profession :</label>
+                                            <input type="text" class="form-control" id="exampleInputCity1" placeholder="{{ participant.profession }}" disabled>                                    
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail3" class="text-color">Adresse email :</label>
+                                            <input type="text" class="form-control" id="exampleInputCity1" placeholder="{{ participant.email }}" disabled>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="exampleInputCity1" class="text-color">Ville :</label>
+                                            <input type="text" class="form-control" id="exampleInputCity1" placeholder="{{ participant.ville }}" disabled>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="exampleInputCity1" class="text-color">Etat/Province :</label>
+                                            <input type="text" class="form-control" id="exampleInputCity1" placeholder="{{ participant.province }}" disabled>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="exampleInputCity1" class="text-color">Pays</label>
+                                            <input type="text" class="form-control" id="exampleInputCity1" placeholder="{{ participant.pays }}" disabled>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="exampleInputCity1" class="text-color">Adhesion BPI : <span style="color:red">*</span>  </label>
+                                            <input type="text" class="form-control" id="exampleInputCity1" placeholder="{{ participant.estMembreBpi ? 'Oui':'Non' }}" disabled>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="exampleInputCity1" class="text-color">Souhaitez-vous faire une présentation au congrès? </label>
+                                            <input type="text" class="form-control" id="exampleInputCity1" placeholder="{{ participant.estPresentateur ? 'Oui':'Non' }}" disabled>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="exampleInputCity1" class="text-color">Si oui, veuillez présenter le titre et un résumé de la présentation: </label>
+                                            <input type="text" class="form-control" id="exampleInputCity1" placeholder="{{ participant.titrePresentation }}" disabled>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="exampleInputCity1" class="text-color">Date limite pour le titre et le résumé de la présentation</label>
+                                            <input type="text" class="form-control" id="exampleInputCity1" placeholder="15 September, 2019" disabled>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="exampleInputCity1" class="text-color">Acceptation de la présentation. Nous vous contacterons dès que possible.</label>
+                                            <input type="text" class="form-control" id="exampleInputCity1" placeholder="30 September, 2019" disabled>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="exampleInputCity1" class="text-color">Date limite d'inscription (frais de congrès et titre / résumé de la présentation, le cas échéant) </label>
+                                            <input type="text" class="form-control" id="exampleInputCity1" placeholder="15 October, 2019" disabled>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="exampleInputCity1" class="text-color">Inscription gratuite</label>
+                                            <input type="text" class="form-control" id="exampleInputCity1">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="exampleInputCity1" class="text-color">Gala Option ?</label>
+                                            <input type="text" class="form-control" id="exampleInputCity1" placeholder="{{ participant.galaOption ? 'Oui':'Non' }}" disabled>
+                                        </div>
+                                       
+                                        <button type="submit" formaction="{{ path('participant_update', { 'id': participant.id }) }}" class="btn btn-primary mr-2">Modier le formulaire</button>
+                                        <button type="submit" class="btn btn-primary mr-2">Payer pour le congrès</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </div>
+    {%  endif %}
+{% endblock %}
