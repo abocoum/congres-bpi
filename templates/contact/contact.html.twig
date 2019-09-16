@@ -1,0 +1,116 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{ asset('styles/contact.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('styles/contact_responsive.css') }}">
+{% endblock %}
+
+
+{% block body %}
+
+    <div class="home">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{{ asset('images/events.jpg') }}" data-speed="0.8"></div>
+
+		{% include 'layout/header.html.twig' %} 
+
+		<div class="home_content_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="home_content d-flex flex-row align-items-end justify-content-start">
+							<div class="current_page">Contact</div>
+							<div class="breadcrumbs ml-auto">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li>Contact</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Contact -->
+
+	<div class="contact">
+		<div class="contact_map_background">
+
+			<!-- Contact Map -->
+			<div class="contact_map">
+
+				<!-- Google Map -->
+				<div class="map">
+					<div id="google_map" class="google_map">
+						<div class="map_container">
+							<div id="map"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="contact_form_container">
+						<div class="contact_form_title">Ecrivez nous !</div>
+						<form action="#" class="contact_form" id="contact_form">
+							<input type="text" class="contact_input" placeholder="Name" required="required">
+							<input type="email" class="contact_input" placeholder="E-mail" required="required">
+							<input type="text" class="contact_input" placeholder="Subject" required="required">
+							<textarea name="contact_textarea" id="contact_textarea" class="contact_textarea contact_input" placeholder="Message" required="required"></textarea>
+							<button class="button contact_button"><span>Envoyez un message</span></button>
+						</form>
+					</div>
+				</div>
+				<div class="col-lg-5 offset-lg-1">
+					<div class="contact_info_container">
+						<div>
+							<a href="#">
+								<div class="logo_container d-flex flex-row align-items-start justify-content-start">
+									<div class="logo_image"><div><img src="{{ asset('images/logo-bpi.png') }}" alt="" style="background-color:#0077bb"></div></div>
+									<div class="logo_content">
+										<div id="logo_text" class="logo_text logo_text_not_ie">Congrès du barreau pénal international au Mali</div>
+										<div class="logo_sub">14-16 Novembre, 2019 - Bamako à l'Hotel Sheraton</div>
+									</div>
+								</div>
+							</a>	
+						</div>
+						<div class="contact_info_list_container">
+							<ul class="contact_info_list">
+								<li class="d-flex flex-row align-items-start justify-content-start">
+									<div><div class="contact_info_icon text-center"><img src="{{ asset('images/contact_1.png') }}" alt=""></div></div>
+									<div class="contact_info_text">Hotel Sheraton, Hamadallaye ACI 2000</div>
+								</li>
+                                <li class="d-flex flex-row align-items-start justify-content-start">
+									<div><div class="contact_info_icon text-center"><img src="{{ asset('images/contact_1.png') }}" alt=""></div></div>
+									<div class="contact_info_text">Cabinet Abouba & Associés, Hamadallaye ACI 2000</div>
+								</li>
+								<li class="d-flex flex-row align-items-start justify-content-start">
+									<div><div class="contact_info_icon text-center"><img src="{{ asset('images/contact_2.png') }}" alt=""></div></div>
+									<div class="contact_info_text">00223 20 22 00 27</div>
+								</li>
+								<li class="d-flex flex-row align-items-start justify-content-start">
+									<div><div class="contact_info_icon text-center"><img src="{{ asset('images/contact_3.png') }}" alt=""></div></div>
+									<div class="contact_info_text">maigabouba@gmail.com</div>
+								</li>
+							</ul>
+						</div>
+						<div class="contact_info_pin"><div></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
+
+
+{% block javascripts %}
+    <script src="{{ asset('js/contact.js')}}"></script>
+    <script src="{{ asset('https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA')}}"></script>
+{% endblock %}

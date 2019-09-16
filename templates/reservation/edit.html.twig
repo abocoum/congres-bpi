@@ -1,0 +1,157 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription {% endblock %}
+
+{% block stylesheets %} 
+<link rel="stylesheet" type="text/css" href="{{ asset('styles/contact.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('styles/contact_responsive.css') }}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+
+{% endblock %}
+
+{% block body %}
+
+<style>
+    .text-color{
+        color: #4867c0;
+    }
+</style>
+
+{{ form_start(form) }}
+
+    <div class="home">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{{ asset('images/events.jpg') }}" data-speed="0.8"></div>
+
+        <!-- header -->
+        {% include 'layout/header.html.twig' %}
+
+		<div class="home_content_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="home_content d-flex flex-row align-items-end justify-content-start">
+							<div class="current_page">Modification/infos</div>
+							<div class="breadcrumbs ml-auto">
+								<ul>
+									<li><a href="index.php">Accueil</a></li>
+									<li>Inscription</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+
+    <div class="main-content" style="margin-top:50px; width:900px; margin:50px auto">
+        <!-- Basic Form area Start -->
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-12 mb-3">
+                            <div class="card bg-boxshadow full-height">
+                                <div class="card-body">
+                                    <h4 class="card-title text-color">Formulaire d'inscription</h4>
+                                    {{ form_errors(form) }}
+                                    <form class="forms-sample" method="post">
+                                        <div class="form-group">
+                                            <label for="exampleSelectGender" class="text-color">Civilité :</label>
+                                            {{ form_widget(form.civilite)}}
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputName1" class="text-color">Nom :</label>
+                                            {{ form_widget(form.nom)}}
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputName1" class="text-color">Prénom :</label>
+                                            {{ form_widget(form.prenom)}}
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail3" class="text-color">Adresse email :</label>
+                                            {{ form_widget(form.email)}}
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputName1" class="text-color">Profession :</label>
+                                            {{ form_widget(form.profession)}}
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputCity1" class="text-color">Ville :</label>
+                                            {{ form_widget(form.ville)}}
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="exampleInputCity1" class="text-color">Etat/Province :</label>
+                                            {{ form_widget(form.province)}}
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="exampleInputCity1" class="text-color">Pays</label>
+                                            {{ form_widget(form.pays)}}
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="exampleInputCity1" class="text-color">Adhesion BPI : <span style="color:red">*</span>  </label>
+                                            {{ form_widget(form.estMembreBpi)}}
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="exampleInputCity1" class="text-color">Souhaitez-vous faire une présentation au congrès? </label>
+                                            {{ form_widget(form.estPresentateur)}}
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="exampleInputCity1" class="text-color">Si oui, veuillez présenter le titre et un résumé de la présentation: </label>
+                                            {{ form_widget(form.titrePresentation)}}
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="exampleInputCity1" class="text-color">Date limite pour le titre et le résumé de la présentation</label>
+                                            <input type="text" class="form-control" id="exampleInputCity1" placeholder="15 September, 2019" disabled>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="exampleInputCity1" class="text-color">Acceptation de la présentation. Nous vous contacterons dès que possible.</label>
+                                            <input type="text" class="form-control" id="exampleInputCity1" placeholder="30 September, 2019" disabled>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="exampleInputCity1" class="text-color">Date limite d'inscription (frais de congrès et titre / résumé de la présentation, le cas échéant) </label>
+                                            <input type="text" class="form-control" id="exampleInputCity1" placeholder="15 October, 2019" disabled>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="exampleInputCity1" class="text-color">Inscription gratuite</label>
+                                            <input type="text" class="form-control" id="exampleInputCity1">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="exampleInputCity1" class="text-color">Gala Option ?</label>
+                                            {{ form_widget(form.galaOption) }}
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <label>
+                                                    <input type="checkbox">
+                                                    <span class="check-box-text text-color"> J'accepte que BPI collecte les données de ce formulaire pour cet événement. *</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        {{ form_row(form._token) }}
+                                        {{ form_widget(form.save)}}
+                                        {# <button type="submit" class="btn btn-primary mr-2">Soumettre le formulaire</button> #}
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </div>
+{{ form_end(form) }}
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('js/contact.js')}}"></script>
+{% endblock %}
