@@ -1,0 +1,34 @@
+ data[response_code]: 00
+data[response_text]: Transaction Found
+ data[hash]: 85c6564b0e29c7955633594bc8aca0d007dc1fce3f67bd3accb00ae4e9d39ae528574be9a6ea8bde81fcbb0bc0fae3e56eb1bbedcd4d119a7fd24b0d44ab3770
+data[invoice][items][item_0][name]:Chaussures Croco
+data[invoice][items][item_0][quantity]: 3
+data[invoice][items][item_0][unit_price]: 10000
+data[invoice][items][item_0][total_price]: 30000
+data[invoice][items][item_0][description]: Chaussures faites en peau de crocrodile authentique qui chasse la pauvreté
+data[invoice][items][item_1][name]: Chemise Glacée
+data[invoice][items][item_1][quantity]: 1
+data[invoice][items][item_1][unit_price]:5000
+data[invoice][items][item_1][total_price]: 5000
+data[invoice][items][item_1][description]: 
+data[invoice][taxes][tax_0][name]: TVA (18%)
+data[invoice][taxes][tax_0][amount]: 6300   
+data[invoice][taxes][tax_0][name]: Livraison
+data[invoice][taxes][tax_0][amount]: 1000 
+data[invoice][token]: test_Jh2T8skw1j
+data[invoice][total_amount]: 42300
+data[invoice][description]: Paiement de 42300 FCFA pour article(s) achetés sur Magasin le Choco
+data[custom_data][categorie]:Jeu concours
+data[custom_data][periode]:  Noël 2015
+data[custom_data][numero_gagnant]:5
+data[custom_data][prix]: Bon de réduction de 50%
+data[actions][cancel_url]: http://magasin-le-choco.com/cancel_url.aspx
+data[actions][callback_url]: http://magasin-le-choco.com/callback_url.aspx
+data[actions][return_url]:  http://magasin-le-choco.com/return_url.aspx
+data[mode]: test
+data[status]: completed
+data[customer][name]:Alioune Faye
+data[customer][name]:Alioune Faye
+data[customer][phone]:774563209
+data[customer][email]:aliounefaye@gmail.com
+data[receipt_url]:https://paydunya.com/sandbox-checkout/receipt/pdf/test_Jh2T8skw1j.pdf

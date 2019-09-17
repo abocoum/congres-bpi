@@ -6,8 +6,10 @@ use Paydunya\Checkout\CheckoutInvoice;
 use Paydunya\Checkout\Store;
 use Paydunya\Setup;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Dotenv\Dotenv;
 use App\Entity\Participant;
 use App\Form\ParticipantFormType;
 use Paydunya;
@@ -143,10 +145,11 @@ class ReservationController extends AbstractController
             );
         }
 
-        Setup::setMasterKey("hmJ2xtPC-kED4-IRrC-ACJq-STiKu7xU74yc");
-        Setup::setPublicKey("test_public_NrOpIYh0A9o8uIjiSxfnCge89wI");
-        Setup::setPrivateKey("test_private_ffPBZhuRyTMQ8XBczl2oNohCxFb");
-        Setup::setToken("Kta4Xit4wB0snCLvMPXs");
+        Setup::setMasterKey($_ENV["PAYDUNYA_MASTER_KEY"]);
+        Setup::setPublicKey($_ENV["PAYDUNYA_PUBLIC_KEY"]);
+        Setup::setPrivateKey($_ENV["PAYDUNYA_PRIVATE_KEY"]);
+        Setup::setToken($_ENV["PAYDUNYA_TOKEN"]);
+
         Setup::setMode("test"); // Optionnel. Utilisez cette option pour les paiements tests.
 
         // configuration des informations vendeurs
@@ -157,37 +160,60 @@ class ReservationController extends AbstractController
         Store::setWebsiteUrl("http://www.codi-mali.com");
         Store::setLogoUrl("http://www.codi-mali.com/logo.png");
         Store::setCallbackUrl("http://localhost/participant/callback_payement");
-
         // creation de la commande
         $invoice = new CheckoutInvoice();
+        $invoice->addTax("Billet non membre BPI", 150);
+        $invoice->addTax("Gala entrée", 30);
+        $invoice->setTotalAmount(100000);
 
+
+        // Le code suivant décrit comment créer une facture de paiement au niveau de nos serveurs,
+        // rediriger ensuite le client vers la page de paiement
+        // et afficher ensuite son reçu de paiement en cas de succès.
+        $iscreated = $invoice->create();
+        var_dump($iscreated);
+        if($invoice->create()) {
+            return $this->redirect($invoice->getInvoiceUrl());
+        }else{
+            echo $invoice->response_text;
+        }
+        return $this->render('reservation/show.html.twig', ['participant' => $participant]);
     }
 
     /**
-     * @Route("/participant/callback_payement/{id}", name="process_payement")
+     * @Route("/participant/callback_payement/{id}", name="callback_payement")
      */
     public function callbackPayement($id, Request $request)
     {
         try {
 
+
+
+
+
             $form = $this->createFormBuilder()
-                ->add('data', 'text')
+                ->add('data', TextType::class)
                 ->getForm();
+            $form->handleRequest($request);
+            $data = $request->request->get('data');
 
-            if ($request->getMethod() == 'POST') {
-                $form->bindRequest($request);
+            var_dump($data);
+            if ($form->isSubmitted() && $form->isValid()) {
                 // data is an array with "name", "email", and "message" keys
-
                 $data = $form->getData();
+                var_dump($data);
+
             }
 
-
+            if($data == null) {
+                die("Paiement a echoué veuillez reessayer avec un autre moyen de paiement");
+            }
+echo  hash('sha512', $_ENV["PAYDUNYA_MASTER_KEY"]);
             //Prenez votre MasterKey, hashez la et comparez le résultat au hash reçu par IPN
-            if($data['hash'] === hash('sha512', "hmJ2xtPC-kED4-IRrC-ACJq-STiKu7xU74yc")) {
+            if($data['hash'] === hash('sha512', $_ENV["PAYDUNYA_MASTER_KEY"])) {
 
-                if ($data['hash']['status'] == "completed") {
+                if ($data['status'] == "completed") {
                     //Faites vos traitements backoffice ici...
-
                     $entityManager = $this->getDoctrine()->getManager();
                     $participant = $entityManager->getRepository(Participant::class)->find($id);
 
@@ -196,6 +222,10 @@ class ReservationController extends AbstractController
                             'No participant found for id '.$id
                         );
                     }
+                    $participant->setPrenom("Paiement effectue");
+
+                    return $this->render('reservation/show.html.twig', ['participant' => $participant]);
+
                 }
             } else {
                 die("Cette requête n'a pas été émise par PayDunya");
