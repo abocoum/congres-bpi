@@ -68,15 +68,12 @@ class ParticipantFormType extends AbstractType
                 'attr' => ['class' => 'form-control'],
                 'required' => false,
             ])
-            ->add('frais', ChoiceType::class, [
+            ->add('galaOption', ChoiceType::class, [
+                'attr' => ['class' => 'form-control'],
                 'choices' => [
-                    'F\'inscription au congrès pour les membres BPI / Frais d\'inscription au congrès pour devenir membre BPI - 100 Euros' => self::BPI,
-                    'Frais d\'inscription au congrès pour les membres non-BPI - 150 euros' => self::NBPI,
-                    'Frais supplémentaires - Dîner de gala - 30 Euro' => self::GALA,
-                ],
-                'expanded'  => true,
-                'multiple'  => true,
-            ])
+                    'Oui' => true,
+                    'Non' => false,
+            ]])
             ->add('save', SubmitType::class, [
                 'attr' => ['class' => 'btn btn-primary mr-2'],
             ]);

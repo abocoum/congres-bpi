@@ -43,8 +43,6 @@ class ReservationController extends AbstractController
 
         if($form->isSubmitted() && $form->isValid()){
             
-            $participant->setFrais([ParticipantFormType::BPI, ParticipantFormType::NBPI, ParticipantFormType::GALA]);
-
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($participant);
             $entityManager->flush();

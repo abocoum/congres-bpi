@@ -57,7 +57,7 @@ class Participant
     private $estMembreBpi;
 
     /**
-     * @ORM\Column(type="boolean" )
+     * @ORM\Column(type="boolean")
      */
     private $estPresentateur;
 
@@ -67,9 +67,9 @@ class Participant
     private $titrePresentation;
 
     /**
-     * @ORM\Column(type="array", nullable=true)
+     * @ORM\Column(type="boolean")
      */
-    protected $frais;
+    protected $galaOption;
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Civilite", inversedBy="participants")
@@ -214,14 +214,14 @@ class Participant
         return $this;
     }
 
-    public function getFrais(): ?array
+    public function getGalaOption()
     {
-        return $this->frais;
+        return $this->galaOption;
     }
 
-    public function setFrais(?array $frais): self
+    public function setGalaOption(bool $galaOption): self
     {
-        $this->frais = $frais;
+        $this->galaOption = $galaOption;
 
         return $this;
     }
