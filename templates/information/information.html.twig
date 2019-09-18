@@ -1,25 +1,17 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Inscription {% endblock %}
+{% block title %}Mali{% endblock %}
 
-{% block stylesheets %} 
-<link rel="stylesheet" type="text/css" href="{{ asset('styles/contact.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('styles/contact_responsive.css') }}">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
-
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{ asset('styles/speakers.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('styles/speakers_responsive.css') }}">
 {% endblock %}
 
 {% block body %}
+<div class="home">
+		<!-- <div class="home_background" style="background-image: url(images/index.jpg)"></div> -->
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{{ asset('images/speakers.jpg') }}" data-speed="0.8"></div>
 
-<style>
-    .text-color{
-        color: #4867c0;
-    }
-</style>
-    <div class="home">
-		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{{ asset('images/events.jpg') }}" data-speed="0.8"></div>
-
-        <!-- header -->
         {% include 'layout/header.html.twig' %}
 
 		<div class="home_content_container">
@@ -27,11 +19,11 @@
 				<div class="row">
 					<div class="col">
 						<div class="home_content d-flex flex-row align-items-end justify-content-start">
-							<div class="current_page">Informations</div>
+							<div class="current_page">Rébublique du Mali</div>
 							<div class="breadcrumbs ml-auto">
 								<ul>
-									<li><a href="index.php">Accueil</a></li>
-									<li>Informaitons</li>
+									<li><a href="index.html">Accueil</a></li>
+									<li>Mali</li>
 								</ul>
 							</div>
 						</div>
@@ -40,26 +32,38 @@
 			</div>
 		</div>
 	</div>
-    
 
-    <div class="main-content mt-5"  >
-        <!-- Basic Form area Start -->
-        <div class="container">
-            <div class="row justify-content-md-center">
-                
-                <div class="col-lg-10 col-md-12 mb-3">
-                            <div class="card bg-boxshadow full-height">
-                                <div class="card-body">
-                                    <h4 class="card-title text-color">Bienvenue sur le site du congrès du Barreau Pénal International au Mali</h4>
-                                    <p>Vous trouverez toutes les informations nécessaire sur le congrès et l'organisation du Barreau</p>
-                                </div>
-                            </div>
-                        </div>
-            </div>
-        </div>
-    </div>
+	<!-- Speakers -->
+
+	<div class="speakers">
+		<div class="container reset_container">
+
+			<!-- Speaker -->
+			<div class="row row-lg-eq-height justify-content-md-center">
+				<div class="col-lg-10 order-lg-1 order-2">
+					<div class="speaker_content d-flex flex-column align-items-start justify-content-center">
+						<div class="speaker_title">Rébublique du Mali</div>
+						<div class="speaker_subtitle">Un peuple, un but, une foi</div>
+						<div class="speaker_text">
+                            <h1 class="speaker_title">Titre 1</h1>
+							<p style="text-align: justify; text-justify: inter-word;">Le Mali, en forme longue la république du Mali, est un pays d'Afrique de l'Ouest, frontalier de la Mauritanie et de l'Algérie au nord, du Niger à l'est, du Burkina Faso et de la Côte d'Ivoire au sud, de la Guinée au sud-ouest et du Sénégal à l'ouest.
+                                Ancienne colonie française du Soudan français, le Mali est devenu indépendant le 22 septembre 1960, après l'éclatement de la fédération du Mali regroupant le Sénégal et la République soudanaise. Sa devise est « un peuple, un but, une foi » et son drapeau est constitué de trois bandes verticales verte, jaune et rouge.
+                                La république du Mali a conservé les frontières héritées de la colonisation, celles du Soudan français. Antérieurement, plusieurs royaumes et empires se sont succédé, englobant une partie plus ou moins importante du Mali actuel et des pays limitrophes.
+                                Avec 15 millions de résidents, la population malienne est constituée de différentes ethnies, dont les principales sont les Bambaras, les Bobos, les Bozos, les Dogons, les Khassonkés, les Malinkés, les Miniankas, les Peuls, les Sénoufos, les Soninkés (ou Sarakolés), les Sonrhaïs, les Touaregs, les Toucouleurs. Le français est la langue officielle, mais la population parle majoritairement les langues nationales, le bambara étant la plus utilisée et servant, parallèlement au français, de langue véhiculaire.
+                                Avec une économie encore essentiellement rurale, le Mali, pays enclavé, fait partie des 48 pays les moins avancés (PMA) sur le plan du développement socio-économique4.
+                                Le pays fait partie de la Communauté économique des États de l'Afrique de l'Ouest (CEDEAO) et de l'Union africaine. Depuis 2012, le Mali est la cible d'attaques djihadistes et est confronté à des conflits communautaires.
+                                Bamako, ville située au sud-ouest et qui comptait 1 809 106 habitants en 20095, est la capitale du pays.
+                            </p>
+						</div>
+						<div class="button speaker_button"><a href="#">En savoir plus !</a></div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
 {% endblock %}
 
 {% block javascripts %}
-    <script src="{{ asset('js/contact.js')}}"></script>
+    <script src="{{ asset('js/speakers.js')}}"></script>
 {% endblock %}

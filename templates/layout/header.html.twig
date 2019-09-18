@@ -59,11 +59,22 @@
 										<div class="header_nav_content d-flex flex-row align-items-center justify-content-start">
 											<nav class="main_nav">
 												<ul>
-													<li><a href="{{ path('home')}}">Accueil</a></li>
+													<li class="dropdown">
+														<a style="    padding: ;" class="nav-link dropdown-toggle" href="{{ path('information') }}" id="navbarDropdown" role="boutton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+															Accueil
+														</a>
+														<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+															<a class="dropdown-item" href="{{ path('information') }}">Le president du barreau pénal international</a>
+															<a class="dropdown-item" href="{{ path('information') }}">Les membres du comité exécutif</a>
+															<a class="dropdown-item" href="{{ path('information') }}">Le president du comité d'organistaion</a>
+															
+														</div>
+													</li>
+		
 													<li><a href="{{ path('agenda')}}">Agenda</a></li>
 
 													<li class="dropdown">
-														<a style="    padding: ;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<a style="    padding: ;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" role="boutton" aria-haspopup="true" aria-expanded="false">
 															Inscriptions
 														</a>
 														<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -72,7 +83,7 @@
 													</li>
 
 													<li class="dropdown">
-														<a style="    padding: ;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<a style="    padding: ;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" role="boutton" aria-haspopup="true" aria-expanded="false">
 															Reservations
 														</a>
 														<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -82,16 +93,16 @@
 													</li>
 
 													<li class="dropdown">
-														<a style="    padding: ;" class="nav-link dropdown-toggle" href="{{ path('reservation') }}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<a style="    padding: ;" class="nav-link dropdown-toggle" href="{{ path('reservation') }}" id="navbarDropdown"  role="boutton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 															Informations
 														</a>
 														<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 															<button class="dropdown-item"></button>
-															<a class="dropdown-item" href="#">Mali</a>
-															<a class="dropdown-item" href="#">Barrau pénal international</a>
-															<a class="dropdown-item" href="#">Cour pénal international</a>
+															<a class="dropdown-item" href="{{ path('information') }}">Mali</a>
+															<a class="dropdown-item" href="https://www.bpi-icb.com/fr/" target="_blank">Barrau pénal international</a>
+															<a class="dropdown-item" href="https://www.icc-cpi.int/Pages/Main.aspx?ln=fr" target="_blank">Cour pénale internationale</a>
 															<div class="dropdown-divider"></div>
-															<a class="dropdown-item" href="#">Barreau du Mali</a>
+															<a class="dropdown-item" href="https://www.barreau.lu/le-barreau/les-commissions/les-commissions-au-sein-du-barreau/cooperation-barreau-du-mali" target="_blank">Barreau du Mali</a>
 														</div>
 													</li>
 													<li><a href="{{ path('contact')}}">Contactez-nous</a></li>
