@@ -100,14 +100,7 @@
                                                                             <p>{{ participant.email }} </p>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="row">
-                                                                        <div class="col-md-6">
-                                                                            <label>Phone</label>
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <p>123 456 7890</p>
-                                                                        </div>
-                                                                    </div>
+                                                                
                                                                     <div class="row">
                                                                         <div class="col-md-6">
                                                                             <label>Profession</label>
@@ -116,6 +109,56 @@
                                                                             <p>{{ participant.profession }}</p>
                                                                         </div>
                                                                     </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <label>Ville</label>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <p>{{ participant.ville }}</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <label>Province/Etat</label>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <p>{{ participant.province }}</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <label>Pays</label>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <p>{{ participant.pays }}</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <label>Adhesion BPI</label>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <p>{{ participant.estMembreBpi ? 'Oui' : 'Non'}}</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <label>Présentation au congrès ?</label>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <p>{{ participant.estPresentateur ? 'Oui' : 'Non' }}</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    {% if participant.estPresentateur == true %}
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <label>Titre présentation</label>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <p>{{ participant.titrePresentation }}</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    {% endif %}
                                                         </div>
                                                         
                                                     </div>
@@ -130,7 +173,7 @@
                                         </div>
                                         <div class="col-md-1"></div>
                                         <div class="col-md-2 col-sm-12 form-group">
-                                            <a  href="{{ path('process_payement', { 'id': participant.id }) }}"    class="btn btn-primary">Payer votre place</a>
+                                            <a  href="https://www.digitick.com/event/congr-s-du-barreau-p-nal-international/hotel-sheraton/1436547" target="_blank" class="btn btn-primary">Payer votre place</a>
                                         </div>
                                     </div>
                                 </div>

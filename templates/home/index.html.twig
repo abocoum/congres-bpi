@@ -25,8 +25,8 @@
 							<div class="home_title">Congrès du Barreau Pénal International au Mali</div>
 							<div class="home_location">Hotel Sheraton.</div>
 							<div class="home_buttons">
-								<div class="button home_button"><a href="https://www.digitick.com/event/congr-s-du-barreau-p-nal-international/hotel-sheraton/1436547">Inscrivez vous</a></div>
-                                <div class="button home_button"><a href="#">En savoir plus</a></div>
+								<div class="button home_button"><a href="{{ path('reservation') }}">Inscrivez vous</a></div>
+                                <div class="button home_button"><a href="{{ path('congres') }}">En savoir plus</a></div>
 							</div>
 						</div>
 					</div>
@@ -43,9 +43,11 @@
 
 			<!-- Intro Item -->
 			<div class="intro_item">
-				<div class="intro_image"><img src="images/agenda.png" alt=""></div>
+				<div class="intro_image">
+				<a href="{{ path('congres') }}"><img src="images/agenda.png" alt=""></a>
+				</div>
 				<div class="intro_body">
-					<div class="intro_title"><a href="#">Congrès</a></div>
+					<div class="intro_title"><a href="{{ path('congres') }}">Congrès</a></div>
 					<div class="intro_subtitle">Accueil du congrès ...</div>
 				</div>
 			</div>
