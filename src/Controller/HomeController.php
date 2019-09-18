@@ -17,4 +17,14 @@ class HomeController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/congres", name="congres")
+     */
+    public function description()
+    {
+        return $this->render('home/description.html.twig', [
+            'controller_name' => 'HomeController',
+        ]);
+    }
+
 }
