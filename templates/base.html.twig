@@ -12,7 +12,8 @@
     <link href="{{ asset('plugins/font-awesome-4.7.0/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="{{ asset('plugins/OwlCarousel2-2.2.1/owl.carousel.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('plugins/OwlCarousel2-2.2.1/owl.theme.default.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('plugins/OwlCarousel2-2.2.1/animate.css') }}">  
+    <link rel="stylesheet" type="text/css" href="{{ asset('plugins/OwlCarousel2-2.2.1/animate.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('styles/congres.css') }}">
     <!--<link rel="stylesheet" type="text/css" href="style.css') }} >-->
     {% block stylesheets %}{% endblock %}
 </head>
@@ -33,6 +34,11 @@
     <script src="{{ asset('plugins/OwlCarousel2-2.2.1/owl.carousel.js') }}"></script>
     <script src="{{ asset('plugins/easing/easing.js') }}"></script>
     <script src="{{ asset('plugins/parallax-js-master/parallax.min.js') }}"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <script>
+        feather.replace()
+    </script>
     {% block javascripts %}{% endblock %}
 
 </body>

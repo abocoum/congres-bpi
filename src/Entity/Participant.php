@@ -67,11 +67,6 @@ class Participant
     private $titrePresentation;
 
     /**
-     * @ORM\Column(type="boolean")
-     */
-    protected $galaOption;
-
-    /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Civilite", inversedBy="participants")
      * @ORM\JoinColumn(nullable=false)
      */
@@ -214,15 +209,5 @@ class Participant
         return $this;
     }
 
-    public function getGalaOption()
-    {
-        return $this->galaOption;
-    }
 
-    public function setGalaOption(bool $galaOption): self
-    {
-        $this->galaOption = $galaOption;
-
-        return $this;
-    }
 }
