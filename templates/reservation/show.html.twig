@@ -8,7 +8,31 @@
 {% endblock %}
 
 {% block body %}
+    <style>
+        .text-color {
+            color: #4867c0;
+        }
 
+        .card {
+            -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid #0056b3;
+            border-radius: 0.25rem;
+        }
+    </style>
 
     <div class="home">
 		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{{ asset('images/events.jpg') }}" data-speed="0.8"></div>
@@ -39,9 +63,8 @@
     <div class="main-content mt-5"  >
         <!-- Basic Form area Start -->
         <div class="container">
-            <div class="row justify-content-md-center">
-                
-                <div class="col-lg-12 col-md-12 mb-3">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 mb-3">
                             <div class="card bg-boxshadow full-height">
                                 <div class="card-body">
                                     <h4 class="card-title text-color">Informations participant</h4>
@@ -59,20 +82,10 @@
                                                                 <h6>
                                                                     {{ participant.profession }}
                                                                 </h6>
-                                                         <p class="proile-rating">RANKINGS : <span>8/10</span></p>
-                                                        
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-md-4">
-                                                    <div class="profile-work">
-                                                        <p>WORK LINK</p>
-                                                        <a href="">Website Link</a><br/>
-                                                        <a href="">Bootsnipp Profile</a><br/>
-                                                        <a hrefgit ="">Bootply Profile</a>
-                                                    </div>
-                                                </div>
                                                 <div class="col-md-8" >
                                                     <div class="tab-content profile-tab" id="myTabContent">
                                                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -171,14 +184,47 @@
                                         <div class="col-md-2 col-sm-12 form-group">
                                             <a   href="{{ path('participant_update', { 'id': participant.id }) }}" class="btn btn-secondary mr-2">Modifier vos inforrmations</a>
                                         </div>
-                                        <div class="col-md-1"></div>
-                                        <div class="col-md-2 col-sm-12 form-group">
-                                            <a  href="https://www.digitick.com/event/congr-s-du-barreau-p-nal-international/hotel-sheraton/1436547" target="_blank" class="btn btn-primary">Payer votre place</a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                <div class="col-lg-5 col-md-5 mb-3">
+                    <div class="card bg-boxshadow full-height">
+                        <div class="card-header">
+                            <h5 class="card-title text-color">Payer par carte bancaire</h5>
+                        </div>
+                        <div class="card-body">
+                            {# <button type="submit" class="btn btn-primary mr-2">Soumettre le formulaire</button> #}
+
+                            <div class="container emp-profile">
+                                <div class="col-md-2 col-sm-12 form-group">
+                                    <a  href="https://www.digitick.com/event/congr-s-du-barreau-p-nal-international/hotel-sheraton/1436547" target="_blank" class="btn btn-primary">Payer votre place</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 card bg-boxshadow full-height">
+                        <div class="card-header">
+                            <h5 class="card-title text-color">Compte BPI au MALI</h5>
+                        </div>
+                        <div class="card-body">
+                            {# <button type="submit" class="btn btn-primary mr-2">Soumettre le formulaire</button> #}
+                            <div class="container emp-profile">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 card bg-boxshadow full-height">
+                        <div class="card-header">
+                            <h5 class="card-title text-color">Compte BPI en Espagne</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="container emp-profile">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>

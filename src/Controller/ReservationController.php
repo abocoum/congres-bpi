@@ -104,7 +104,7 @@ class ReservationController extends AbstractController
             ]);
         }
 
-        return $this->render('reservation/edit.html.twig', [
+        return $this->render('reservation/inscription.html.twig', [
             'form' => $form->createView(),
             'controller_name' => 'ReservationController',
         ]);
