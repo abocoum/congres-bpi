@@ -69,6 +69,10 @@ class ParticipantFormType extends AbstractType
                 'attr' => ['class' => 'form-control'],
                 'required' => false,
             ])
+            ->add('agreeTerms', CheckboxType::class, [
+                'attr' => ['class' => 'form-control'],
+                'mapped' => false
+            ])
             ->add('save', SubmitType::class, [
                 'attr' => ['class' => 'btn btn-primary mr-2'],
             ]);

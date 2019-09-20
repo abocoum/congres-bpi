@@ -13,6 +13,10 @@
             color: #4867c0;
         }
 
+        .name{
+            color: black;
+        }
+
         .card {
             -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
             box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
@@ -91,7 +95,7 @@
                                                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                                                     <div class="row">
                                                                         <div class="col-md-6">
-                                                                            <label>Nom :</label>
+                                                                            <label class="name">Nom :</label>
                                                                         </div>
                                                                         <div class="col-md-6">
                                                                             <p>{{ participant.nom }} </p>
@@ -99,7 +103,7 @@
                                                                     </div>
                                                                     <div class="row">
                                                                         <div class="col-md-6">
-                                                                            <label>Prenom :</label>
+                                                                            <label class="name">Prenom :</label>
                                                                         </div>
                                                                         <div class="col-md-6">
                                                                             <p>{{ participant.prenom }} </p>
@@ -107,7 +111,7 @@
                                                                     </div>
                                                                     <div class="row">
                                                                         <div class="col-md-6">
-                                                                            <label>Email: </label>
+                                                                            <label class="name">Email: </label>
                                                                         </div>
                                                                         <div class="col-md-6">
                                                                             <p>{{ participant.email }} </p>
@@ -116,7 +120,7 @@
                                                                 
                                                                     <div class="row">
                                                                         <div class="col-md-6">
-                                                                            <label>Profession</label>
+                                                                            <label class="name">Profession</label>
                                                                         </div>
                                                                         <div class="col-md-6">
                                                                             <p>{{ participant.profession }}</p>
@@ -124,7 +128,7 @@
                                                                     </div>
                                                                     <div class="row">
                                                                         <div class="col-md-6">
-                                                                            <label>Ville</label>
+                                                                            <label class="name">Ville</label>
                                                                         </div>
                                                                         <div class="col-md-6">
                                                                             <p>{{ participant.ville }}</p>
@@ -132,7 +136,7 @@
                                                                     </div>
                                                                     <div class="row">
                                                                         <div class="col-md-6">
-                                                                            <label>Province/Etat</label>
+                                                                            <label class="name">Province/Etat</label>
                                                                         </div>
                                                                         <div class="col-md-6">
                                                                             <p>{{ participant.province }}</p>
@@ -140,7 +144,7 @@
                                                                     </div>
                                                                     <div class="row">
                                                                         <div class="col-md-6">
-                                                                            <label>Pays</label>
+                                                                            <label class="name">Pays</label>
                                                                         </div>
                                                                         <div class="col-md-6">
                                                                             <p>{{ participant.pays }}</p>
@@ -148,7 +152,7 @@
                                                                     </div>
                                                                     <div class="row">
                                                                         <div class="col-md-6">
-                                                                            <label>Adhesion BPI</label>
+                                                                            <label class="name">Adhesion BPI</label>
                                                                         </div>
                                                                         <div class="col-md-6">
                                                                             <p>{{ participant.estMembreBpi ? 'Oui' : 'Non'}}</p>
@@ -156,7 +160,7 @@
                                                                     </div>
                                                                     <div class="row">
                                                                         <div class="col-md-6">
-                                                                            <label>Présentation au congrès ?</label>
+                                                                            <label class="name">Présentation au congrès ?</label>
                                                                         </div>
                                                                         <div class="col-md-6">
                                                                             <p>{{ participant.estPresentateur ? 'Oui' : 'Non' }}</p>
@@ -165,7 +169,7 @@
                                                                     {% if participant.estPresentateur == true %}
                                                                     <div class="row">
                                                                         <div class="col-md-6">
-                                                                            <label>Titre présentation</label>
+                                                                            <label class="name">Titre présentation</label>
                                                                         </div>
                                                                         <div class="col-md-6">
                                                                             <p>{{ participant.titrePresentation }}</p>
