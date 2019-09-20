@@ -39,6 +39,20 @@
     <script>
         feather.replace()
     </script>
+    <script>
+        /*
+* Only go to the link when dropdown is already open (if the dropdown is a link)
+*/
+        $('.dropdown > a[href]').click(function() {
+            var dropdown = $(this).next('.dropdown-menu');
+
+            if (dropdown.length == 0 || $(dropdown).css('display') !== 'none') {
+                if (this.href) {
+                    location.href = this.href;
+                }
+            }
+            });
+    </script>
     {% block javascripts %}{% endblock %}
 
 </body>
