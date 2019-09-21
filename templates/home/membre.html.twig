@@ -1,0 +1,87 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mali{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{ asset('styles/speakers.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('styles/speakers_responsive.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div class="home">
+        <!-- <div class="home_background" style="background-image: url(images/index.jpg)"></div> -->
+        <div class="parallax_background parallax-window" data-parallax="scroll"
+             data-image-src="{{ asset('images/speakers.jpg') }}" data-speed="0.8"></div>
+
+        {% include 'layout/header.html.twig' %}
+
+        <div class="home_content_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="home_content d-flex flex-row align-items-end justify-content-start">
+                            <div class="current_page">Rébublique du Mali</div>
+                            <div class="breadcrumbs ml-auto">
+                                <ul>
+                                    <li><a href="index.html">Accueil</a></li>
+                                    <li>Mali</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Speakers -->
+
+    <div class="speakers">
+        <div class="container reset_container">
+
+            <!-- Speaker -->
+            <div class="pt-5 pb-5  row row-lg-eq-height justify-content-md-center">
+                <div class="col-lg-8 order-lg-1 order-2">
+                    <div class=" d-flex flex-column align-items-start justify-content-center">
+                        <div class="speaker_title">Comité Exécutif
+                        </div>
+                        <div class="">
+                            <p style="text-align: justify; text-justify: inter-word;  color: #212529;">Le CoEx est chargé de convoquer la
+                                célébration de l’Assemblée Générale, avec l’importance que cela entraîne, il devra
+                                promouvoir les thèmes à traiter et décider si les questions proposées par les membres
+                                individuels seront traités dans l’Assemblée.
+                                Le Comité Exécutif doit être formé par sept membres, occupant les figures obligatoires
+                                de, Président, Vice-président, Secrétaire et Trésorier.
+                                Sur le Comité Exécutif aussi retombe le Pouvoir de Représentation du BPI par trois
+                                membres qui agissent en même temps.
+                            </p>
+
+                            <div class="mt-4 media" style="color: #212529;">
+                                <div class="media-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Dragos Chilea President</li>
+                                        <li class="list-group-item">Abouba Ali Maiga Vicepresident</li>
+                                        <li class="list-group-item">Jaume Antich Secretary General</li>
+                                        <li class="list-group-item">Antonia Rocha Treasurer</li>
+                                        <li class="list-group-item">Kent Gallant</li>
+                                        <li class="list-group-item">Pierre Kopp</li>
+                                        <li class="list-group-item">Nguyen Dang Trung</li>
+                                    </ul>
+                                </div>
+                                <img src="{{ asset('images/comite.jpg') }}" class="ml-3 rounded float-right img-thumbnail" style="width: 400px; height: 300px;">
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('js/speakers.js') }}"></script>
+{% endblock %}
