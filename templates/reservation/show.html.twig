@@ -9,6 +9,9 @@
 
 {% block body %}
     <style>
+        body {
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        }
         .text-color {
             color: #4867c0;
         }
@@ -65,12 +68,12 @@
     </div>
 
     {% if participant is not null %}
-        <div class="main-content mt-5">
+        <div class="main-content mt-5 mb-5" >
             <!-- Basic Form area Start -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7 col-md-7 mb-3">
-                        <div class="card bg-boxshadow full-height">
+            <div class="container emp-profile">
+                <div class="d-flex flex-row  ">
+                    <div class="col-lg-6 col-md-6 ">
+                        <div class="card bg-boxshadow h-100">
                             <div class="card-body">
                                 <h4 class="card-title text-color">Vos Informations</h4>
                                 {# <button type="submit" class="btn btn-primary mr-2">Soumettre le formulaire</button> #}
@@ -78,7 +81,7 @@
                                 <div class="container emp-profile">
                                     <form method="post">
                                         <div class="row">
-                                            <div class="col-md-8">
+                                            <div class="col-md-12">
                                                 <div class="tab-content profile-tab" id="myTabContent">
                                                     <div class="tab-pane fade show active" id="home" role="tabpanel"
                                                          aria-labelledby="home-tab">
@@ -173,7 +176,7 @@
                                     </form>
                                 </div>
 
-                                <div class="row justify-content-center">
+                                <div class="row justify-content-start">
                                     <div class="col-md-2 col-sm-12 form-group">
                                         <a href="{{ path('participant_update', { 'id': participant.id }) }}"
                                            class="btn btn-secondary mr-2">Modifier vos inforrmations</a>
@@ -183,7 +186,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-5 col-md-5 mb-3">
+                    <div class="col-lg-5 col-md-6 ">
                         <div class="card bg-boxshadow full-height">
                             <div class="card-header">
                                 <h5 class="card-title text-color">Payer par carte bancaire</h5>
@@ -191,12 +194,10 @@
                             <div class="card-body">
                                 {# <button type="submit" class="btn btn-primary mr-2">Soumettre le formulaire</button> #}
 
-                                <div class="container emp-profile">
                                     <div class="col-md-2 col-sm-12 form-group">
                                         <a href="https://www.digitick.com/event/congr-s-du-barreau-p-nal-international/hotel-sheraton/1436547"
                                            target="_blank" class="btn btn-primary">Payer votre place</a>
                                     </div>
-                                </div>
                             </div>
                         </div>
                         <div class="mt-4 card bg-boxshadow full-height">
@@ -204,20 +205,67 @@
                                 <h5 class="card-title text-color">Compte BPI au MALI</h5>
                             </div>
                             <div class="card-body">
-                                {# <button type="submit" class="btn btn-primary mr-2">Soumettre le formulaire</button> #}
-                                <div class="container emp-profile">
+                                <div class="row mb-3">
+                                        <div class="col-md-5">
+                                            <label class="name">Nom de la banque:</label>
+                                        </div>
+                                        <div class="col-md-7 name">
+                                            BANQUE ANTLATIQUE MALI
+                                        </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-3 mb-3">
+                                        <label class="name" for="validationDefault01">Code banque</label>
+                                        <input type="text" class="form-control form-control-sm" readonly="readonly" value="ML135" >
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label   class="name"  for="validationDefault02">Code guichet</label>
+                                        <input type="text" class="form-control form-control-sm"   readonly="readonly" value="01013" >
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class="name" for="validationDefaultUsername">N° de compte</label>
+                                        <input  value="073178830009" type="text" class=" form-control form-control-sm name" readonly="readonly"  >
+
+                                    </div>
+                                    <div class="col-md-2 mb-3">
+                                        <label class="name" for="validationDefault01">Clé</label>
+                                        <input type="text" class="form-control form-control-sm"   readonly="readonly"   value="95" >
+                                    </div>
+                                </div>
+
+                                <hr>
+
+
+                                <div class="row mb-3">
+                                    <div class="col-md-5">
+                                        <label class="name">Nom de la banque:</label>
+                                    </div>
+                                    <div class="col-md-7 name">
+                                        BANQUE ANTLATIQUE ESPAGNE
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-3 mb-3">
+                                        <label class="name" for="validationDefault01">Code banque</label>
+                                        <input type="text" class="form-control form-control-sm" readonly="readonly" value="ML135" >
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label   class="name"  for="validationDefault02">Code guichet</label>
+                                        <input type="text" class="form-control form-control-sm"   readonly="readonly" value="01013" >
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class="name" for="validationDefaultUsername">N° de compte</label>
+                                        <input  value="073178830009" type="text" class=" form-control form-control-sm name" readonly="readonly"  >
+
+                                    </div>
+                                    <div class="col-md-2 mb-3">
+                                        <label class="name" for="validationDefault01">Clé</label>
+                                        <input type="text" class="form-control form-control-sm"   readonly="readonly"   value="95" >
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="mt-4 card bg-boxshadow full-height">
-                            <div class="card-header">
-                                <h5 class="card-title text-color">Compte BPI en Espagne</h5>
-                            </div>
-                            <div class="card-body">
-                                <div class="container emp-profile">
-                                </div>
-                            </div>
-                        </div>
+
 
                     </div>
                 </div>

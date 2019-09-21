@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26e7aec4-2c04-49f8-9be4-a940df64c667" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/templates/home/membre.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/membre.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/reservation/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/reservation/show.html.twig" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/reservation/inscription.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="38" selection-end-column="12" />
+            <state relative-caret-position="130">
+              <caret line="80" column="36" selection-start-line="80" selection-end-line="81" />
             </state>
           </provider>
         </entry>
@@ -55,7 +55,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/home/membre.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -105,11 +105,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/reservation/show.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="84" column="73" selection-start-line="84" selection-start-column="73" selection-end-line="84" selection-end-column="73" />
+            <state relative-caret-position="79">
+              <caret line="248" column="58" selection-start-line="248" selection-start-column="54" selection-end-line="248" selection-end-column="58" />
+              <folding>
+                <element signature="e#2080#12453#0#HTML" />
+                <element signature="e#2479#11914#0#HTML" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,6 +148,7 @@
       <find>succ</find>
       <find>*/</find>
       <find>dropdown</find>
+      <find>col-md-8</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -166,8 +171,8 @@
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/HomeController.php" />
         <option value="$PROJECT_DIR$/templates/layout/header.html.twig" />
-        <option value="$PROJECT_DIR$/templates/reservation/show.html.twig" />
         <option value="$PROJECT_DIR$/templates/home/membre.html.twig" />
+        <option value="$PROJECT_DIR$/templates/reservation/show.html.twig" />
       </list>
     </option>
   </component>
@@ -289,11 +294,10 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="1" />
-    <option name="width" value="1935" />
-    <option name="height" value="1049" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -400,13 +404,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37621000" />
+    <option name="totallyTimeSpent" value="41864000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49780703" visible="true" weight="0.20872483" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49780703" weight="0.43134534" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -422,7 +426,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.86711407" visible="true" weight="0.33044732" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.86711407" visible="true" weight="0.33044732" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.1328859" side_tool="true" weight="0.32756132" />
       <window_info anchor="bottom" id="JRebel Executor" order="12" />
       <window_info anchor="bottom" id="JRebel Console" order="13" side_tool="true" />
@@ -614,13 +618,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/reservation/edit.html.twig" />
-    <entry file="file://$PROJECT_DIR$/templates/reservation/inscription.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="38" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/layout/menu.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -673,13 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/reservation/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="84" column="73" selection-start-line="84" selection-start-column="73" selection-end-line="84" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/home/membre.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -688,6 +678,24 @@
             <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/reservation/inscription.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="80" column="36" selection-start-line="80" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/reservation/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="248" column="58" selection-start-line="248" selection-start-column="54" selection-end-line="248" selection-end-column="58" />
+          <folding>
+            <element signature="e#2080#12453#0#HTML" />
+            <element signature="e#2479#11914#0#HTML" />
           </folding>
         </state>
       </provider>
