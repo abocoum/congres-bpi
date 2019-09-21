@@ -70,15 +70,15 @@
     {% if participant is not null %}
         <div class="main-content mt-5 mb-5" >
             <!-- Basic Form area Start -->
-            <div class="container emp-profile">
-                <div class="d-flex flex-row  ">
+            <div class="container">
+                <div class="row">
                     <div class="col-lg-6 col-md-6 ">
                         <div class="card bg-boxshadow h-100">
+                            <div class="card-header">
+                                <h5 class="card-title text-color">Vos Informations</h5>
+                            </div>
                             <div class="card-body">
-                                <h4 class="card-title text-color">Vos Informations</h4>
-                                {# <button type="submit" class="btn btn-primary mr-2">Soumettre le formulaire</button> #}
-
-                                <div class="container emp-profile">
+                                <div class="container">
                                     <form method="post">
                                         <div class="row">
                                             <div class="col-md-12">
@@ -89,7 +89,7 @@
                                                             <div class="col-md-4">
                                                                 <label class="name">Nom :</label>
                                                             </div>
-                                                            <div class="col-md-8">
+                                                            <div class="col-md-8 form-control-plaintext">
                                                                 <p>{{ participant.nom }} </p>
                                                             </div>
                                                         </div>
@@ -97,7 +97,7 @@
                                                             <div class="col-md-4">
                                                                 <label class="name">Prenom :</label>
                                                             </div>
-                                                            <div class="col-md-8">
+                                                            <div class="col-md-8 form-control-plaintext">
                                                                 <p>{{ participant.prenom }} </p>
                                                             </div>
                                                         </div>
@@ -105,65 +105,65 @@
                                                             <div class="col-md-4">
                                                                 <label class="name">Email: </label>
                                                             </div>
-                                                            <div class="col-md-8">
+                                                            <div class="col-md-8 form-control-plaintext">
                                                                 <p>{{ participant.email }} </p>
                                                             </div>
                                                         </div>
 
                                                         <div class="row">
                                                             <div class="col-md-4">
-                                                                <label class="name">Profession</label>
+                                                                <label class="name">Profession: </label>
                                                             </div>
-                                                            <div class="col-md-8">
+                                                            <div class="col-md-8 form-control-plaintext">
                                                                 <p>{{ participant.profession }}</p>
                                                             </div>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-md-4">
-                                                                <label class="name">Ville</label>
+                                                                <label class="name">Ville: </label>
                                                             </div>
-                                                            <div class="col-md-8">
+                                                            <div class="col-md-8 form-control-plaintext">
                                                                 <p>{{ participant.ville }}</p>
                                                             </div>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-md-4">
-                                                                <label class="name">Province/Etat</label>
+                                                                <label class="name">Province/Etat: </label>
                                                             </div>
-                                                            <div class="col-md-8">
+                                                            <div class="col-md-8 form-control-plaintext">
                                                                 <p>{{ participant.province }}</p>
                                                             </div>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-md-4">
-                                                                <label class="name">Pays</label>
+                                                                <label class="name">Pays: </label>
                                                             </div>
-                                                            <div class="col-md-8">
+                                                            <div class="col-md-8 form-control-plaintext">
                                                                 <p>{{ participant.pays }}</p>
                                                             </div>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-md-4">
-                                                                <label class="name">Adhesion BPI</label>
+                                                                <label class="name">Adhesion BPI: </label>
                                                             </div>
-                                                            <div class="col-md-8">
+                                                            <div class="col-md-8 form-control-plaintext">
                                                                 <p>{{ participant.estMembreBpi ? 'Oui' : 'Non' }}</p>
                                                             </div>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-md-4">
-                                                                <label class="name">Présentation au congrès ?</label>
+                                                                <label class="name">Présentation au congrès ?: </label>
                                                             </div>
-                                                            <div class="col-md-8">
+                                                            <div class="col-md-8 form-control-plaintext">
                                                                 <p>{{ participant.estPresentateur ? 'Oui' : 'Non' }}</p>
                                                             </div>
                                                         </div>
                                                         {% if participant.estPresentateur == true %}
                                                             <div class="row">
                                                                 <div class="col-md-4">
-                                                                    <label class="name">Titre présentation</label>
+                                                                    <label class="name">Titre présentation: </label>
                                                                 </div>
-                                                                <div class="col-md-8">
+                                                                <div class="col-md-8 form-control-plaintext">
                                                                     <p>{{ participant.titrePresentation }}</p>
                                                                 </div>
                                                             </div>
@@ -176,17 +176,18 @@
                                     </form>
                                 </div>
 
-                                <div class="row justify-content-start">
-                                    <div class="col-md-2 col-sm-12 form-group">
+
+                            </div>
+                            <div class="card-footer text-muted justify-content-end">
+                                <div class="row justify-content-end">
                                         <a href="{{ path('participant_update', { 'id': participant.id }) }}"
                                            class="btn btn-secondary mr-2">Modifier vos inforrmations</a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-5 col-md-6 ">
+                    <div class="col-lg-6 col-md-6">
                         <div class="card bg-boxshadow full-height">
                             <div class="card-header">
                                 <h5 class="card-title text-color">Payer par carte bancaire</h5>
@@ -202,7 +203,7 @@
                         </div>
                         <div class="mt-4 card bg-boxshadow full-height">
                             <div class="card-header">
-                                <h5 class="card-title text-color">Compte BPI au MALI</h5>
+                                <h5 class="card-title text-color">Payer par virement bancaire</h5>
                             </div>
                             <div class="card-body">
                                 <div class="row mb-3">
@@ -241,7 +242,7 @@
                                         <label class="name">Nom de la banque:</label>
                                     </div>
                                     <div class="col-md-7 name">
-                                        BANQUE ANTLATIQUE ESPAGNE
+                                       BANK SANTANDER ESPAGNE
                                     </div>
                                 </div>
                                 <div class="form-row">
