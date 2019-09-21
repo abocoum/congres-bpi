@@ -23,7 +23,7 @@
                             <div class="current_page">Comité d'organisation</div>
                             <div class="breadcrumbs ml-auto">
                                 <ul>
-                                    <li><a href="index.html">Accueil</a></li>
+                                    <li><a href="{{ path('home') }}">Accueil</a></li>
                                     <li>comité-organisation</li>
                                 </ul>
                             </div>
@@ -41,33 +41,31 @@
 
             <!-- Speaker -->
             <div class="pt-5 pb-5  row row-lg-eq-height justify-content-md-center">
-                <div class="col-lg-8 order-lg-1 order-2">
+                <div class="col-lg-9 order-lg-1 order-2">
                     <div class=" d-flex flex-column align-items-start justify-content-center">
+                        
                         <div class="speaker_title">Président du comité d'organisation
                         </div>
-                        <div class="">
-                            <p style="text-align: justify; text-justify: inter-word;  color: #212529;">Le CoEx est chargé de convoquer la
-                                célébration de l’Assemblée Générale, avec l’importance que cela entraîne, il devra
-                                promouvoir les thèmes à traiter et décider si les questions proposées par les membres
-                                individuels seront traités dans l’Assemblée.
-                                Le Comité Exécutif doit être formé par sept membres, occupant les figures obligatoires
-                                de, Président, Vice-président, Secrétaire et Trésorier.
-                                Sur le Comité Exécutif aussi retombe le Pouvoir de Représentation du BPI par trois
-                                membres qui agissent en même temps.
-                            </p>
-
+                        <div>
                             <div class="mt-4 media" style="color: #212529;">
                                 <div class="media-body">
                                     <ul class="list-group">
-                                        <li class="list-group-item">Maître Abdoulaye ONE <span class="badge  badge-primary h4">President du comité d'organisation</span></li>
+                                        <li class="list-group-item"> Maître Abdoulaye ONE <span class="badge  badge-primary h4"> President du comité d'organisation</span></li>
                                     </ul>
+                                    <hr />
+                                    <p style="text-align: justify; text-justify: inter-word;  color: #212529;">Le CoEx est chargé de convoquer la
+                                        célébration de l’Assemblée Générale, avec l’importance que cela entraîne, il devra
+                                        promouvoir les thèmes à traiter et décider si les questions proposées par les membres
+                                        individuels seront traités dans l’Assemblée.
+                                        Le Comité Exécutif doit être formé par sept membres, occupant les figures obligatoires
+                                        de, Président, Vice-président, Secrétaire et Trésorier.
+                                        Sur le Comité Exécutif aussi retombe le Pouvoir de Représentation du BPI par trois
+                                        membres qui agissent en même temps.
+                                    </p>
                                 </div>
                                 <img src="{{ asset('images/comite.jpg') }}" class="ml-3 rounded float-right img-thumbnail" style="width: 400px; height: 300px;">
-                            </div>
-
-
+                            </div>                        
                         </div>
-
                     </div>
                 </div>
 
