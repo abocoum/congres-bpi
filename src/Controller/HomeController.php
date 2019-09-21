@@ -27,4 +27,14 @@ class HomeController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/comite-executif", name="comite-executif")
+     */
+    public function commiteExecutif()
+    {
+        return $this->render('home/membre.html.twig', [
+            'controller_name' => 'HomeController',
+        ]);
+    }
+
 }
