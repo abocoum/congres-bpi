@@ -2,9 +2,9 @@
 
 {% block title %}Participant {% endblock %}
 
-{% block stylesheets %} 
-<link rel="stylesheet" type="text/css" href="{{ asset('styles/contact.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('styles/contact_responsive.css') }}">
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{ asset('styles/contact.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('styles/contact_responsive.css') }}">
 {% endblock %}
 
 {% block body %}
@@ -13,7 +13,7 @@
             color: #4867c0;
         }
 
-        .name{
+        .name {
             color: black;
         }
 
@@ -39,301 +39,310 @@
     </style>
 
     <div class="home">
-		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{{ asset('images/events.jpg') }}" data-speed="0.8"></div>
+        <div class="parallax_background parallax-window" data-parallax="scroll"
+             data-image-src="{{ asset('images/events.jpg') }}" data-speed="0.8"></div>
 
         <!-- header -->
         {% include 'layout/header.html.twig' %}
 
-		<div class="home_content_container">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<div class="home_content d-flex flex-row align-items-end justify-content-start">
-							<div class="current_page">Participant/congrès</div>
-							<div class="breadcrumbs ml-auto">
-								<ul>
-									<li><a href="index.php">Accueil</a></li>
-									<li>Participant</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-    
-    {% if participant is not null %}
-    <div class="main-content mt-5"  >
-        <!-- Basic Form area Start -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 col-md-7 mb-3">
-                            <div class="card bg-boxshadow full-height">
-                                <div class="card-body">
-                                    <h4 class="card-title text-color">Informations participant</h4>
-                                    {# <button type="submit" class="btn btn-primary mr-2">Soumettre le formulaire</button> #}
-                                    
-                                    <div class="container emp-profile">
-                                        <form method="post">
-                                            <div class="row">
-                                                
-                                                <div class="col-md-10">
-                                                    <div class="profile-head">
-                                                                <h5>
-                                                                    {{ participant.nom }} {{ participant.prenom }}
-                                                                </h5>
-                                                                <h6>
-                                                                    {{ participant.profession }}
-                                                                </h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-8" >
-                                                    <div class="tab-content profile-tab" id="myTabContent">
-                                                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                                                    <div class="row">
-                                                                        <div class="col-md-6">
-                                                                            <label class="name">Nom :</label>
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <p>{{ participant.nom }} </p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row">
-                                                                        <div class="col-md-6">
-                                                                            <label class="name">Prenom :</label>
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <p>{{ participant.prenom }} </p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row">
-                                                                        <div class="col-md-6">
-                                                                            <label class="name">Email: </label>
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <p>{{ participant.email }} </p>
-                                                                        </div>
-                                                                    </div>
-                                                                
-                                                                    <div class="row">
-                                                                        <div class="col-md-6">
-                                                                            <label class="name">Profession</label>
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <p>{{ participant.profession }}</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row">
-                                                                        <div class="col-md-6">
-                                                                            <label class="name">Ville</label>
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <p>{{ participant.ville }}</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row">
-                                                                        <div class="col-md-6">
-                                                                            <label class="name">Province/Etat</label>
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <p>{{ participant.province }}</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row">
-                                                                        <div class="col-md-6">
-                                                                            <label class="name">Pays</label>
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <p>{{ participant.pays }}</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row">
-                                                                        <div class="col-md-6">
-                                                                            <label class="name">Adhesion BPI</label>
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <p>{{ participant.estMembreBpi ? 'Oui' : 'Non'}}</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row">
-                                                                        <div class="col-md-6">
-                                                                            <label class="name">Présentation au congrès ?</label>
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <p>{{ participant.estPresentateur ? 'Oui' : 'Non' }}</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    {% if participant.estPresentateur == true %}
-                                                                    <div class="row">
-                                                                        <div class="col-md-6">
-                                                                            <label class="name">Titre présentation</label>
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <p>{{ participant.titrePresentation }}</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    {% endif %}
-                                                        </div>
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>           
-                                    </div>
-                                    
-                                    <div class="row justify-content-center">
-                                        <div class="col-md-2 col-sm-12 form-group">
-                                            <a   href="{{ path('participant_update', { 'id': participant.id }) }}" class="btn btn-secondary mr-2">Modifier vos inforrmations</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                <div class="col-lg-5 col-md-5 mb-3">
-                    <div class="card bg-boxshadow full-height">
-                        <div class="card-header">
-                            <h5 class="card-title text-color">Payer par carte bancaire</h5>
-                        </div>
-                        <div class="card-body">
-                            {# <button type="submit" class="btn btn-primary mr-2">Soumettre le formulaire</button> #}
-
-                            <div class="container emp-profile">
-                                <div class="col-md-2 col-sm-12 form-group">
-                                    <a  href="https://www.digitick.com/event/congr-s-du-barreau-p-nal-international/hotel-sheraton/1436547" target="_blank" class="btn btn-primary">Payer votre place</a>
-                                </div>
+        <div class="home_content_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="home_content d-flex flex-row align-items-end justify-content-start">
+                            <div class="current_page">Participant/congrès</div>
+                            <div class="breadcrumbs ml-auto">
+                                <ul>
+                                    <li><a href="index.php">Accueil</a></li>
+                                    <li>Participant</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="mt-4 card bg-boxshadow full-height">
-                        <div class="card-header">
-                            <h5 class="card-title text-color">Compte BPI au MALI</h5>
-                        </div>
-                        <div class="card-body">
-                            {# <button type="submit" class="btn btn-primary mr-2">Soumettre le formulaire</button> #}
-                            <div class="container emp-profile">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-4 card bg-boxshadow full-height">
-                        <div class="card-header">
-                            <h5 class="card-title text-color">Compte BPI en Espagne</h5>
-                        </div>
-                        <div class="card-body">
-                            <div class="container emp-profile">
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
     </div>
 
-   <style>
-    
-.emp-profile{
-    padding: 3%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    border-radius: 0.5rem;
-    background: #fff;
-}
-.profile-img{
-    text-align: center;
-}
-.profile-img img{
-    width: 70%;
-    height: 100%;
-}
-.profile-img .file {
-    position: relative;
-    overflow: hidden;
-    margin-top: -20%;
-    width: 70%;
-    border: none;
-    border-radius: 0;
-    font-size: 15px;
-    background: #212529b8;
-}
-.profile-img .file input {
-    position: absolute;
-    opacity: 0;
-    right: 0;
-    top: 0;
-}
-.profile-head h5{
-    color: #333;
-}
-.profile-head h6{
-    color: #0062cc;
-}
-.profile-edit-btn{
-    border: none;
-    border-radius: 1.5rem;
-    width: 70%;
-    padding: 2%;
-    font-weight: 600;
-    color: #6c757d;
-    cursor: pointer;
-}
-.proile-rating{
-    font-size: 12px;
-    color: #818182;
-    margin-top: 5%;
-}
-.proile-rating span{
-    color: #495057;
-    font-size: 15px;
-    font-weight: 600;
-}
-.profile-head .nav-tabs{
-    margin-bottom:5%;
-}
-.profile-head .nav-tabs .nav-link{
-    font-weight:600;
-    border: none;
-}
-.profile-head .nav-tabs .nav-link.active{
-    border: none;
-    border-bottom:2px solid #0062cc;
-}
-.profile-work{
-    padding: 14%;
-    margin-top: -15%;
-}
-.profile-work p{
-    font-size: 12px;
-    color: #818182;
-    font-weight: 600;
-    margin-top: 10%;
-}
-.profile-work a{
-    text-decoration: none;
-    color: #495057;
-    font-weight: 600;
-    font-size: 14px;
-}
-.profile-work ul{
-    list-style: none;
-}
-.profile-tab label{
-    font-weight: 600;
-}
-.profile-tab p{
-    font-weight: 600;
-    color: #0062cc;
-}
-   
-   </style>
+    {% if participant is not null %}
+        <div class="main-content mt-5">
+            <!-- Basic Form area Start -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-7 mb-3">
+                        <div class="card bg-boxshadow full-height">
+                            <div class="card-body">
+                                <h4 class="card-title text-color">Vos Informations</h4>
+                                {# <button type="submit" class="btn btn-primary mr-2">Soumettre le formulaire</button> #}
 
-    
+                                <div class="container emp-profile">
+                                    <form method="post">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="tab-content profile-tab" id="myTabContent">
+                                                    <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                                         aria-labelledby="home-tab">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <label class="name">Nom :</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <p>{{ participant.nom }} </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <label class="name">Prenom :</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <p>{{ participant.prenom }} </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <label class="name">Email: </label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <p>{{ participant.email }} </p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <label class="name">Profession</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <p>{{ participant.profession }}</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <label class="name">Ville</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <p>{{ participant.ville }}</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <label class="name">Province/Etat</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <p>{{ participant.province }}</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <label class="name">Pays</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <p>{{ participant.pays }}</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <label class="name">Adhesion BPI</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <p>{{ participant.estMembreBpi ? 'Oui' : 'Non' }}</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <label class="name">Présentation au congrès ?</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <p>{{ participant.estPresentateur ? 'Oui' : 'Non' }}</p>
+                                                            </div>
+                                                        </div>
+                                                        {% if participant.estPresentateur == true %}
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                    <label class="name">Titre présentation</label>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <p>{{ participant.titrePresentation }}</p>
+                                                                </div>
+                                                            </div>
+                                                        {% endif %}
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="row justify-content-center">
+                                    <div class="col-md-2 col-sm-12 form-group">
+                                        <a href="{{ path('participant_update', { 'id': participant.id }) }}"
+                                           class="btn btn-secondary mr-2">Modifier vos inforrmations</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-5 mb-3">
+                        <div class="card bg-boxshadow full-height">
+                            <div class="card-header">
+                                <h5 class="card-title text-color">Payer par carte bancaire</h5>
+                            </div>
+                            <div class="card-body">
+                                {# <button type="submit" class="btn btn-primary mr-2">Soumettre le formulaire</button> #}
+
+                                <div class="container emp-profile">
+                                    <div class="col-md-2 col-sm-12 form-group">
+                                        <a href="https://www.digitick.com/event/congr-s-du-barreau-p-nal-international/hotel-sheraton/1436547"
+                                           target="_blank" class="btn btn-primary">Payer votre place</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 card bg-boxshadow full-height">
+                            <div class="card-header">
+                                <h5 class="card-title text-color">Compte BPI au MALI</h5>
+                            </div>
+                            <div class="card-body">
+                                {# <button type="submit" class="btn btn-primary mr-2">Soumettre le formulaire</button> #}
+                                <div class="container emp-profile">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 card bg-boxshadow full-height">
+                            <div class="card-header">
+                                <h5 class="card-title text-color">Compte BPI en Espagne</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="container emp-profile">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+
+            .emp-profile {
+                padding: 3%;
+                margin-top: 3%;
+                margin-bottom: 3%;
+                border-radius: 0.5rem;
+                background: #fff;
+            }
+
+            .profile-img {
+                text-align: center;
+            }
+
+            .profile-img img {
+                width: 70%;
+                height: 100%;
+            }
+
+            .profile-img .file {
+                position: relative;
+                overflow: hidden;
+                margin-top: -20%;
+                width: 70%;
+                border: none;
+                border-radius: 0;
+                font-size: 15px;
+                background: #212529b8;
+            }
+
+            .profile-img .file input {
+                position: absolute;
+                opacity: 0;
+                right: 0;
+                top: 0;
+            }
+
+            .profile-head h5 {
+                color: #333;
+            }
+
+            .profile-head h6 {
+                color: #0062cc;
+            }
+
+            .profile-edit-btn {
+                border: none;
+                border-radius: 1.5rem;
+                width: 70%;
+                padding: 2%;
+                font-weight: 600;
+                color: #6c757d;
+                cursor: pointer;
+            }
+
+            .proile-rating {
+                font-size: 12px;
+                color: #818182;
+                margin-top: 5%;
+            }
+
+            .proile-rating span {
+                color: #495057;
+                font-size: 15px;
+                font-weight: 600;
+            }
+
+            .profile-head .nav-tabs {
+                margin-bottom: 5%;
+            }
+
+            .profile-head .nav-tabs .nav-link {
+                font-weight: 600;
+                border: none;
+            }
+
+            .profile-head .nav-tabs .nav-link.active {
+                border: none;
+                border-bottom: 2px solid #0062cc;
+            }
+
+            .profile-work {
+                padding: 14%;
+                margin-top: -15%;
+            }
+
+            .profile-work p {
+                font-size: 12px;
+                color: #818182;
+                font-weight: 600;
+                margin-top: 10%;
+            }
+
+            .profile-work a {
+                text-decoration: none;
+                color: #495057;
+                font-weight: 600;
+                font-size: 14px;
+            }
+
+            .profile-work ul {
+                list-style: none;
+            }
+
+            .profile-tab label {
+                font-weight: 600;
+            }
+
+            .profile-tab p {
+                font-weight: 600;
+                color: #0062cc;
+            }
+
+        </style>
 
 
 
 
-    {%  endif %}
+
+
+    {% endif %}
 {% endblock %}
