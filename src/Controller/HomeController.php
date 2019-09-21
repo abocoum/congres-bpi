@@ -37,4 +37,14 @@ class HomeController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/comite-organisation", name="comite-organisation")
+     */
+    public function commiteOrganisation()
+    {
+        return $this->render('home/president.html.twig', [
+            'controller_name' => 'HomeController',
+        ]);
+    }
+
 }
