@@ -58,13 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/home/membre.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="64" column="112" selection-start-line="64" selection-start-column="112" selection-end-line="64" selection-end-column="112" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="57" column="112" selection-start-line="57" selection-start-column="112" selection-end-line="57" selection-end-column="112" />
             </state>
           </provider>
         </entry>
@@ -108,11 +103,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/reservation/show.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="248" column="58" selection-start-line="248" selection-start-column="54" selection-end-line="248" selection-end-column="58" />
+            <state relative-caret-position="272">
+              <caret line="244" column="53" selection-start-line="244" selection-start-column="53" selection-end-line="244" selection-end-column="53" />
               <folding>
-                <element signature="e#2080#12453#0#HTML" />
-                <element signature="e#2479#11914#0#HTML" />
+                <element signature="e#10817#11657#0#HTML" />
               </folding>
             </state>
           </provider>
@@ -149,7 +143,13 @@
       <find>*/</find>
       <find>dropdown</find>
       <find>col-md-8</find>
+      <find>&lt;/label&gt;</find>
     </findStrings>
+    <replaceStrings>
+      <replace>col-md-8 form-control-plaintext</replace>
+      <replace>: &lt;/div&gt;</replace>
+      <replace>: &lt;/label&gt;</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -367,7 +367,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -404,7 +404,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41864000" />
+    <option name="totallyTimeSpent" value="43540000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
@@ -426,7 +426,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.86711407" visible="true" weight="0.33044732" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.86711407" visible="true" weight="0.33044732" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.1328859" side_tool="true" weight="0.32756132" />
       <window_info anchor="bottom" id="JRebel Executor" order="12" />
       <window_info anchor="bottom" id="JRebel Console" order="13" side_tool="true" />
@@ -442,6 +442,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/templates/reservation/show.html.twig</url>
+          <line>203</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Controller/InformationController.php">
@@ -672,13 +683,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/home/membre.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="64" column="112" selection-start-line="64" selection-start-column="112" selection-end-line="64" selection-end-column="112" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="57" column="112" selection-start-line="57" selection-start-column="112" selection-end-line="57" selection-end-column="112" />
         </state>
       </provider>
     </entry>
@@ -691,11 +697,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/reservation/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="248" column="58" selection-start-line="248" selection-start-column="54" selection-end-line="248" selection-end-column="58" />
+        <state relative-caret-position="272">
+          <caret line="244" column="53" selection-start-line="244" selection-start-column="53" selection-end-line="244" selection-end-column="53" />
           <folding>
-            <element signature="e#2080#12453#0#HTML" />
-            <element signature="e#2479#11914#0#HTML" />
+            <element signature="e#10817#11657#0#HTML" />
           </folding>
         </state>
       </provider>
