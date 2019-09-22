@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ParticipantRepository")
@@ -71,6 +72,23 @@ class Participant
      * @ORM\JoinColumn(nullable=false)
      */
     private $civilite;
+
+    /**
+     *
+     * @var string A "Y-m-d H:i:s" formatted value
+     * @Assert\DateTime
+     * @ORM\Column(name="updated_at", type="datetime")
+     */
+    private $updatedAt;
+
+
+
+    public function __construct()
+    {
+        $this->updatedAt = new \DateTime('now');
+    }
+
+
 
     public function getId(): ?int
     {
@@ -209,5 +227,16 @@ class Participant
         return $this;
     }
 
+    public function getUpdatedAt()
+    {
+        return $this->updatedAt;
+    }
+
+    public function setUpdatedAt(?datetime $updatedAt): self
+    {
+        $this->updatedAt= $updatedAt;
+
+        return $this;
+    }
 
 }
