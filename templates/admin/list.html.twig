@@ -1,0 +1,51 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}Liste des participants{% endblock %}
+
+{% block body %}
+<div class="row justify-content-center">
+  <div class="col-md-12">
+      <div class="table-responsive">
+        <table class="table table-striped w-auto">
+          <thead>
+            <tr>
+              <th scope="col">Nom</th>
+              <th scope="col">Prenom</th>
+              <th scope="col">Genre</th>
+              <th scope="col">Email</th>
+              <th scope="col">Profession</th>
+              <th scope="col">Ville</th>
+              <th scope="col">Province/Etat</th>
+              <th scope="col">Pays</th>
+              <th scope="col">Est Membre BPI</th>
+              <th scope="col">Presentation</th>
+              <th scope="col">Titre Présentation</th>
+              <th scope="col">Date création</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for p in participants %}
+            <tr>
+              <td>{{ p.nom }}</td>
+              <td>{{ p.prenom }}</td>
+              <td>{{ p.civilite.name }}</td>
+              <td>{{ p.email }}</td>
+              <td>{{ p.profession }}</td>
+              <td>{{ p.ville }}</td>
+              <td>{{ p.province }}</td>
+              <td>{{ p.pays }}</td>
+              <td>{{ p.estmembrebpi ? 'Oui' : 'Non' }}</td>
+              <td>{{ p.estpresentateur ? 'Oui' : 'Non' }}</td>
+              <td>{{ p.titrepresentation }}</td>
+              <td>{{ p.updatedat|date("m/d/Y") }}</td>
+            </tr>
+            {% endfor %}
+            
+          </tbody>
+        </table>
+    </div>
+  <div>
+<div>
+
+{% endblock %}
+

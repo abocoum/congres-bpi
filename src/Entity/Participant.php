@@ -81,7 +81,7 @@ class Participant
      */
     private $updatedAt;
 
-
+    
 
     public function __construct()
     {
