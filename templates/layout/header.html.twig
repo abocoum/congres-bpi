@@ -26,21 +26,18 @@
 									<div>
 										<a href="{{ path('home') }}">
 											<div class="logo_container d-flex flex-row align-items-start justify-content-start">
-												<div class="logo_image"><div><img src="{{ asset('images/logo-bpi.png') }}" alt="" style="background-color:#0077bb"></div></div>
+												<div class="logo_image"><div><img src="images/logobpi.png" alt="Logo du Bpi"></div></div>
 												<div class="logo_content">
 													<div class="logo_text logo_text_not_ie">Congrès du barreau pénal international au Mali</div>
-													<div class="logo_sub">14-15-16 Novembre 2019 - Bamako à l'Hotel Sheraton</div>
+							<div class="logo_sub">14-15-16 Novembre, 2019 - Bamako à l'Hotel Sheraton</div>
 												</div>
 											</div>
 										</a>	
 									</div>
 									<div class="header_social ml-auto">
 										<ul>
-											<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
 											<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 											<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
 											<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 										</ul>
 									</div>
@@ -64,6 +61,7 @@
 															Accueil
 														</a>
 														<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+														<a class="dropdown-item" href="{{ path('congres') }}">Congres 2019</a>
 															<a class="dropdown-item" href="{{ path('comite-executif') }}">Les membres du comité exécutif</a>
 															<a class="dropdown-item" href="{{ path('comite-organisation') }}">La commission d'organistaion</a>
 															
@@ -96,6 +94,7 @@
 															<a class="dropdown-item" href="https://www.barreau.lu/le-barreau/les-commissions/les-commissions-au-sein-du-barreau/cooperation-barreau-du-mali" target="_blank">Barreau du Mali</a>
 														</div>
 													</li>
+													<li><a href="{{ path('galerie')}}">Galerie</a></li>
 													<li><a href="{{ path('contact')}}">Contactez-nous</a></li>
 												</ul>
 											</nav>

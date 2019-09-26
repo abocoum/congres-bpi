@@ -232,11 +232,4 @@ class Participant
         return $this->updatedAt;
     }
 
-    public function setUpdatedAt(?datetime $updatedAt): self
-    {
-        $this->updatedAt= $updatedAt;
-
-        return $this;
-    }
-
 }
