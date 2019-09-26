@@ -123,10 +123,7 @@ p a:hover::after
 	background: #329fec;
 	color: #FFFFFF;
 }
-p::selection
-{
-	
-}
+
 h1{font-size: 48px;}
 h2{font-size: 36px;}
 h3{font-size: 24px;}
@@ -139,15 +136,7 @@ h1, h2, h3, h4, h5, h6
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
-h1::selection, 
-h2::selection, 
-h3::selection, 
-h4::selection, 
-h5::selection, 
-h6::selection
-{
-	
-}
+
 .form-control
 {
 	color: #db5246;
@@ -388,10 +377,7 @@ section
 {
 	margin-bottom: 38px;
 }
-.menu_logo a img
-{
-	
-}
+
 .menu_logo .logo_text,
 .menu_logo .logo_sub
 {
@@ -623,11 +609,7 @@ section
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
-.logo_image div
-{
-	width: 59px;
-	height: 46px;
-}
+
 .logo_image div img
 {
 	max-width: 100%;

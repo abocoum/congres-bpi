@@ -72,10 +72,10 @@
             <!-- Basic Form area Start -->
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 ">
+                    <div class="col-lg-6 col-md-6" style="margin-bottom: 30px">
                         <div class="card bg-boxshadow h-100">
                             <div class="card-header">
-                                <h5 class="card-title text-color">Vos Informations</h5>
+                                <h5 class="card-title text-color">VOS INFORMATIONS</h5>
                             </div>
                             <div class="card-body">
                                 <div class="container">
@@ -89,7 +89,7 @@
                                                             <div class="col-md-12">
                                                                 <p>Bravo, votre inscription a bien été prise en compte ! <br/>
                                                                 Votre place a été reservée, et 3 possibilités de paiement s'offrent à vous : <br/>
-                                                                Prix : <span style="color:red">100 euros</span>
+                                                                Frais d'inscription : <span style="color:red">100 euros</span>
                                                                 </p>
                                                             </div>
                                                             <div class="col-md-8 form-control-plaintext">
@@ -189,8 +189,8 @@
 
 
                             </div>
-                            <div class="card-footer text-muted justify-content-end">
-                                <div class="row justify-content-end">
+                            <div class="card-footer text-muted">
+                                <div class="row justify-content-center">
                                         <a href="{{ path('participant_update', { 'id': participant.id }) }}"
                                            class="btn btn-secondary mr-2">Modifier vos inforrmations</a>
                                 </div>
@@ -202,7 +202,7 @@
 
                         <div class="card bg-boxshadow full-height">
                             <div class="card-header">
-                                <h5 class="card-title text-color">1 - Payer par carte bancaire. </h5>
+                                <h5 class="card-title text-color">1 - PAYER PAR CARTE BANCAIRE. </h5>
                             </div>
                             <div class="card-body">
                                 {# <button type="submit" class="btn btn-primary mr-2">Soumettre le formulaire</button> #}
@@ -215,12 +215,12 @@
 
                         <div class="mt-4 card bg-boxshadow full-height">
                             <div class="card-header">
-                                <h5 class="card-title text-color">2 - Payer par virement bancaire. </h5>
+                                <h5 class="card-title text-color">2 - PAYER PAR VIREMENT BANCAIRE. </h5>
                             </div>
                             <div class="card-body">
                                 <div class="row mb-3">
                                         <div class="col-md-5">
-                                            <label class="name">Nom de la banque:</label>
+                                            <label class="name">NOME DE LA BANQUE:</label>
                                         </div>
                                         <div class="col-md-7 name">
                                             COMPTE BIP - BANQUE ANTLATIQUE MALI
@@ -228,21 +228,21 @@
                                 </div>
                                 <div class="form-row">
                                     <div class="col-md-3 mb-3">
-                                        <label class="name" for="validationDefault01">Code banque</label>
-                                        <input type="text" class="form-control form-control-sm" readonly="readonly" value="ML135" >
+                                        <label class="name" for="validationDefault01">CODE BANQUE</label>
+                                        <input type="text" class="form-control form-control-sm name" readonly="readonly" value="ML135" >
                                     </div>
                                     <div class="col-md-3 mb-3">
-                                        <label   class="name"  for="validationDefault02">Code guichet</label>
-                                        <input type="text" class="form-control form-control-sm"   readonly="readonly" value="01013" >
+                                        <label   class="name"  for="validationDefault02">CODE GUICHET</label>
+                                        <input type="text" class="form-control form-control-sm name"   readonly="readonly" value="01013" >
                                     </div>
                                     <div class="col-md-4 mb-3">
-                                        <label class="name" for="validationDefaultUsername">N° de compte</label>
+                                        <label class="name" for="validationDefaultUsername">N° DE COMPTE</label>
                                         <input  value="073178830009" type="text" class=" form-control form-control-sm name" readonly="readonly"  >
 
                                     </div>
                                     <div class="col-md-2 mb-3">
-                                        <label class="name" for="validationDefault01">Clé</label>
-                                        <input type="text" class="form-control form-control-sm"   readonly="readonly"   value="95" >
+                                        <label class="name" for="validationDefault01">CLE</label>
+                                        <input type="text" class="form-control form-control-sm name"   readonly="readonly"   value="95" >
                                     </div>
                                 </div>
 
@@ -251,30 +251,22 @@
 
                                 <div class="row mb-3">
                                     <div class="col-md-5">
-                                        <label class="name">Nom de la banque:</label>
+                                        <label class="name">NOME DE LA BANQUE:</label>
                                     </div>
                                     <div class="col-md-7 name">
-                                       BANK SANTANDER ESPAGNE
+                                       COMPTE BPI - CAIXA BANK BARCELONE
                                     </div>
                                 </div>
                                 <div class="form-row">
-                                    <div class="col-md-3 mb-3">
-                                        <label class="name" for="validationDefault01">Code banque</label>
-                                        <input type="text" class="form-control form-control-sm" readonly="readonly" value="ML135" >
+                                    <div class="col-md-7 mb-3">
+                                        <label class="name" for="validationDefault01">IBAN :</label>
+                                        <input type="text" class="form-control form-control-sm name" readonly="readonly" value="IBAN ES13 2100 0555 3307 0019 3994" >
                                     </div>
                                     <div class="col-md-3 mb-3">
-                                        <label   class="name"  for="validationDefault02">Code guichet</label>
-                                        <input type="text" class="form-control form-control-sm"   readonly="readonly" value="01013" >
+                                        <label   class="name"  for="validationDefault02">SWIFT/BIC :</label>
+                                        <input type="text" class="form-control form-control-sm name"   readonly="readonly" value="CAIXESBBXXX" >
                                     </div>
-                                    <div class="col-md-4 mb-3">
-                                        <label class="name" for="validationDefaultUsername">N° de compte</label>
-                                        <input  value="073178830009" type="text" class=" form-control form-control-sm name" readonly="readonly"  >
-
-                                    </div>
-                                    <div class="col-md-2 mb-3">
-                                        <label class="name" for="validationDefault01">Clé</label>
-                                        <input type="text" class="form-control form-control-sm"   readonly="readonly"   value="95" >
-                                    </div>
+                                    
                                 </div>
 
 
@@ -283,7 +275,7 @@
 
                         <div class="mt-4 card bg-boxshadow full-height">
                             <div class="card-header">
-                                <h5 class="card-title text-color">3 - Payer sur place à l'entrée. </h5>
+                                <h5 class="card-title text-color">3 - PAYER SUR PLACE A L'ENTREE. </h5>
                             </div>
                         
                         </div>

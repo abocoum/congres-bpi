@@ -90,11 +90,11 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6 form-group">
-                                    <label for="exampleInputName1" class="text-color">Nom :</label>
+                                    <label for="exampleInputName1" class="text-color">Nom : <span style="color:red">*</span> </label>
                                     {{ form_widget(form.nom) }}
                                 </div>
                                 <div class=" col-md-6 form-group">
-                                    <label for="exampleInputName1" class="text-color">Prénom :</label>
+                                    <label for="exampleInputName1" class="text-color">Prénom :<span style="color:red">*</span></label>
                                     {{ form_widget(form.prenom) }}
                                 </div>
                             </div>
@@ -168,14 +168,14 @@
                                         résumé
                                         de la présentation</label>
                                     <input type="text" class="form-control" id="exampleInputCity1"
-                                           placeholder="15 September, 2019" disabled>
+                                           placeholder="15 September 2019" disabled>
                                 </div>
                                 <div class=" col-md-6 form-group">
                                     <label for="exampleInputCity1" class="text-color">Acceptation de la présentation.
                                         Nous
                                         vous contacterons dès que possible.</label>
                                     <input type="text" class="form-control" id="exampleInputCity1"
-                                           placeholder="30 September, 2019" disabled>
+                                           placeholder="30 September 2019" disabled>
                                 </div>
                             </div>
 
@@ -183,7 +183,7 @@
                                 <label for="exampleInputCity1" class="text-color">Date limite d'inscription (frais de
                                     congrès et titre / résumé de la présentation, le cas échéant) </label>
                                 <input type="text" class="form-control" id="exampleInputCity1"
-                                       placeholder="15 October, 2019" disabled>
+                                       placeholder="15 October 2019" disabled>
                             </div>
 
                             <div class="mt-4">
@@ -193,7 +193,7 @@
                             <div class="form-group">
                                 <div class="form-check">
                                     <label>
-                                        <label for="exampleInputCity1" class="text-color">Prix : <span style="color:red">100 euros</span> </label>
+                                        <label for="exampleInputCity1" class="text-color">Frais d'inscription : <span style="color:red">100 euros</span> </label>
                                     </label>
                                 </div>
                             </div>
@@ -208,7 +208,7 @@
                             </div>
 
                             {{ form_row(form._token) }}
-                            {{ form_widget(form.save,  { 'label': 'Reserver votre place' }) }}
+                            {{ form_widget(form.save,  { 'label': 'Soumettre' }) }}
                             {# <button type="submit" class="btn btn-primary mr-2">Soumettre le formulaire</button> #}
                         </form>
                     </div>

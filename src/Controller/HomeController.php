@@ -47,4 +47,14 @@ class HomeController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/galerie", name="galerie")
+     */
+    public function galerie()
+    {
+        return $this->render('home/galerie.html.twig', [
+            'controller_name' => 'HomeController',
+        ]);
+    }
+
 }
