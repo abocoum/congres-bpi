@@ -57,11 +57,9 @@
 											<nav class="main_nav">
 												<ul>
 													<li class="dropdown {% if app.request.attributes.get('_route') == "home" %} active {% endif %}">
-														<a  class="nav-link dropdown-toggle" href="{{ path('home') }}" id="navbarDropdown" role="boutton"  data-toggle="dropdown">
-															Accueil
-														</a>
+														<a class="nav-link dropdown-toggle" href="{{ path('home') }}" id="navbarDropdown" role="boutton" data-toggle="dropdown">Accueil</a>
 														<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-														<a class="dropdown-item" href="{{ path('congres') }}">Le congrès</a>
+															<a class="dropdown-item" href="{{ path('congres') }}">Le congrès</a>
 															<a class="dropdown-item" href="{{ path('comite-executif') }}">Les membres du comité exécutif</a>
 															<a class="dropdown-item" href="{{ path('comite-organisation') }}">La commission d'organistaion</a>
 														</div>
