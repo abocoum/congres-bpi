@@ -38,11 +38,11 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/comite-organisation", name="comite-organisation")
+     * @Route("/commission-organisation", name="commission-organisation")
      */
     public function commiteOrganisation()
     {
-        return $this->render('home/president.html.twig', [
+        return $this->render('home/commission.html.twig', [
             'controller_name' => 'HomeController',
         ]);
     }
@@ -53,6 +53,16 @@ class HomeController extends AbstractController
     public function galerie()
     {
         return $this->render('home/galerie.html.twig', [
+            'controller_name' => 'HomeController',
+        ]);
+    }
+
+    /**
+     * @Route("/president-commission", name="president")
+     */
+    public function president()
+    {
+        return $this->render('home/president.html.twig', [
             'controller_name' => 'HomeController',
         ]);
     }
