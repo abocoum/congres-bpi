@@ -18,7 +18,7 @@ class AgendaController extends AbstractController
     }
 
     /**
-     * @Route("/agenda/details", name="details")
+     * @Route("/agenda-details", name="details")
      */
     public function details()
     {
