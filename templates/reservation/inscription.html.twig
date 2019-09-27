@@ -92,10 +92,12 @@
                                 <div class="col-md-6 form-group">
                                     <label for="exampleInputName1" class="text-color">Nom : <span style="color:red">*</span> </label>
                                     {{ form_widget(form.nom) }}
+                                    <span style="color:red"> {{ form_errors(form.nom) }} </span>
                                 </div>
                                 <div class=" col-md-6 form-group">
                                     <label for="exampleInputName1" class="text-color">Prénom :<span style="color:red">*</span></label>
                                     {{ form_widget(form.prenom) }}
+                                    <span style="color:red"> {{ form_errors(form.prenom) }} </span>
                                 </div>
                             </div>
 
@@ -103,10 +105,12 @@
                                 <div class="col-md-6 form-group">
                                     <label for="exampleInputName1" class="text-color">Adresse email</label>
                                     {{ form_widget(form.email) }}
+                                    <span style="color:red"> {{ form_errors(form.email) }} </span>
                                 </div>
                                 <div class=" col-md-6 form-group">
                                     <label for="exampleInputName1" class="text-color">Profession</label>
                                     {{ form_widget(form.profession) }}
+                                    <span style="color:red"> {{ form_errors(form.profession) }} </span>
                                 </div>
                             </div>
 
@@ -119,10 +123,12 @@
                                 <div class="col-md-6 form-group">
                                     <label for="exampleInputCity1" class="text-color">Ville :</label>
                                     {{ form_widget(form.ville) }}
+                                    <span style="color:red"> {{ form_errors(form.ville) }} </span>
                                 </div>
                                 <div class=" col-md-6 form-group">
                                     <label for="exampleInputCity1" class="text-color">Etat/Province :</label>
                                     {{ form_widget(form.province) }}
+                                    <span style="color:red"> {{ form_errors(form.province) }} </span>
                                 </div>
                             </div>
                             <div class="form-group">

@@ -19,31 +19,41 @@ class Participant
 
     /**
      * @ORM\Column(type="string", length=255)
+     * 
+     * @Assert\NotBlank
+     * @Assert\Length(min=2, max=100, minMessage="Nom invalide", maxMessage="Nom trop long!")
      */
     private $nom;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank
+     * @Assert\Length(min=2, max=100, minMessage="Prenom invalide!", maxMessage="Prenom trop long!")
      */
     private $prenom;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank
+     * @Assert\Email(message="Email invalide !")
      */
     private $email;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Length(min=2, minMessage="Profession invalide !")
      */
     private $profession;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Length(min=2, minMessage="Ville invalide !")
      */
     private $ville;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Length(min=2, minMessage="Province invalide !")
      */
     private $province;
 
