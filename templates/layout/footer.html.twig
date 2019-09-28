@@ -18,8 +18,8 @@
 										</div>
 									</div>
 											<br/>
-											<div class="logo_text logo_text_not_ie">Congrès du barreau pénal international au Mali</div>
-											<div class="logo_sub">14-15-16 Novembre 2019 - Bamako à l'Hotel Sheraton</div>
+											<div class="logo_text logo_text_not_ie">{% trans %}Congrès du barreau pénal international au Mali{% endtrans %}</div>
+											<div class="logo_sub">{% trans %}14-15-16 Novembre 2019 - Bamako à l'Hotel Sheraton{% endtrans %}</div>
 										</div>
 										
 									</div>
@@ -35,10 +35,9 @@
 					<div class="col-lg-3 footer_col">
 						<div class="footer_links">
 							<ul>
-								<li><a href="#">Contactez-nous</a></li>
-								<li><a href="#">Informations</a></li>
-								<li><a href="#">Agenda</a></li>
-								<li><a href="#">Adresse</a></li>
+								<li><a href="{{ path('contact') }}">{% trans %}Contactez-nous{% endtrans %}</a></li>
+								<li><a href="{ path('agenda') }}">{% trans %}Agenda{% endtrans %}</a></li>
+								<li><a href="{ path('congres') }}">{% trans %}Congrès{% endtrans %}</a></li>
 							</ul>
 						</div>
 					</div>
@@ -47,8 +46,8 @@
 					<div class="col-lg-3 footer_col">
 						<div class="footer_links">
 							<ul>
-								<li><a href="#">Hotels</a></li>
-								<li><a href="#">Informations sur le Mali</a></li>
+								<li><a href="#">{% trans %}Hotels{% endtrans %}</a></li>
+								<li><a href="#">{% trans %}Informations sur le Mali{% endtrans %}</a></li>
 							</ul>
 						</div>
 					</div>
@@ -57,9 +56,9 @@
 					<div class="col-lg-2 footer_col">
 						<div class="footer_links">
 							<ul>
-								<li><a href="#">Barreau Pénal Internationnal</a></li>
-								<li><a href="#">Cour Pénale Internationale</a></li>
-								<li><a href="#">Barreau du Mali</a></li>
+								<li><a href="#">{% trans %}Barreau pénal international{% endtrans %}</a></li>
+								<li><a href="#">{% trans %}Cour pénale internationale{% endtrans %}</a></li>
+								<li><a href="#">{% trans %}Barreau du Mali{% endtrans %}</a></li>
 							</ul>
 						</div>
 					</div>
@@ -73,24 +72,12 @@
 					<div class="col">
 						<div class="footer_extra_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-start justify-content-center">
 							<div class="footer_social">
-								<div class="footer_social_title">Liens réseaux sociaux</div>
+								<div class="footer_social_title">{% trans %}Liens réseaux sociaux{% endtrans %}</div>
 								<ul class="footer_social_list">
-									<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
 									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
 									<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 								</ul>
-							</div>
-							<div class="footer_extra_right ml-lg-auto text-lg-right">
-								<div class="footer_extra_links">
-									<ul>
-										<li><a href="contact.html">Contactez-nous</a></li>
-									</ul>
-								</div>
-								<div class="copyright" style="color:#0c081d">
-								</div>
 							</div>
 						</div>
 					</div>

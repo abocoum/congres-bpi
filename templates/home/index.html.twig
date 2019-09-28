@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Accueil{% endblock %}
+{% block title %}{% trans %}Accueil{% endtrans %}{% endblock %}
 
 {% block stylesheets %}
     <link rel="stylesheet" type="text/css" href="{{ asset('styles/main_styles.css') }}">
@@ -21,12 +21,12 @@
 				<div class="row">
 					<div class="col">
 						<div class="home_content">
-							<div class="home_date">14-15-16 Novembre 2019</div>
-							<div class="home_title">Congrès du Barreau Pénal International au Mali</div>
-							<div class="home_location">Hotel Sheraton de Bamako</div>
+							<div class="home_date">{% trans %}14-15-16 Novembre 2019{% endtrans %}</div>
+							<div class="home_title">{% trans %}Congrès du barreau pénal international au Mali{% endtrans %}</div>
+							<div class="home_location">{% trans %}Hotel Sheraton de Bamako{% endtrans %}</div>
 							<div class="home_buttons">
-								<div class="button home_button"><a href="{{ path('reservation') }}">Inscrivez vous</a></div>
-                                <div class="button home_button"><a href="{{ path('congres') }}">En savoir plus</a></div>
+								<div class="button home_button"><a href="{{ path('reservation') }}">{% trans %}Inscrivez vous{% endtrans %}</a></div>
+                                <div class="button home_button"><a href="{{ path('congres') }}">{% trans %}En savoir plus{% endtrans %}</a></div>
 							</div>
 						</div>
 					</div>
@@ -47,8 +47,8 @@
 				<a href="{{ path('congres') }}"><img src="images/agenda.png" alt=""></a>
 				</div>
 				<div class="intro_body">
-					<div class="intro_title"><a href="{{ path('congres') }}">Congrès</a></div>
-					<div class="intro_subtitle">Accueil du congrès ...</div>
+					<div class="intro_title"><a href="{{ path('congres') }}">{% trans %}Congrès{% endtrans %}</a></div>
+					<div class="intro_subtitle">{% trans %}Accueil du congrès ...{% endtrans %}</div>
 				</div>
 			</div>
 
@@ -57,8 +57,8 @@
 				<div class="intro_image">
                     <a href="{{ path('agenda') }}"><img src="{{ asset('images/agen.jpg') }}" alt=""></a></div>
 				<div class="intro_body">
-					<div class="intro_title"><a href="{{ path('agenda') }}">Agenda</a></div>
-					<div class="intro_subtitle">Agenda, programme, déroulement du congrès ...</div>
+					<div class="intro_title"><a href="{{ path('agenda') }}">{% trans %}Agenda{% endtrans %}</a></div>
+					<div class="intro_subtitle">{% trans %}Agenda, programme, déroulement du congrès ...{% endtrans %}</div>
 				</div>
 			</div>
 
@@ -67,8 +67,8 @@
 				<div class="intro_image">
                     <a href="{{ path('reservation') }}"><img src="images/inscription.jpg" alt=""></a></div>
 				<div class="intro_body">
-					<div class="intro_title"><a href="{{ path('reservation') }}">Inscriptions</a></div>
-					<div class="intro_subtitle">Reserver, payer votre place ...</div>
+					<div class="intro_title"><a href="{{ path('reservation') }}">{% trans %}Inscriptions{% endtrans %}</a></div>
+					<div class="intro_subtitle">{% trans %}Réserver, payer votre place ...{% endtrans %}</div>
 				</div>
 			</div>
             
@@ -77,8 +77,8 @@
 				<div class="intro_image">
                     <a href="{{ path('hotel') }}"><img src="{{ asset('images/reserver.jpg') }}" alt=""></a></div>
 				<div class="intro_body">
-					<div class="intro_title"><a href="{{ path('hotel') }}">Hebergements</a></div>
-					<div class="intro_subtitle">Hotels, Location de vehicules ...</div>
+					<div class="intro_title"><a href="{{ path('hotel') }}">{% trans %}Hébergements{% endtrans %}</a></div>
+					<div class="intro_subtitle">{% trans %}Hotels, Location de vehicules ...{% endtrans %}</div>
 				</div>
 			</div>
 
@@ -87,8 +87,8 @@
 				<div class="intro_image">
                     <a href="{{ path('information') }}"><img src="{{ asset('images/i.jpg') }}" alt=""></a></div>
 				<div class="intro_body">
-					<div class="intro_title"><a href="{{ path('information') }}">Informations</a></div>
-					<div class="intro_subtitle">Informations sur le Mali, le congrès ...</div>
+					<div class="intro_title"><a href="{{ path('information') }}">{% trans %}Informations{% endtrans %}</a></div>
+					<div class="intro_subtitle">{% trans %}Informations sur le Mali, le congrès ...{% endtrans %}</div>
 				</div>
 			</div>
 
@@ -97,8 +97,8 @@
 				<div class="intro_image">
                     <a href="{{ path('contact') }}"><img src="{{ asset('images/contactt.jpg') }}" alt=""></a></div>
 				<div class="intro_body">
-					<div class="intro_title"><a href="{{ path('contact') }}">Contacts</a></div>
-					<div class="intro_subtitle">Pour plus d'informations sur le congrès ...</div>
+					<div class="intro_title"><a href="{{ path('contact') }}">{% trans %}Contacts{% endtrans %}</a></div>
+					<div class="intro_subtitle">{% trans %}Pour plus d'informations sur le congrès ...{% endtrans %}</div>
 				</div>
 			</div>
 
@@ -114,7 +114,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="cta_content text-center">
-						<div class="button cta_button"><a href="https://www.digitick.com/event/congr-s-du-barreau-p-nal-international/hotel-sheraton/1436547">Inscrivez vous !</a></div>
+						<div class="button cta_button"><a href="https://www.digitick.com/event/congr-s-du-barreau-p-nal-international/hotel-sheraton/1436547">{% trans %}Inscrivez vous{% endtrans %}</a></div>
 					</div>
 				</div>
 			</div>

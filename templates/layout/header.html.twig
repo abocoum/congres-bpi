@@ -57,7 +57,9 @@
 											<nav class="main_nav">
 												<ul>
 													<li class="dropdown {% if app.request.attributes.get('_route') == "home" %} active {% endif %}">
-														<a class="nav-link dropdown-toggle" href="{{ path('home') }}" id="navbarDropdown" role="boutton" data-toggle="dropdown">{% trans %}Accueil{% endtrans %}</a>
+														<a class="nav-link dropdown-toggle" href="{{ path('home') }}" id="navbarDropdown" role="boutton" >
+															{% trans %}Accueil{% endtrans %}
+														</a>
 														<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 															<a class="dropdown-item" href="{{ path('congres') }}">{% trans %}Le congrès{% endtrans %}</a>
 															<a class="dropdown-item" href="{{ path('comite-executif') }}">{% trans %}Les membres du comité exécutif{% endtrans %}</a>
@@ -73,7 +75,7 @@
 
 
 													<li class="dropdown {% if app.request.attributes.get('_route') == "information" %} active {% endif %}">
-														<a  class="nav-link dropdown-toggle" href="{{ path('information') }}" id="navbarDropdown"  role="boutton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<a  class="nav-link dropdown-toggle" href="{{ path('information') }}" id="navbarDropdown"  role="boutton" aria-haspopup="true" aria-expanded="false">
 															{% trans %}Informations{% endtrans %}
 														</a>
 														<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -86,7 +88,7 @@
 														</div>
 													</li>
 													<li {% if app.request.attributes.get('_route') == "galerie" %} class="active" {% endif %}><a href="{{ path('galerie')}}">{% trans %}Galerie{% endtrans %}</a></li>
-													<li {% if app.request.attributes.get('_route') == "contact" %} class="active" {% endif %}><a href="{{ path('contact')}}">{% trans %}Contacts{% endtrans %}</a></li>
+													<li {% if app.request.attributes.get('_route') == "contact" %} class="active" {% endif %}><a href="{{ path('contact')}}">{% trans %}Contactez-nous{% endtrans %}</a></li>
 												</ul>
 											</nav>
                                             <div class="header_extra ml-auto">
