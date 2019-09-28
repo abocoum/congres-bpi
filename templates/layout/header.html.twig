@@ -57,7 +57,7 @@
 											<nav class="main_nav">
 												<ul>
 													<li class="dropdown {% if app.request.attributes.get('_route') == "home" %} active {% endif %}">
-														<a class="nav-link dropdown-toggle" href="{{ path('home') }}" id="navbarDropdown" role="boutton" >
+														<a class="nav-link dropdown-toggle" href="{{ path('home') }}" id="navbarDropdown" role="boutton">
 															{% trans %}Accueil{% endtrans %}
 														</a>
 														<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -75,7 +75,7 @@
 
 
 													<li class="dropdown {% if app.request.attributes.get('_route') == "information" %} active {% endif %}">
-														<a  class="nav-link dropdown-toggle" href="{{ path('information') }}" id="navbarDropdown"  role="boutton" aria-haspopup="true" aria-expanded="false">
+														<a  class="nav-link dropdown-toggle" href="{{ path('information') }}" id="navbarDropdown"  role="boutton">
 															{% trans %}Informations{% endtrans %}
 														</a>
 														<div class="dropdown-menu" aria-labelledby="navbarDropdown">
