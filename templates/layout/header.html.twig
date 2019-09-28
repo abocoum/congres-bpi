@@ -67,17 +67,10 @@
 													</li>
 		
 													<li {% if app.request.attributes.get('_route') == "agenda" %} class="active" {% endif %}><a href="{{ path('agenda')}}">{% trans %}Agenda{% endtrans %}</a></li>
-													<li {% if app.request.attributes.get('_route') == "reservation" %} class="active" {% endif %}><a href="{{ path('reservation')}}">{% trans %}Inscriptions{% endtrans %}</a></li>
+													<li {% if app.request.attributes.get('_route') == "reservation" %} class="active" {% endif %}><a href="{{ path('reservation')}}">{% trans %}Inscription{% endtrans %}</a></li>
 
-													<li class="dropdown {% if app.request.attributes.get('_route') == "hotel" %} active {% endif %}">
-														<a   class="nav-link dropdown-toggle" href="{{ path('hotel') }}" id="navbarDropdown" data-toggle="dropdown" role="boutton" aria-haspopup="true" aria-expanded="false">
-															{% trans %}Reservations{% endtrans %}
-														</a>
-														<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-															<a class="dropdown-item" href="{{ path('hotel') }}">{% trans %}Hotels{% endtrans %}</a>
-															<a class="dropdown-item" href="{{ path('hotel') }}">{% trans %}Location de vehicules{% endtrans %}</a>
-														</div>
-													</li>
+													<li {% if app.request.attributes.get('_route') == "hotel" %} class="active" {% endif %}><a href="{{ path('hotel')}}">{% trans %}Hotels{% endtrans %}</a></li>
+
 
 													<li class="dropdown {% if app.request.attributes.get('_route') == "information" %} active {% endif %}">
 														<a  class="nav-link dropdown-toggle" href="{{ path('information') }}" id="navbarDropdown"  role="boutton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
