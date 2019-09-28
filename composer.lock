@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3335c302e78023d91c019c8c8c52d47a",
+    "content-hash": "98661505f9e6dab8027461ad4d096f2c",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1566,63 +1566,6 @@
             "time": "2017-05-04T11:12:50+00:00"
         },
         {
-            "name": "paydunya/paydunya",
-            "version": "1.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/paydunya/paydunya-php-composer.git",
-                "reference": "df0e64ff8f19bc04311185aa26fef5f4beb8f833"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/paydunya/paydunya-php-composer/zipball/df0e64ff8f19bc04311185aa26fef5f4beb8f833",
-                "reference": "df0e64ff8f19bc04311185aa26fef5f4beb8f833",
-                "shasum": ""
-            },
-            "require": {
-                "rmccue/requests": "^1.6"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Paydunya\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PAYDUNYA",
-                    "email": "paydunya@paydunya.com"
-                }
-            ],
-            "description": "PAYDUNYA PHP CLIENT",
-            "keywords": [
-                "Marchand en ligne",
-                "Mobile Payments",
-                "Orange Money",
-                "Paiement Sénégal",
-                "Passerelle de paiement en ligne",
-                "Plateforme de paiement en ligne Afrique",
-                "Sénégal",
-                "api",
-                "best payment gateway",
-                "client php",
-                "library",
-                "online payment gateway",
-                "paiement",
-                "paiement en ligne",
-                "paydunya",
-                "paydunya.com",
-                "payment gateway",
-                "payment gateway Africa",
-                "php client"
-            ],
-            "time": "2017-08-19T00:59:56+00:00"
-        },
-        {
             "name": "phpdocumentor/reflection-common",
             "version": "2.0.0",
             "source": {
@@ -1962,55 +1905,6 @@
                 "psr-3"
             ],
             "time": "2018-11-20T15:27:04+00:00"
-        },
-        {
-            "name": "rmccue/requests",
-            "version": "v1.7.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/rmccue/Requests.git",
-                "reference": "87932f52ffad70504d93f04f15690cf16a089546"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/rmccue/Requests/zipball/87932f52ffad70504d93f04f15690cf16a089546",
-                "reference": "87932f52ffad70504d93f04f15690cf16a089546",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2"
-            },
-            "require-dev": {
-                "requests/test-server": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Requests": "library/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "ISC"
-            ],
-            "authors": [
-                {
-                    "name": "Ryan McCue",
-                    "homepage": "http://ryanmccue.info"
-                }
-            ],
-            "description": "A HTTP library written in PHP, for human beings.",
-            "homepage": "http://github.com/rmccue/Requests",
-            "keywords": [
-                "curl",
-                "fsockopen",
-                "http",
-                "idna",
-                "ipv6",
-                "iri",
-                "sockets"
-            ],
-            "time": "2016-10-13T00:11:37+00:00"
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -2479,59 +2373,6 @@
             "time": "2019-08-26T08:26:39+00:00"
         },
         {
-            "name": "symfony/css-selector",
-            "version": "v4.3.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/css-selector.git",
-                "reference": "c6e5e2a00db768c92c3ae131532af4e1acc7bd03"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/c6e5e2a00db768c92c3ae131532af4e1acc7bd03",
-                "reference": "c6e5e2a00db768c92c3ae131532af4e1acc7bd03",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\CssSelector\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Jean-François Simon",
-                    "email": "jeanfrancois.simon@sensiolabs.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony CssSelector Component",
-            "homepage": "https://symfony.com",
-            "time": "2019-08-20T14:07:54+00:00"
-        },
-        {
             "name": "symfony/debug",
             "version": "v4.3.4",
             "source": {
@@ -2749,67 +2590,6 @@
             "description": "Symfony Doctrine Bridge",
             "homepage": "https://symfony.com",
             "time": "2019-08-26T11:29:20+00:00"
-        },
-        {
-            "name": "symfony/dom-crawler",
-            "version": "v4.3.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "cc686552948d627528c0e2e759186dff67c2610e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/cc686552948d627528c0e2e759186dff67c2610e",
-                "reference": "cc686552948d627528c0e2e759186dff67c2610e",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3",
-                "symfony/polyfill-ctype": "~1.8",
-                "symfony/polyfill-mbstring": "~1.0"
-            },
-            "conflict": {
-                "masterminds/html5": "<2.6"
-            },
-            "require-dev": {
-                "masterminds/html5": "^2.6",
-                "symfony/css-selector": "~3.4|~4.0"
-            },
-            "suggest": {
-                "symfony/css-selector": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\DomCrawler\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony DomCrawler Component",
-            "homepage": "https://symfony.com",
-            "time": "2019-08-26T08:26:39+00:00"
         },
         {
             "name": "symfony/dotenv",
@@ -5962,181 +5742,6 @@
             "time": "2019-08-24T08:43:50+00:00"
         },
         {
-            "name": "weglot/simplehtmldom",
-            "version": "0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/weglot/simple_html_dom.git",
-                "reference": "2ea1e9e308b4b5efde92dcfbf5aa2599751ad443"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/weglot/simple_html_dom/zipball/2ea1e9e308b4b5efde92dcfbf5aa2599751ad443",
-                "reference": "2ea1e9e308b4b5efde92dcfbf5aa2599751ad443",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "SimpleHtmlDom": "src/"
-                },
-                "files": [
-                    "src/simple_html_dom.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "S.C. Chen",
-                    "email": "me578022@gmail.com"
-                }
-            ],
-            "description": "Composer package that gives you access to and (unlike all the others at this time) autoloads S.C. Chen's PHP Simple HTML DOM Parser Library",
-            "homepage": "http://simplehtmldom.sourceforge.net/",
-            "keywords": [
-                "Simple",
-                "dom",
-                "html"
-            ],
-            "time": "2018-04-12T11:51:29+00:00"
-        },
-        {
-            "name": "weglot/translate-bundle",
-            "version": "0.7.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/weglot/translate-bundle.git",
-                "reference": "f5457f82f8bf8d98d6b68836d7a5bce35acc82e4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/weglot/translate-bundle/zipball/f5457f82f8bf8d98d6b68836d7a5bce35acc82e4",
-                "reference": "f5457f82f8bf8d98d6b68836d7a5bce35acc82e4",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "php": ">=5.5",
-                "weglot/weglot-php": "^0.6"
-            },
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-4": {
-                    "Weglot\\TranslateBundle\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Floran Pagliai",
-                    "role": "Developer",
-                    "email": "floran@weglot.com"
-                },
-                {
-                    "name": "Remy Berda",
-                    "role": "Developer",
-                    "email": "remy@weglot.com"
-                },
-                {
-                    "name": "Baptiste Leduc",
-                    "role": "Developer",
-                    "email": "baptiste@weglot.com",
-                    "homepage": "https://baptiste-leduc.now.sh/"
-                }
-            ],
-            "description": "Seamless integration of Weglot into your Symfony project",
-            "homepage": "https://weglot.com/",
-            "keywords": [
-                "Symfony2",
-                "Weglot",
-                "i18n",
-                "languages",
-                "localization",
-                "php",
-                "symfony",
-                "symfony3",
-                "symfony4",
-                "translate",
-                "translation",
-                "translator",
-                "weglot-integration"
-            ],
-            "time": "2018-07-10T10:21:21+00:00"
-        },
-        {
-            "name": "weglot/weglot-php",
-            "version": "0.6.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/weglot/weglot-php.git",
-                "reference": "400925c3f1b10ad1eebe97ac23f128d1909439a9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/weglot/weglot-php/zipball/400925c3f1b10ad1eebe97ac23f128d1909439a9",
-                "reference": "400925c3f1b10ad1eebe97ac23f128d1909439a9",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4",
-                "psr/cache": "^1.0",
-                "symfony/css-selector": "^2.8 || >=3.0",
-                "symfony/dom-crawler": "^2.8.1 || >=3.0",
-                "symfony/event-dispatcher": "^2.8 || >=3.0",
-                "weglot/simplehtmldom": "^0.2"
-            },
-            "require-dev": {
-                "codeception/codeception": "^2.4",
-                "vlucas/phpdotenv": "^2.4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Weglot\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Thomas Deneulin",
-                    "email": "thomas@weglot.com",
-                    "role": "Review"
-                },
-                {
-                    "name": "Baptiste Leduc",
-                    "email": "baptiste@weglot.com",
-                    "homepage": "https://baptiste-leduc.now.sh/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "PHP library for the Weglot API",
-            "homepage": "https://weglot.com/",
-            "keywords": [
-                "Weglot",
-                "i18n",
-                "languages",
-                "localization",
-                "php",
-                "translate",
-                "translation",
-                "translator",
-                "weglot-library"
-            ],
-            "time": "2018-10-29T16:56:49+00:00"
-        },
-        {
             "name": "zendframework/zend-code",
             "version": "3.3.2",
             "source": {
@@ -6406,6 +6011,59 @@
             "time": "2019-08-26T08:26:39+00:00"
         },
         {
+            "name": "symfony/css-selector",
+            "version": "v4.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/css-selector.git",
+                "reference": "c6e5e2a00db768c92c3ae131532af4e1acc7bd03"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/c6e5e2a00db768c92c3ae131532af4e1acc7bd03",
+                "reference": "c6e5e2a00db768c92c3ae131532af4e1acc7bd03",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\CssSelector\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Jean-François Simon",
+                    "email": "jeanfrancois.simon@sensiolabs.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony CssSelector Component",
+            "homepage": "https://symfony.com",
+            "time": "2019-08-20T14:07:54+00:00"
+        },
+        {
             "name": "symfony/debug-bundle",
             "version": "v4.3.4",
             "source": {
@@ -6500,6 +6158,67 @@
             ],
             "description": "A debug pack for Symfony projects",
             "time": "2018-12-10T12:11:11+00:00"
+        },
+        {
+            "name": "symfony/dom-crawler",
+            "version": "v4.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/dom-crawler.git",
+                "reference": "cc686552948d627528c0e2e759186dff67c2610e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/cc686552948d627528c0e2e759186dff67c2610e",
+                "reference": "cc686552948d627528c0e2e759186dff67c2610e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/polyfill-mbstring": "~1.0"
+            },
+            "conflict": {
+                "masterminds/html5": "<2.6"
+            },
+            "require-dev": {
+                "masterminds/html5": "^2.6",
+                "symfony/css-selector": "~3.4|~4.0"
+            },
+            "suggest": {
+                "symfony/css-selector": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\DomCrawler\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony DomCrawler Component",
+            "homepage": "https://symfony.com",
+            "time": "2019-08-26T08:26:39+00:00"
         },
         {
             "name": "symfony/maker-bundle",
