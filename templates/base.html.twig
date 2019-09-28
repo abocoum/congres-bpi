@@ -16,12 +16,6 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('styles/congres.css') }}">
     <!--<link rel="stylesheet" type="text/css" href="style.css') }} >-->
     {% block stylesheets %}{% endblock %}
-    <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
-    <script>
-        Weglot.initialize({
-            api_key: 'wg_904fc62444ca80d1a014e81a758d6bf31'
-        });
-    </script>
 </head>
 
 <body>
@@ -46,19 +40,7 @@
         feather.replace()
     </script>
     <script>
-        /*
-* Only go to the link when dropdown is already open (if the dropdown is a link)
-*/
-        $('.dropdown > a[href]').click(function() {
-            var dropdown = $(this).next('.dropdown-menu');
-
-            if (dropdown.length == 0 || $(dropdown).css('display') !== 'none') {
-                if (this.href) {
-                    location.href = this.href;
-                }
-            }
-            });
-    </script>
+   
     {% block javascripts %}{% endblock %}
 
 </body>
