@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class HotelController extends AbstractController
 {
     /**
-     * @Route("/hotel", name="hotel")
+     * @Route("/hotel/{_locale}", name="hotel", defaults={"_locale": "fr"}, requirements={"_locale": "fr|en"})
      */
     public function index()
     {

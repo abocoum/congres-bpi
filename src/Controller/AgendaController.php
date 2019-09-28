@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class AgendaController extends AbstractController
 {
     /**
-     * @Route("/agenda", name="agenda")
+     * @Route("/agenda/{_locale}", name="agenda", defaults={"_locale": "fr"}, requirements={"_locale": "fr|en"})
      */
     public function index()
     {
@@ -18,7 +18,7 @@ class AgendaController extends AbstractController
     }
 
     /**
-     * @Route("/agenda-details", name="details")
+     * @Route("/agenda-details/{_locale}", name="details", defaults={"_locale": "fr"}, requirements={"_locale": "fr|en"})
      */
     public function details()
     {

@@ -17,22 +17,7 @@ use Paydunya;
 class ReservationController extends AbstractController
 {
     /**
-     * @Route("/participant/list", name="participant_list")
-     */
-    public function list(Request $request)
-    {
-        $participants = $this->getDoctrine()
-            ->getRepository(Participant::class)
-            ->findAll();
-
-        return $this->render('reservation/list.html.twig', [
-            'participants' => $participants,
-            'controller_name' => 'ReservationController',
-        ]);
-    }
-
-    /**
-     * @Route("/reservation", name="reservation")
+     * @Route("/reservation/{_locale}", name="reservation", defaults={"_locale": "fr"}, requirements={"_locale": "fr|en"})
      */
     public function add(Request $request)
     {
@@ -60,7 +45,7 @@ class ReservationController extends AbstractController
 
 
     /**
-     * @Route("/participant/{id}", name="participant_show")
+     * @Route("/participant/{id}/{_locale}", name="participant_show", defaults={"_locale": "fr"}, requirements={"_locale": "fr|en"})
      */
     public function show($id)
     {
@@ -76,7 +61,7 @@ class ReservationController extends AbstractController
     }
 
     /**
-     * @Route("/participant/edit/{id}", name="participant_update")
+     * @Route("/participant/edit/{id}/{_locale}", name="participant_update", defaults={"_locale": "fr"}, requirements={"_locale": "fr|en"})
      */
     public function update($id, Request $request)
     {
@@ -111,7 +96,7 @@ class ReservationController extends AbstractController
     }
 
     /**
-     * @Route("/participant/delete/{id}", name="participant_delete")
+     * @Route("/participant/delete/{id}/{_locale}", name="participant_delete", defaults={"_locale": "fr"}, requirements={"_locale": "fr|en"})
      */
     public function delete($id)
     {

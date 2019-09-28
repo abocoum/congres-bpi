@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class ContactController extends AbstractController
 {
     /**
-     * @Route("/contact", name="contact")
+     * @Route("/contact/{_locale}", name="contact", defaults={"_locale": "fr"}, requirements={"_locale": "fr|en"})
      */
     public function index()
     {

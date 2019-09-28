@@ -4,13 +4,16 @@ namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\Request;
 
 class HomeController extends AbstractController
 {
+
+
     /**
-     * @Route("/", name="home")
+     * @Route("/{_locale}", name="home", defaults={"_locale": "fr"}, requirements={"_locale": "fr|en"})
      */
-    public function index()
+    public function index(Request $request)
     {
         return $this->render('home/index.html.twig', [
             'controller_name' => 'HomeController',
@@ -18,7 +21,7 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/congres", name="congres")
+     * @Route("/congres/{_locale}", name="congres", defaults={"_locale": "fr"}, requirements={"_locale": "fr|en"})
      */
     public function description()
     {
@@ -28,7 +31,7 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/comite-executif", name="comite-executif")
+     * @Route("/comite-executif/{_locale}", name="comite-executif", defaults={"_locale": "fr"}, requirements={"_locale": "fr|en"})
      */
     public function commiteExecutif()
     {
@@ -38,7 +41,7 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/commission-organisation", name="commission-organisation")
+     * @Route("/commission-organisation/{_locale}", name="commission-organisation", defaults={"_locale": "fr"}, requirements={"_locale": "fr|en"})
      */
     public function commiteOrganisation()
     {
@@ -48,7 +51,7 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/galerie", name="galerie")
+     * @Route("/galerie/{_locale}", name="galerie", defaults={"_locale": "fr"}, requirements={"_locale": "fr|en"})
      */
     public function galerie()
     {
@@ -58,7 +61,7 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/president-commission", name="president")
+     * @Route("/president-commission/{_locale}", name="president", defaults={"_locale": "fr"}, requirements={"_locale": "fr|en"})
      */
     public function president()
     {
