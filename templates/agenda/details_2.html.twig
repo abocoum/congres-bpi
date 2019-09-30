@@ -1,0 +1,261 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Agenda{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{ asset('styles/events.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('styles/events_responsive.css') }}">
+	<style>
+		.tp{
+			border-left:5px solid #003399; 
+			border-right:5px solid #003399; 
+			border-bottom:5px solid #003399;
+		}
+		.th-tp{
+			text-align: center; 
+			color:white; 
+			background-color:#003399;
+		}
+		.td-tp{
+			background-color: gainsboro; 
+			color:black;
+		}
+	</style>
+{% endblock %}
+
+{% block body %}
+
+	<!-- Home -->
+
+	<div class="home">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{{ asset('images/events.jpg') }}" data-speed="0.8"></div>
+
+		<!-- Header -->
+
+		{%  include 'layout/header.html.twig' %}
+        
+		<div class="home_content_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="home_content d-flex flex-row align-items-end justify-content-start">
+							<div class="current_page">15 Novemebre 2019</div>
+							<div class="breadcrumbs ml-auto">
+								<ul>
+									<li><a href="index.html">Accueil</a></li>
+									<li>Programme</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Events -->
+
+	<div class="events">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					
+					
+					<div class="calendar">
+
+					<div class="container reset_container">
+
+						<div class="row justify-content-center">
+							
+							<div class="col-md-10 calendar_col ">
+								<div class="calendar_container">
+										
+										<table class="table tp">
+										<thead>
+											<tr class="d-flex">
+												<th class="col-12 th-tp">
+													<strong>PROGRAMME DU 1er CONGRES DU BARREAU PENAL INTERNATIONAL EN AFRIQUE (BAMAKO 14, 15 ET 16 NOVEMBRE 2019)</strong>
+												</th>
+											</tr>
+											<tr class="d-flex">
+												<th class="col-12 th-tp">
+													<span style="text-decoration:underline"><strong>THEME PRINCIPAL</strong></span><br/>
+													Afrique : Nouveaux défis pour la justice Pénale Internationale et le Barreau Pénal International.
+												</th>
+											</tr>
+											<tr class="d-flex">
+												<th class="col-12 th-tp">
+													<strong>VENDREDI 15 NOVEMBRE 2019</strong> <br/>
+													Ouverture du Congrès | Lieu : Centre international de Conférence de Bamako
+												</th>
+											</tr>
+											<tr class="d-flex">
+												<th class="col-2" style="text-align:center; background-color: gainsboro; color:black"  bg-color="gray">HEURE</th>
+												<th class="col-10 table-light" style="color:black">DEROULES</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="d-flex">
+												<td class="col-2 td-tp" align="center">08h00 - 09h00</td>
+												<td class="col-10 table-light" style="color:black">Accueil des participants</td>
+											</tr>
+											<tr class="d-flex">
+												<td class="col-2 td-tp" align="center">09h00 - 09h30</td>
+												<td class="col-10 table-light" style="color:black">Accueil des officiels</td>
+											</tr>
+											<tr class="d-flex">
+												<td class="col-2 td-tp" align="center">09h30 - 10h00</td>
+												<td class="col-10 table-light"style="color:black">Mise en place terminée</td>
+											</tr>
+											<tr class="d-flex">
+												<td class="col-2 td-tp" align="center">10h00</td>
+												<td class="col-10 table-light"style="color:black">Arrivée de Son Excellence, Monsieur Ibrahim Boubacar KEITA, Président de la République</td>
+											</tr>
+											<tr class="d-flex">
+												<td class="col-2 td-tp" align="center">10h00 - 10h05</td>
+												<td class="col-10 table-light"style="color:black">Hymne national du Mali par la Fanfare Nationale</td>
+											</tr>
+											<tr class="d-flex">
+												<td class="col-2 td-tp" align="center">10h05 - 10h20</td>
+												<td class="col-10 table-light"style="color:black">Présentation des invités par le Maître de cérémonie</td>
+											</tr>
+											<tr class="d-flex">
+												<td class="col-2 td-tp" align="center">10h20 - 10h30</td>
+												<td class="col-10 table-light"style="color:black">Discours de bienvenue du Président de la Commission d’organisation</td>
+											</tr>
+											<tr class="d-flex">
+												<td class="col-2 td-tp" align="center">10h30 - 10h40</td>
+												<td class="col-10 table-light"style="color:black">Discours de bienvenue du Premier vice-président du BPI</td>
+											</tr>
+											<tr class="d-flex">
+												<td class="col-2 td-tp" align="center">10h40 - 11h00</td>
+												<td class="col-10 table-light"style="color:black">Discours de bienvenue du Bâtonnier de l’Ordre des avocats du MALI</td>
+											</tr>
+											<tr class="d-flex">
+												<td class="col-2 td-tp" align="center">11h00 - 11h20</td>
+												<td class="col-10 table-light"style="color:black">Discours du Président du Barreau Pénal International</td>
+											</tr>
+											<tr class="d-flex">
+												<td class="col-2 td-tp" align="center">11h20 - 11h30</td>
+												<td class="col-10 table-light"style="color:black">Intermède musicale par la Fanfare Nationale</td>
+											</tr>
+											<tr class="d-flex">
+												<td class="col-2 td-tp" align="center">11h30 - 12h00</td>
+												<td class="col-10 table-light"style="color:black">Discours d’ouverture du congrès par le chef de l’Etat</td>
+											</tr>
+											<tr class="d-flex">
+												<td class="col-2 td-tp" align="center">12h00 - 12h15</td>
+												<td class="col-10 table-light"style="color:black">Photos de famille avec le Président de la République</td>
+											</tr>
+											<tr class="d-flex">
+												<td class="col-2 td-tp" align="center">12h30 - 13h45</td>
+												<td class="col-10 table-light"style="color:black">Déjeuner à l’Hôtel Sheraton de Bamako</td>
+											</tr>
+											<tr class="d-flex">
+												<td class="col-2 td-tp" align="center">14h00-16h00</td>
+												<td class="col-10 table-light"style="color:black">Présentation de la Session I</td>
+											</tr>
+										</tbody>
+										<thead>
+											<tr class="d-flex">
+												<th class="col-12" style = "text-align: center; color:white; background-color:#003399">
+													<strong>VENDREDI 15 NOVEMBRE 2019</strong> <br/>
+													Ouverture du Congrès | Lieu : Centre international de Conférence de Bamako
+												</th>
+											</tr>
+											<tr class="d-flex">
+												<th class="col-4"  bg-color="gray" style="text-align: center; background-color: gainsboro; color:black">Heures</th>
+												<th class="col-4" style="text-align: center; background-color: gainsboro; color:black">Panel</th>
+												<th class="col-4" style="text-align: center; background-color: gainsboro; color:black">Communicateurs</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="d-flex">
+												<td class="col-4" align="center" style="color:black">14h00 - 16h00</td>
+												<td class="col-4 table-light"style="color:black">
+													1. Les contraintes socio-culturelles et politiques de l’accès à la justice pénale internationale<br/>
+													2. Complémentarité contre complémentarité l’Afrique à l’épreuve de l’internationalisation de la justice pénale
+												</td>
+												<td class="col-4 table-light"style="color:black">
+													<strong>Prof Claude Abbé</strong> : Professeur de sociologie et anthropologie, université d’Afrique Centrale de Yaoundé <br/>
+													<strong>Pr. Germain Ntomo Tsimi</strong> : Agrégé de Droit privé et sciences criminelles, Université de Yaoundé II, Soa)
+												</td>
+											</tr>
+											<tr class="d-flex">
+												<td class="col-4" align="center" style="color:black">
+													14h00-16h00 <br/>
+													16h00 à 16h 30 : Pause –café
+												</td>
+												<td class="col-4 table-light"style="color:black">
+													1. Etat des lieux de la relation entre les Etats africains et la CPI <br/>
+													2. L’Afrique et le BPI face à la problématique de la révision du traité de Rome.
+												</td>
+												<td class="col-4 table-light"style="color:black">
+													<strong>Madame Fatou BENSOUDA</strong> : Procureure générale près la Cour Pénale Internationale <br/>
+													<strong>Maître Dragos CHIELA</strong> : Président du BPI Professeur Agrégé des Facultés de droit Bâtonnier <strong>Maître Magatte Hassan SEYE</strong>, Avocat au Barreau du Mali, Ancien Bâtonnier
+													<strong>Maître Pierre-Alexandre KOPP</strong> : Avocat au Barreau de Paris, Professeur Agrégé des Facultés de droit à la Sorbonne
+												</td>
+											</tr>
+
+										</tbody>
+
+									</table>
+
+									<div style="text-align:center">
+										<div class="cta_content text-center">
+											<div class="button cta_button"><a href="{{ path('agenda') }}">Retour à la liste</a></div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+    						
+
+	<!-- Call to action -->
+
+	<!-- Call to action -->
+
+	<div class="cta">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{{ asset('images/ae.jpg') }}" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="cta_content text-center">
+				        <div class="button cta_button"><a href="{{ path('reservation') }}">Inscrivez-vous au congrès</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('js/costum.js')}}"></script>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

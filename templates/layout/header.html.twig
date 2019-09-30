@@ -91,6 +91,56 @@
 													<li {% if app.request.attributes.get('_route') == "contact" %} class="active" {% endif %}><a href="{{ path('contact')}}">{% trans %}Contactez-nous{% endtrans %}</a></li>
 												</ul>
 											</nav>
+
+
+			
+
+											<div class="header_extra ml-auto">	
+												
+											{% set route = app.request.attributes.get('_route') %}
+											{% set route_params = app.request.attributes.get('_route_params') %}
+											{% set params = route_params|merge(app.request.query.all) %}
+
+											{% for locale in locales if locale != app.request.locale %}
+											<div class="container">
+												<nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+													
+													<div class="collapse navbar-collapse" id="navbarsExample09">
+														<ul class="navbar-nav mr-auto">
+															
+															<li class="nav-item dropdown">
+																{% if locale == 'en' %}
+																	<a class="nav-link dropdown-toggle" href="" id="dropdown09" data-toggle="dropdown">
+																	 	<img src="{{ asset('images/fr.png') }}" alt="{{ locale }}"> Français
+																	</a>
+																{% endif %}
+																{% if locale == 'fr' %}
+																	<a class="nav-link dropdown-toggle" href="" id="dropdown09" data-toggle="dropdown">
+																	 	<img src="{{ asset('images/en.png') }}" alt="{{ locale }}"> English
+																	</a>
+																{% endif %}
+
+																<div class="dropdown-menu" aria-labelledby="dropdown09">
+																	{% if locale == 'fr' %}
+																		<a class="dropdown-item" href="{{ path(route, params|merge({ _locale: locale })) }}" style="background-color:#f3f7f9"> 
+																			<img src="{{ asset('images/' ~ locale ~ '.png') }}" alt="{{ locale }}"> French
+																		</a>
+																	{% endif %}
+																	{% if locale == 'en' %}
+																		<a class="dropdown-item" href="{{ path(route, params|merge({ _locale: locale })) }}" style="background-color:#f3f7f9"> 
+																			<img src="{{ asset('images/' ~ locale ~ '.png') }}" alt="{{ locale }}"> Anglais
+																		</a>
+																	{% endif %}								
+																</div>
+															</li>
+														</ul>
+														
+													</div>
+												</nav>
+											</div>
+											{% endfor %}
+											</div>
+
                                             <div class="header_extra ml-auto">
 												<div class="header_search"><i class="fa fa-search" aria-hidden="true"></i></div>
 											</div>
@@ -117,3 +167,4 @@
 				</div>	
 			</div>
 		</header>
+
