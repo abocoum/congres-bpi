@@ -52,11 +52,11 @@
                 <div class="row">
                     <div class="col">
                         <div class="home_content d-flex flex-row align-items-end justify-content-start">
-                            <div class="current_page">Inscription</div>
+                            <div class="current_page">{% trans %}Inscription{% endtrans %}</div>
                             <div class="breadcrumbs ml-auto">
                                 <ul>
-                                    <li><a href="index.php">Accueil</a></li>
-                                    <li>Inscription</li>
+                                    <li><a href="{{ path('home') }}">{% trans %}Accueil{% endtrans %}</a></li>
+                                    <li>{% trans %}Inscription{% endtrans %}</li>
                                 </ul>
                             </div>
                         </div>
@@ -73,11 +73,11 @@
             <div class="offset-md-2 col-md-8">
                 <div class="card bg-boxshadow full-height">
                     <div class="card-body">
-                        <h4 class="card-title text-color">Formulaire d'inscription</h4>
+                        <h4 class="card-title text-color">{% trans %}Formulaire d'inscription{% endtrans %}</h4>
                         {{ form_errors(form) }}
                         <form class=" card-body" method="post">
                             <div>
-                                <span class="primary-color"><i data-feather="user"></i> Informations personnelles</span>
+                                <span class="primary-color"><i data-feather="user"></i>{% trans %}Informations personnelles{% endtrans %}</span>
                                 <hr>
                             </div>
                             <div class="row">
