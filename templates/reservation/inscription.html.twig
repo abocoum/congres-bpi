@@ -83,19 +83,19 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="exampleSelectGender" class="text-color">Civilité</label>
+                                        <label for="exampleSelectGender" class="text-color">{% trans %}Civilité{% endtrans %}</label>
                                         {{ form_widget(form.civilite) }}
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6 form-group">
-                                    <label for="exampleInputName1" class="text-color">Nom : <span style="color:red">*</span> </label>
+                                    <label for="exampleInputName1" class="text-color">{% trans %}Nom{% endtrans %} : <span style="color:red">*</span> </label>
                                     {{ form_widget(form.nom) }}
                                     <span style="color:red"> {{ form_errors(form.nom) }} </span>
                                 </div>
                                 <div class=" col-md-6 form-group">
-                                    <label for="exampleInputName1" class="text-color">Prénom :<span style="color:red">*</span></label>
+                                    <label for="exampleInputName1" class="text-color">{% trans %}Prénom{% endtrans %} :<span style="color:red">*</span></label>
                                     {{ form_widget(form.prenom) }}
                                     <span style="color:red"> {{ form_errors(form.prenom) }} </span>
                                 </div>
@@ -103,91 +103,81 @@
 
                             <div class="row">
                                 <div class="col-md-6 form-group">
-                                    <label for="exampleInputName1" class="text-color">Adresse email</label>
+                                    <label for="exampleInputName1" class="text-color">{% trans %}Email{% endtrans %}</label>
                                     {{ form_widget(form.email) }}
                                     <span style="color:red"> {{ form_errors(form.email) }} </span>
                                 </div>
                                 <div class=" col-md-6 form-group">
-                                    <label for="exampleInputName1" class="text-color">Profession</label>
+                                    <label for="exampleInputName1" class="text-color">{% trans %}Profession{% endtrans %}</label>
                                     {{ form_widget(form.profession) }}
                                     <span style="color:red"> {{ form_errors(form.profession) }} </span>
                                 </div>
                             </div>
 
                             <div class="mt-4">
-                                <span class="primary-color"><i data-feather="home"></i> Adresse</span>
+                                <span class="primary-color"><i data-feather="home"></i> {% trans %}Adresse{% endtrans %}</span>
                                 <hr>
                             </div>
 
                             <div class="row">
                                 <div class="col-md-6 form-group">
-                                    <label for="exampleInputCity1" class="text-color">Ville :</label>
+                                    <label for="exampleInputCity1" class="text-color">{% trans %}Ville{% endtrans %} :</label>
                                     {{ form_widget(form.ville) }}
                                     <span style="color:red"> {{ form_errors(form.ville) }} </span>
                                 </div>
                                 <div class=" col-md-6 form-group">
-                                    <label for="exampleInputCity1" class="text-color">Etat/Province :</label>
+                                    <label for="exampleInputCity1" class="text-color">{% trans %}Etat/Province{% endtrans %} :</label>
                                     {{ form_widget(form.province) }}
                                     <span style="color:red"> {{ form_errors(form.province) }} </span>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputCity1" class="text-color">Pays</label>
+                                <label for="exampleInputCity1" class="text-color">{% trans %}Pays{% endtrans %}</label>
                                 {{ form_widget(form.pays) }}
                             </div>
 
                             <div class="mt-4">
-                                <span class="primary-color"><i data-feather="plus"></i> Autres informations</span>
+                                <span class="primary-color"><i data-feather="plus"></i> {% trans %}Autres informations{% endtrans %}</span>
                                 <hr>
                             </div>
 
                             <div class="row">
                                 <div class="col-md-6 form-group">
-                                    <label for="exampleInputCity1" class="text-color">Êtes vous adhérent au Barreau
-                                        Penal International (BPI)? <span
+                                    <label for="exampleInputCity1" class="text-color">{% trans %}Êtes vous adhérent au Barreau Penal International (BPI){% endtrans %} ? <span
                                                 style="color:red">*</span> </label>
                                     {{ form_widget(form.estMembreBpi) }}
                                 </div>
                                 <div class=" col-md-6 form-group">
-                                    <label for="exampleInputCity1" class="text-color">Souhaitez-vous faire une
-                                        présentation
-                                        au congrès? </label>
+                                    <label for="exampleInputCity1" class="text-color">{% trans %}Souhaitez-vous faire une présentation au congrès{% endtrans %} ?</label>
                                     {{ form_widget(form.estPresentateur) }}
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="exampleInputCity1" class="text-color">Si oui, veuillez présenter le titre et
-                                    un résumé de la présentation: </label>
+                                <label for="exampleInputCity1" class="text-color">{% trans %}Si oui, veuillez présenter le titre et un résumé de la présentation{% endtrans %} :</label>
                                 {{ form_widget(form.titrePresentation) }}
                             </div>
 
-
                             <div class="mt-4">
-                                <span class="primary-color"><i data-feather="info"></i> Informations importantes</span>
+                                <span class="primary-color"><i data-feather="info"></i> {% trans %}Informations importantes{% endtrans %}</span>
                                 <hr>
                             </div>
 
                             <div class="row">
                                 <div class="col-md-6 form-group">
-                                    <label for="exampleInputCity1" class="text-color">Date limite pour le titre et le
-                                        résumé
-                                        de la présentation</label>
+                                    <label for="exampleInputCity1" class="text-color">{% trans %}Date limite pour le titre et le résumé de la présentation{% endtrans %}</label>
                                     <input type="text" class="form-control" id="exampleInputCity1"
                                            placeholder="15 September 2019" disabled>
                                 </div>
                                 <div class=" col-md-6 form-group">
-                                    <label for="exampleInputCity1" class="text-color">Acceptation de la présentation.
-                                        Nous
-                                        vous contacterons dès que possible.</label>
+                                    <label for="exampleInputCity1" class="text-color">{% trans %}Acceptation de la présentation. Nous vous contacterons dès que possible{% endtrans %}</label>
                                     <input type="text" class="form-control" id="exampleInputCity1"
                                            placeholder="30 September 2019" disabled>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="exampleInputCity1" class="text-color">Date limite d'inscription (frais de
-                                    congrès et titre / résumé de la présentation, le cas échéant) </label>
+                                <label for="exampleInputCity1" class="text-color">{% trans %}Date limite d'inscription (frais de congrès et titre / résumé de la présentation, le cas échéant){% endtrans %}</label>
                                 <input type="text" class="form-control" id="exampleInputCity1"
                                        placeholder="15 October 2019" disabled>
                             </div>
@@ -199,7 +189,7 @@
                             <div class="form-group">
                                 <div class="form-check">
                                     <label>
-                                        <label for="exampleInputCity1" class="text-color">Frais d'inscription : <span style="color:red">100 euros</span> </label>
+                                        <label for="exampleInputCity1" class="text-color">{% trans %}Frais d'inscription{% endtrans %} : <span style="color:red">100 euros</span> </label>
                                     </label>
                                 </div>
                             </div>
@@ -208,7 +198,7 @@
                                 <div class="form-check">
                                     <label>
                                         {{ form_widget(form.agreeTerms) }}
-                                        <span class="check-box-text text-color"> J'accepte que BPI collecte les données de ce formulaire pour cet événement. *</span>
+                                        <span class="check-box-text text-color"> {% trans %}J'accepte que BPI collecte les données de ce formulaire pour cet événement{% endtrans %}. *</span>
                                     </label>
                                 </div>
                             </div>
