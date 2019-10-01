@@ -77,6 +77,12 @@
                         {{ form_errors(form) }}
                         <form class=" card-body" method="post">
                             <div>
+                                <p class="primary-color">
+                                <span style="color:red">{% trans %}ATTENTION{% endtrans %} !!!<br/></span>
+                                {% trans %}Pour entrer au Mali Visa requis{% endtrans %}.<br/>
+                                {% trans %}Pour les participants, le visa peut être obtenu par la commission d'organisation ou à l'aéroport{% endtrans %}.<br/>
+                                {% trans %}Frais de visa{% endtrans %} : <span style="color:red">70 euros</span>.</p>
+                                <br/>
                                 <span class="primary-color"><i data-feather="user"></i>{% trans %}Informations personnelles{% endtrans %}</span>
                                 <hr>
                             </div>

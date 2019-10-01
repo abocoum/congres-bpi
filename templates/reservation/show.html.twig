@@ -53,11 +53,11 @@
                 <div class="row">
                     <div class="col">
                         <div class="home_content d-flex flex-row align-items-end justify-content-start">
-                            <div class="current_page">Participant/congrès</div>
+                            <div class="current_page">{% trans %}Participant/congrès{% endtrans %}</div>
                             <div class="breadcrumbs ml-auto">
                                 <ul>
-                                    <li><a href="index.php">Accueil</a></li>
-                                    <li>Participant</li>
+                                    <li><a href="{{ path('home') }}">{% trans %}Accueil{% endtrans %}</a></li>
+                                    <li>{% trans %}Participant{% endtrans %}</li>
                                 </ul>
                             </div>
                         </div>
@@ -75,7 +75,7 @@
                     <div class="col-lg-6 col-md-6" style="margin-bottom: 30px">
                         <div class="card bg-boxshadow h-100">
                             <div class="card-header">
-                                <h5 class="card-title text-color">VOS INFORMATIONS</h5>
+                                <h5 class="card-title text-color">{% trans %}VOS INFORMATIONS{% endtrans %}</h5>
                             </div>
                             <div class="card-body">
                                 <div class="container">
@@ -87,9 +87,9 @@
                                                          aria-labelledby="home-tab">
                                                          <div class="row">
                                                             <div class="col-md-12">
-                                                                <p>Bravo, votre inscription a bien été prise en compte ! <br/>
-                                                                Votre place a été reservée, et 3 possibilités de paiement s'offrent à vous : <br/>
-                                                                Frais d'inscription : <span style="color:red">100 euros</span>
+                                                                <p>{% trans %}Bravo, votre inscription au congrès a bien été prise en compte{% endtrans %} ! <br/>
+                                                                {% trans %}Votre place a été reservée, et 3 possibilités de paiement s'offrent à vous{% endtrans %} : <br/>
+                                                                {% trans %}Frais d'inscription{% endtrans %} : <span style="color:red">100 euros</span>
                                                                 </p>
                                                             </div>
                                                             <div class="col-md-8 form-control-plaintext">
@@ -98,7 +98,7 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-md-4">
-                                                                <label class="name">Nom :</label>
+                                                                <label class="name">{% trans %}Nom{% endtrans %} :</label>
                                                             </div>
                                                             <div class="col-md-8 form-control-plaintext">
                                                                 <p>{{ participant.nom }} </p>
@@ -106,7 +106,7 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-md-4">
-                                                                <label class="name">Prenom :</label>
+                                                                <label class="name">{% trans %}Prénom{% endtrans %} :</label>
                                                             </div>
                                                             <div class="col-md-8 form-control-plaintext">
                                                                 <p>{{ participant.prenom }} </p>
@@ -114,7 +114,7 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-md-4">
-                                                                <label class="name">Email: </label>
+                                                                <label class="name">{% trans %}Email{% endtrans %} : </label>
                                                             </div>
                                                             <div class="col-md-8 form-control-plaintext">
                                                                 <p>{{ participant.email }} </p>
@@ -123,7 +123,7 @@
 
                                                         <div class="row">
                                                             <div class="col-md-4">
-                                                                <label class="name">Profession: </label>
+                                                                <label class="name">{% trans %}Profession{% endtrans %} : </label>
                                                             </div>
                                                             <div class="col-md-8 form-control-plaintext">
                                                                 <p>{{ participant.profession }}</p>
@@ -131,7 +131,7 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-md-4">
-                                                                <label class="name">Ville: </label>
+                                                                <label class="name">{% trans %}Ville{% endtrans %} : </label>
                                                             </div>
                                                             <div class="col-md-8 form-control-plaintext">
                                                                 <p>{{ participant.ville }}</p>
@@ -139,7 +139,7 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-md-4">
-                                                                <label class="name">Province/Etat: </label>
+                                                                <label class="name">{% trans %}Etat/Province{% endtrans %} : </label>
                                                             </div>
                                                             <div class="col-md-8 form-control-plaintext">
                                                                 <p>{{ participant.province }}</p>
@@ -147,7 +147,7 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-md-4">
-                                                                <label class="name">Pays: </label>
+                                                                <label class="name">{% trans %}Pays{% endtrans %} : </label>
                                                             </div>
                                                             <div class="col-md-8 form-control-plaintext">
                                                                 <p>{{ participant.pays }}</p>
@@ -155,7 +155,7 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-md-4">
-                                                                <label class="name">Adhesion BPI: </label>
+                                                                <label class="name">{% trans %}Adhesion BPI{% endtrans %} ? : </label>
                                                             </div>
                                                             <div class="col-md-8 form-control-plaintext">
                                                                 <p>{{ participant.estMembreBpi ? 'Oui' : 'Non' }}</p>
@@ -163,16 +163,16 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-md-4">
-                                                                <label class="name">Présentation au congrès ?: </label>
+                                                                <label class="name">{% trans %}Présentation au congrès{% endtrans %} ? :</label>
                                                             </div>
                                                             <div class="col-md-8 form-control-plaintext">
-                                                                <p>{{ participant.estPresentateur ? 'Oui' : 'Non' }}</p>
+                                                                <p>{{ participant.estPresentateur ? 'Oui':'Non' }}</p>
                                                             </div>
                                                         </div>
                                                         {% if participant.estPresentateur == true %}
                                                             <div class="row">
                                                                 <div class="col-md-4">
-                                                                    <label class="name">Titre présentation: </label>
+                                                                    <label class="name">{% trans %}Titre de la présentation{% endtrans %}: </label>
                                                                 </div>
                                                                 <div class="col-md-8 form-control-plaintext">
                                                                     <p>{{ participant.titrePresentation }}</p>
@@ -192,7 +192,7 @@
                             <div class="card-footer text-muted">
                                 <div class="row justify-content-center">
                                         <a href="{{ path('participant_update', { 'id': participant.id }) }}"
-                                           class="btn btn-secondary mr-2">Modifier vos inforrmations</a>
+                                           class="btn btn-secondary mr-2">{% trans %}Modifier vos inforrmations{% endtrans %}</a>
                                 </div>
                             </div>
                         </div>
@@ -202,46 +202,46 @@
 
                         <div class="card bg-boxshadow full-height">
                             <div class="card-header">
-                                <h5 class="card-title text-color">1 - PAYER PAR CARTE BANCAIRE. </h5>
+                                <h5 class="card-title text-color">1 - {% trans %}PAYER EN LIGNE{% endtrans %} (CB). </h5>
                             </div>
                             <div class="card-body">
                                 {# <button type="submit" class="btn btn-primary mr-2">Soumettre le formulaire</button> #}
                                     <div class="col-md-2 col-sm-12 form-group">
                                         <a href="https://www.digitick.com/event/congr-s-du-barreau-p-nal-international-au-mali/hotel-sheraton/1443527"
-                                           target="_blank" class="btn btn-primary">Payer votre place</a>
+                                           target="_blank" class="btn btn-primary">{% trans %}Cliquez-ici{% endtrans %}</a>
                                     </div>
                             </div>
                         </div>
 
                         <div class="mt-4 card bg-boxshadow full-height">
                             <div class="card-header">
-                                <h5 class="card-title text-color">2 - PAYER PAR VIREMENT BANCAIRE. </h5>
+                                <h5 class="card-title text-color">2 - {% trans %}PAYER PAR VIREMENT BANCAIRE{% endtrans %}. </h5>
                             </div>
                             <div class="card-body">
                                 <div class="row mb-3">
                                         <div class="col-md-5">
-                                            <label class="name">NOME DE LA BANQUE:</label>
+                                            <label class="name">{% trans %}NOM DE LA BANQUE{% endtrans %} :</label>
                                         </div>
                                         <div class="col-md-7 name">
-                                            COMPTE BIP - BANQUE ANTLATIQUE MALI
+                                            {% trans %}COMPTE BPI{% endtrans %} - BANQUE ANTLATIQUE MALI
                                         </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="col-md-3 mb-3">
-                                        <label class="name" for="validationDefault01">CODE BANQUE</label>
+                                        <label class="name" for="validationDefault01">{% trans %}CODE BANQUE{% endtrans %}</label>
                                         <input type="text" class="form-control form-control-sm name" readonly="readonly" value="ML135" >
                                     </div>
                                     <div class="col-md-3 mb-3">
-                                        <label   class="name"  for="validationDefault02">CODE GUICHET</label>
+                                        <label   class="name"  for="validationDefault02">{% trans %}CODE GUICHET{% endtrans %}</label>
                                         <input type="text" class="form-control form-control-sm name"   readonly="readonly" value="01013" >
                                     </div>
                                     <div class="col-md-4 mb-3">
-                                        <label class="name" for="validationDefaultUsername">N° DE COMPTE</label>
+                                        <label class="name" for="validationDefaultUsername">{% trans %}N° DE COMPTE{% endtrans %}</label>
                                         <input  value="073178830009" type="text" class=" form-control form-control-sm name" readonly="readonly"  >
 
                                     </div>
                                     <div class="col-md-2 mb-3">
-                                        <label class="name" for="validationDefault01">CLE</label>
+                                        <label class="name" for="validationDefault01">{% trans %}CLE{% endtrans %}</label>
                                         <input type="text" class="form-control form-control-sm name"   readonly="readonly"   value="95" >
                                     </div>
                                 </div>
@@ -251,10 +251,10 @@
 
                                 <div class="row mb-3">
                                     <div class="col-md-5">
-                                        <label class="name">NOME DE LA BANQUE:</label>
+                                        <label class="name">{% trans %}NOM DE LA BANQUE{% endtrans %} :</label>
                                     </div>
                                     <div class="col-md-7 name">
-                                       COMPTE BPI - CAIXA BANK BARCELONE
+                                       {% trans %}COMPTE BPI{% endtrans %} - CAIXA BANK BARCELONE
                                     </div>
                                 </div>
                                 <div class="form-row">
@@ -275,7 +275,7 @@
 
                         <div class="mt-4 card bg-boxshadow full-height">
                             <div class="card-header">
-                                <h5 class="card-title text-color">3 - PAYER SUR PLACE A L'ENTREE. </h5>
+                                <h5 class="card-title text-color">3 - {% trans %}PAYER SUR PLACE A L'ENTREE{% endtrans %} . </h5>
                             </div>
                         
                         </div>
