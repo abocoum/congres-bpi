@@ -20,11 +20,11 @@
                 <div class="row">
                     <div class="col">
                         <div class="home_content d-flex flex-row align-items-end justify-content-start">
-                            <div class="current_page">Comission d'organisation</div>
+                            <div class="current_page">{% trans %}Comission d'organisation{% endtrans %}</div>
                             <div class="breadcrumbs ml-auto">
                                 <ul>
-                                    <li><a href="{{ path('home') }}">Accueil</a></li>
-                                    <li>commission-organisation</li>
+                                    <li><a href="{{ path('home') }}">{% trans %}Accueil{% endtrans %}</a></li>
+                                    <li>{% trans %}Comission d'organisation{% endtrans %}</li>
                                 </ul>
                             </div>
                         </div>
@@ -44,22 +44,14 @@
                 <div class="col-lg-9 order-lg-1 order-2">
                     <div class=" d-flex flex-column align-items-start justify-content-center">
                         
-                        <div class="speaker_title">Commission d'organisation
+                        <div class="speaker_title">{% trans %}Comission d'organisation{% endtrans %}
                         </div>
                         <div>
                             <div class="mt-4 media" style="color: #212529;">
-                                <div class="media-body">
-                                    <ul class="list-group">
-                                        <li class="list-group-item"> <span class="badge  badge-primary h4">Commission d'organisation</span></li>
-                                    </ul>
-                                    <hr />
-                                    <p style="text-align: justify; text-justify: inter-word;  color: #212529;">La commission d'organisation La commission d'organisation La commission d'organisation
-                                    La commission d'organisationLa commission d'organisationLa commission d'organisationLa commission d'organisationLa commission d'organisation
-                                    La commission d'organisationLa commission d'organisationLa commission d'organisationLa commission d'organisation
-                                    </p>
+                                <div class="media-body">                                   
                                 </div>
                                 <a href="{{ asset('images/galerie/c2.jpg') }}">
-                                    <img src="{{ asset('images/galerie/c2.jpg') }}" class="ml-3 rounded float-right img-thumbnail" style="width: 650px; height: 350px;">
+                                    <img src="{{ asset('images/galerie/c2.jpg') }}" class="ml-3 rounded float-right img-thumbnail" >
                                 </a>
                             </div>                        
                         </div>
