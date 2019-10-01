@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Details{% endblock %}
+{% block title %}Détails{% endblock %}
 
 {% block stylesheets %}
     <link rel="stylesheet" type="text/css" href="{{ asset('styles/speakers.css') }}">
@@ -19,11 +19,11 @@
 				<div class="row">
 					<div class="col">
 						<div class="home_content d-flex flex-row align-items-end justify-content-start">
-							<div class="current_page">Congrès/BPI</div>
+							<div class="current_page">{% trans %}Congrès/BPI{% endtrans %}</div>
 							<div class="breadcrumbs ml-auto">
 								<ul>
-									<li><a href="index.html">Accueil</a></li>
-									<li>congrès</li>
+									<li><a href="{{ path('home') }}">{% trans %}Accueil{% endtrans %}</a></li>
+									<li>{% trans %}Congrès{% endtrans %}</li>
 								</ul>
 							</div>
 						</div>
@@ -43,54 +43,45 @@
 				<div class="col-lg-10 order-lg-1 order-2">
 					<div class="speaker_content d-flex flex-column align-items-start justify-content-center">
 						<div class="speaker_title" align="center">
-							<h2 style="color:#003399; font-weight:bold;">1er Congrès du Barreau Pénal International en Afrique</h2>
-							<h4 style="color:blueviolet">Du 14 au 16 novembre 2019 au Mali - Bamako</h4>
-							<h6 style="color:blueviolet">Hotel Sheraton, Hamdallaye, ACI 2000</h6>
+							<h2 style="color:#003399; font-weight:bold;">{% trans %}1er Congrès du Barreau Pénal International en Afrique{% endtrans %}</h2>
+							<h4 style="color:blueviolet">{% trans %}14-15-16 Novembre 2019 - Bamako à l'Hotel Sheraton{% endtrans %}</h4>
 						</div>
 						<hr class="mt-5" width="100%" style="border: 2px solid #003399; border-radius: 2px;">
 						<div class="speaker_text">
 							<p style="text-align: justify; color: black;text-justify: inter-word;">
-								Le Barreau pénal international <strong>(BPI)</strong> organise du 14 au 16 novembre 2019 à Bamako, Mali, son premier congrès en terre africaine sous le thème : 
-								<span style="font-weight: bold;font-style: italic;"><< l'Afrique : nouveaux défis de la justice pénale internationale et le Barreau pénal international >></span>. 
-								<br/><br/>Cette activité entend mettre en orbite le continent africain dans son rapport avec la justice internationale pénale. A cet effet, <span style="text-decoration:underline;font-style: italic">elle ambitionne de travailler avec et sur le droit positif
-								afin de réinventer les dispositifs normatifs de référence de tout le système international pénal de lutte contre l'impunité.</span>
-								Le travail avec le droit concernera, la revue des différents textes en vigueur dans le champ de la justice internationale pénale, dans le seul but d'en questionner 
-								leurs capacités à garantir une justice équitable pour les justiciables du continent africain. 
-								Le travail sur le droit de son côté, ouvrira des questionnements critiques et épistémologiques aptes à renouveler la grande réflexion sur la nécessité d'une réforme du Traité de Rome en particulier, et par l'occasion, celle adjacente du 
-								renouvellement du cadastre juridique de la justice internationale pénale en général. Normes et principes, procédures et organes, seront revisités à partir d'une approche 
-								pluridisciplinaire, sous l'angle d'un regard africain ouvert aux enjeux mondiaux de la justice pénale.<br/><br/>Le congrès entend également <span style="text-decoration:underline;font-style: italic">intelliger les faits, 
-								pour mieux élucider les rapports de force entre acteurs de ce champ judiciaire.</span>
-								A cet effet, dans un contexte de tractations internationales permanentes autour de l'attribution 
-								d'un statut indépendant aux avocats, dans leur collaboration avec les autres professionnels de la justice internationale pénale, il est de bon ton de mettre en lumière 
-								l'importance des synergies entre corporations professionnelles à repenser. Toute chose qui relève l'importance des sources matérielles dans l'intelligence des dynamiques de réformes. 
-								Les Barreaux africains également ne seront pas occultés, tant leur place est essentielle dans un continent fertile pour les crimes internationaux. Bien d'autres questionnements 
-								en lien direct avec cette problématique seraient la bienvenue. 
-								<br/><br/>Ce congrès vise à accomplir les objectifs spécifiques suivants :<br/>
+								{% trans %}Le Barreau pénal international {% endtrans %}<strong>{% trans %} (BPI) {% endtrans %} </strong> {% trans %}organise du 14 au 16 novembre 2019 à Bamako, Mali, son premier congrès en terre africaine sous le thème {% endtrans %}: 
+								<span style="font-weight: bold;font-style: italic;"><< {% trans %}l'Afrique, nouveaux défis de la justice pénale internationale et le Barreau pénal international{% endtrans %}>></span>. 
+								<br/><br/>{% trans %}Cette activité entend mettre en orbite le continent africain dans son rapport avec la justice pénale internationale{% endtrans %}. {% trans %}À cet effet{% endtrans %}, <span style="text-decoration:underline;font-style: italic">{% trans %}elle ambitionne de travailler avec et sur le droit positif afin de réinventer les dispositifs normatifs de référence de tout le système international pénal de lutte contre l'impunité{% endtrans %}.</span>
+								{% trans %}Le travail avec le droit concernera, la revue des différents textes en vigueur dans le champ de la justice internationale pénale, dans le seul but d'en questionner leurs capacités à garantir une justice équitable pour les justiciables du continent africain. Le travail sur le droit de son côté, ouvrira des questionnements critiques et épistémologiques aptes à renouveler la grande réflexion sur la nécessité d'une réforme du Traité de Rome en particulier, et par l'occasion, celle adjacente du renouvellement du cadastre juridique de la justice internationale pénale en général. Normes et principes, procédures et organes, seront revisités à partir d'une approche pluridisciplinaire, sous l'angle d'un regard africain ouvert aux enjeux mondiaux de la justice pénale{% endtrans %}.
+								<br/><br/>{% trans %}Le congrès entend également{% endtrans %} <span style="text-decoration:underline;font-style: italic">
+								{% trans %}intelliger les faits, pour mieux élucider les rapports de force entre acteurs de ce champ judiciaire{% endtrans %}.</span>
+								{% trans %}À cet effet, dans un contexte de tractations internationales permanentes autour de l'attribution d'un statut indépendant aux avocats, dans leur collaboration avec les autres professionnels de la justice internationale pénale, il est de bon ton de mettre en lumière l'importance des synergies entre corporations professionnelles à repenser. Toute chose qui relève l'importance des sources matérielles dans l'intelligence des dynamiques de réformes. Les Barreaux africains également ne seront pas occultés, tant leur place est essentielle dans un continent fertile pour les crimes internationaux. Bien d'autres questionnements en lien direct avec cette problématique seraient la bienvenue{% endtrans %}. 
+								<br/><br/>{% trans %}Ce congrès vise à accomplir les objectifs spécifiques suivants{% endtrans %} :<br/>
 								<ul style="list-style:inside; color:black">
 									<li style="margin-left:30px">
-										Promouvoir la revalorisation de la place de l'Afrique dans la distribution de la justice pénale internationale.
+										{% trans %}Promouvoir la revalorisation de la place de l'Afrique dans la distribution de la justice pénale internationale{% endtrans %}.
 									</li>
 									<li style="margin-left:30px">
-										Discuter de l'apport des Barreaux africains à l'édification d'une justice pénale internationale adaptée aux spécificités locales.
+										{% trans %}Discuter de l'apport des Barreaux africains à l'édification d'une justice pénale internationale adaptée aux spécificités locales{% endtrans %}.
 									</li>
 									<li style="margin-left:30px">
-										Evoquer les questions liées à l'indépendance des avocats devant la CPI et proposer des solutions pour y parvenir.
+										{% trans %}Evoquer les questions liées à l'indépendance des avocats devant la CPI et proposer des solutions pour y parvenir{% endtrans %}.
 									</li>
 									<li style="margin-left:30px">
-										Encourager la synergie d'actions des différents acteurs en vue de l'amélioration au niveau international du rôle incontournable de la défense dans un procès équitable
+										{% trans %}Encourager la synergie d'actions des différents acteurs en vue de l'amélioration au niveau international du rôle incontournable de la défense dans un procès équitable{% endtrans %}.
 									</li>
 									<li style="margin-left:30px">
-										Discuter sur les grandes problématiques actuelles pour l'Afrique de la justice internationale pénale afin d'en dégager des pistes possibles de solutions.
+										{% trans %}Discuter sur les grandes problématiques actuelles pour l'Afrique de la justice internationale pénale afin d'en dégager des pistes possibles de solutions{% endtrans %}.
 									</li>
 									<li style="margin-left:30px">
-										Sensibiliser sur la nécessité de la mise en œuvre d'une architecture décentralisée de la CPI dans toutes les zones du monde. 
+										{% trans %}Sensibiliser sur la nécessité de la mise en œuvre d'une architecture décentralisée de la CPI dans toutes les zones du monde{% endtrans %}. 
 									</li>
 								</ul>	
 							</p>
 							<hr class="mt-5" width="100%" style="border: 2px solid #003399; border-radius: 2px;">
 							<div style="margin-top: 70px">
 								<div class="cta_content text-center">
-									<div class="button cta_button"><a href="{{ path('reservation') }}">S'inscrire</a></div>
+									<div class="button cta_button"><a href="{{ path('reservation') }}">{% trans %}Inscription{% endtrans %}</a></div>
 								</div>
 							</div>	
 									
