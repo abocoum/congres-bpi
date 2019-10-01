@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="de" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="UzFhc1Y" resname="Accueil">
+        <source>Accueil</source>
+        <target>__Accueil</target>
+      </trans-unit>
+      <trans-unit id="ismAaKY" resname="14-15-16 Novembre 2019">
+        <source>14-15-16 Novembre 2019</source>
+        <target>__14-15-16 Novembre 2019</target>
+      </trans-unit>
+      <trans-unit id="DtUME9Z" resname="Congrès du barreau pénal international au Mali">
+        <source>Congrès du barreau pénal international au Mali</source>
+        <target>__Congrès du barreau pénal international au Mali</target>
+      </trans-unit>
+      <trans-unit id="1mdShMG" resname="Hotel Sheraton de Bamako">
+        <source>Hotel Sheraton de Bamako</source>
+        <target>__Hotel Sheraton de Bamako</target>
+      </trans-unit>
+      <trans-unit id="HMIB7fb" resname="Inscrivez vous">
+        <source>Inscrivez vous</source>
+        <target>__Inscrivez vous</target>
+      </trans-unit>
+      <trans-unit id="3TrjMlD" resname="En savoir plus">
+        <source>En savoir plus</source>
+        <target>__En savoir plus</target>
+      </trans-unit>
+      <trans-unit id="dVKmSeh" resname="Congrès">
+        <source>Congrès</source>
+        <target>__Congrès</target>
+      </trans-unit>
+      <trans-unit id="MUj_QiJ" resname="Accueil du congrès ...">
+        <source>Accueil du congrès ...</source>
+        <target>__Accueil du congrès ...</target>
+      </trans-unit>
+      <trans-unit id="D99IX1v" resname="Agenda">
+        <source>Agenda</source>
+        <target>__Agenda</target>
+      </trans-unit>
+      <trans-unit id="S3TglzN" resname="Agenda, programme, déroulement du congrès ...">
+        <source>Agenda, programme, déroulement du congrès ...</source>
+        <target>__Agenda, programme, déroulement du congrès ...</target>
+      </trans-unit>
+      <trans-unit id="3QJdA5E" resname="Inscriptions">
+        <source>Inscriptions</source>
+        <target>__Inscriptions</target>
+      </trans-unit>
+      <trans-unit id="PToiKXK" resname="Réserver, payer votre place ...">
+        <source>Réserver, payer votre place ...</source>
+        <target>__Réserver, payer votre place ...</target>
+      </trans-unit>
+      <trans-unit id="ucDfNfa" resname="Hébergements">
+        <source>Hébergements</source>
+        <target>__Hébergements</target>
+      </trans-unit>
+      <trans-unit id="gWw6sk0" resname="Hotels, Location de vehicules ...">
+        <source>Hotels, Location de vehicules ...</source>
+        <target>__Hotels, Location de vehicules ...</target>
+      </trans-unit>
+      <trans-unit id="QSvguc1" resname="Informations">
+        <source>Informations</source>
+        <target>__Informations</target>
+      </trans-unit>
+      <trans-unit id="yNjs9z1" resname="Informations sur le Mali, le congrès ...">
+        <source>Informations sur le Mali, le congrès ...</source>
+        <target>__Informations sur le Mali, le congrès ...</target>
+      </trans-unit>
+      <trans-unit id="tFBkXev" resname="Contacts">
+        <source>Contacts</source>
+        <target>__Contacts</target>
+      </trans-unit>
+      <trans-unit id="TANaDAf" resname="Pour plus d'informations sur le congrès ...">
+        <source>Pour plus d'informations sur le congrès ...</source>
+        <target>__Pour plus d'informations sur le congrès ...</target>
+      </trans-unit>
+      <trans-unit id="eyeUeCH" resname="Galerie">
+        <source>Galerie</source>
+        <target>__Galerie</target>
+      </trans-unit>
+      <trans-unit id="SWtMYIv" resname="Contactez-nous">
+        <source>Contactez-nous</source>
+        <target>__Contactez-nous</target>
+      </trans-unit>
+      <trans-unit id="K1w9JnI" resname="Contact">
+        <source>Contact</source>
+        <target>__Contact</target>
+      </trans-unit>
+      <trans-unit id="DgJBrSh" resname="Ecrivez-nous">
+        <source>Ecrivez-nous</source>
+        <target>__Ecrivez-nous</target>
+      </trans-unit>
+      <trans-unit id="0B5hQ6b" resname="Envoyez">
+        <source>Envoyez</source>
+        <target>__Envoyez</target>
+      </trans-unit>
+      <trans-unit id="hjQkhnZ" resname="14-15-16 Novembre 2019 - Bamako à l'Hotel Sheraton">
+        <source>14-15-16 Novembre 2019 - Bamako à l'Hotel Sheraton</source>
+        <target>__14-15-16 Novembre 2019 - Bamako à l'Hotel Sheraton</target>
+      </trans-unit>
+      <trans-unit id="3Dleg_h" resname="Face à la CREE">
+        <source>Face à la CREE</source>
+        <target>__Face à la CREE</target>
+      </trans-unit>
+      <trans-unit id="bqOlH6U" resname="Rébublique du Mali">
+        <source>Rébublique du Mali</source>
+        <target>__Rébublique du Mali</target>
+      </trans-unit>
+      <trans-unit id="3._xw9q" resname="Un peuple, un but, une foi">
+        <source>Un peuple, un but, une foi</source>
+        <target>__Un peuple, un but, une foi</target>
+      </trans-unit>
+      <trans-unit id="vEoG_NF" resname="Le Mali, en forme longue la république du Mali, est un pays d'Afrique de l'Ouest, frontalier de la Mauritanie et de l'Algérie au nord, du Niger à l'est, du Burkina Faso et de la Côte d'Ivoire au sud, de la Guinée au sud-ouest et du Sénégal à l'ouest. Ancienne colonie française du Soudan français, le Mali est devenu indépendant le 22 septembre 1960, après l'éclatement de la fédération du Mali regroupant le Sénégal et la République soudanaise. Sa devise est (un peuple, un but, une foi) et son drapeau est constitué de trois bandes verticales verte, jaune et rouge. La république du Mali a conservé les frontières héritées de la colonisation, celles du Soudan français. Antérieurement, plusieurs royaumes et empires se sont succédé, englobant une partie plus ou moins importante du Mali actuel et des pays limitrophes. Avec 15 millions de résidents, la population malienne est constituée de différentes ethnies, dont les principales sont les Bambaras, les Bobos, les Bozos, les Dogons, les Khassonkés, les Malinkés, les Miniankas, les Peuls, les Sénoufos, les Soninkés (ou Sarakolés), les Sonrhaïs, les Touaregs, les Toucouleurs. Le français est la langue officielle, mais la population parle majoritairement les langues nationales, le bambara étant la plus utilisée et servant, parallèlement au français, de langue véhiculaire. Avec une économie encore essentiellement rurale, le Mali, pays enclavé, fait partie des 48 pays les moins avancés (PMA) sur le plan du développement socio-économique4. Le pays fait partie de la Communauté économique des États de l'Afrique de l'Ouest (CEDEAO) et de l'Union africaine. Depuis 2012. Bamako, ville située au sud-ouest et qui comptait 1 809 106 habitants en 20095, est la capitale du pays">
+        <source>Le Mali, en forme longue la république du Mali, est un pays d'Afrique de l'Ouest, frontalier de la Mauritanie et de l'Algérie au nord, du Niger à l'est, du Burkina Faso et de la Côte d'Ivoire au sud, de la Guinée au sud-ouest et du Sénégal à l'ouest. Ancienne colonie française du Soudan français, le Mali est devenu indépendant le 22 septembre 1960, après l'éclatement de la fédération du Mali regroupant le Sénégal et la République soudanaise. Sa devise est (un peuple, un but, une foi) et son drapeau est constitué de trois bandes verticales verte, jaune et rouge. La république du Mali a conservé les frontières héritées de la colonisation, celles du Soudan français. Antérieurement, plusieurs royaumes et empires se sont succédé, englobant une partie plus ou moins importante du Mali actuel et des pays limitrophes. Avec 15 millions de résidents, la population malienne est constituée de différentes ethnies, dont les principales sont les Bambaras, les Bobos, les Bozos, les Dogons, les Khassonkés, les Malinkés, les Miniankas, les Peuls, les Sénoufos, les Soninkés (ou Sarakolés), les Sonrhaïs, les Touaregs, les Toucouleurs. Le français est la langue officielle, mais la population parle majoritairement les langues nationales, le bambara étant la plus utilisée et servant, parallèlement au français, de langue véhiculaire. Avec une économie encore essentiellement rurale, le Mali, pays enclavé, fait partie des 48 pays les moins avancés (PMA) sur le plan du développement socio-économique4. Le pays fait partie de la Communauté économique des États de l'Afrique de l'Ouest (CEDEAO) et de l'Union africaine. Depuis 2012. Bamako, ville située au sud-ouest et qui comptait 1 809 106 habitants en 20095, est la capitale du pays</source>
+        <target>__Le Mali, en forme longue la république du Mali, est un pays d'Afrique de l'Ouest, frontalier de la Mauritanie et de l'Algérie au nord, du Niger à l'est, du Burkina Faso et de la Côte d'Ivoire au sud, de la Guinée au sud-ouest et du Sénégal à l'ouest. Ancienne colonie française du Soudan français, le Mali est devenu indépendant le 22 septembre 1960, après l'éclatement de la fédération du Mali regroupant le Sénégal et la République soudanaise. Sa devise est (un peuple, un but, une foi) et son drapeau est constitué de trois bandes verticales verte, jaune et rouge. La république du Mali a conservé les frontières héritées de la colonisation, celles du Soudan français. Antérieurement, plusieurs royaumes et empires se sont succédé, englobant une partie plus ou moins importante du Mali actuel et des pays limitrophes. Avec 15 millions de résidents, la population malienne est constituée de différentes ethnies, dont les principales sont les Bambaras, les Bobos, les Bozos, les Dogons, les Khassonkés, les Malinkés, les Miniankas, les Peuls, les Sénoufos, les Soninkés (ou Sarakolés), les Sonrhaïs, les Touaregs, les Toucouleurs. Le français est la langue officielle, mais la population parle majoritairement les langues nationales, le bambara étant la plus utilisée et servant, parallèlement au français, de langue véhiculaire. Avec une économie encore essentiellement rurale, le Mali, pays enclavé, fait partie des 48 pays les moins avancés (PMA) sur le plan du développement socio-économique4. Le pays fait partie de la Communauté économique des États de l'Afrique de l'Ouest (CEDEAO) et de l'Union africaine. Depuis 2012. Bamako, ville située au sud-ouest et qui comptait 1 809 106 habitants en 20095, est la capitale du pays</target>
+      </trans-unit>
+      <trans-unit id="z7GsDIB" resname="Inscription">
+        <source>Inscription</source>
+        <target>__Inscription</target>
+      </trans-unit>
+      <trans-unit id="XCELJ7C" resname="Reservations">
+        <source>Reservations</source>
+        <target>__Reservations</target>
+      </trans-unit>
+      <trans-unit id="DSgQXYf" resname="Suivez nous sur les réseaux sociaux">
+        <source>Suivez nous sur les réseaux sociaux</source>
+        <target>__Suivez nous sur les réseaux sociaux</target>
+      </trans-unit>
+      <trans-unit id="fDpO6wZ" resname="Le congrès">
+        <source>Le congrès</source>
+        <target>__Le congrès</target>
+      </trans-unit>
+      <trans-unit id="AVkCaEX" resname="Les membres du comité exécutif">
+        <source>Les membres du comité exécutif</source>
+        <target>__Les membres du comité exécutif</target>
+      </trans-unit>
+      <trans-unit id="UvNuRtN" resname="Président de la commission d'orgination">
+        <source>Président de la commission d'orgination</source>
+        <target>__Président de la commission d'orgination</target>
+      </trans-unit>
+      <trans-unit id="Bt_YHtD" resname="La commission d'organistaion">
+        <source>La commission d'organistaion</source>
+        <target>__La commission d'organistaion</target>
+      </trans-unit>
+      <trans-unit id="n7iJynt" resname="Hotels">
+        <source>Hotels</source>
+        <target>__Hotels</target>
+      </trans-unit>
+      <trans-unit id="7lchpaY" resname="Mali">
+        <source>Mali</source>
+        <target>__Mali</target>
+      </trans-unit>
+      <trans-unit id="9psdvoj" resname="Barreau pénal international">
+        <source>Barreau pénal international</source>
+        <target>__Barreau pénal international</target>
+      </trans-unit>
+      <trans-unit id="a62wqpj" resname="Cour pénale internationale">
+        <source>Cour pénale internationale</source>
+        <target>__Cour pénale internationale</target>
+      </trans-unit>
+      <trans-unit id="lpQAx2D" resname="Barreau du Mali">
+        <source>Barreau du Mali</source>
+        <target>__Barreau du Mali</target>
+      </trans-unit>
+      <trans-unit id="rbJ8S74" resname="Informations sur le Mali">
+        <source>Informations sur le Mali</source>
+        <target>__Informations sur le Mali</target>
+      </trans-unit>
+      <trans-unit id="ONPvWep" resname="Liens réseaux sociaux">
+        <source>Liens réseaux sociaux</source>
+        <target>__Liens réseaux sociaux</target>
+      </trans-unit>
+      <trans-unit id="sg2fbNs" resname="Formulaire d'inscription">
+        <source>Formulaire d'inscription</source>
+        <target>__Formulaire d'inscription</target>
+      </trans-unit>
+      <trans-unit id="mJMkdXe" resname="Informations personnelles">
+        <source>Informations personnelles</source>
+        <target>__Informations personnelles</target>
+      </trans-unit>
+      <trans-unit id="kBziTMq" resname="Civilité">
+        <source>Civilité</source>
+        <target>__Civilité</target>
+      </trans-unit>
+      <trans-unit id="ssEkU20" resname="Nom">
+        <source>Nom</source>
+        <target>__Nom</target>
+      </trans-unit>
+      <trans-unit id="4yW.j5A" resname="Prénom">
+        <source>Prénom</source>
+        <target>__Prénom</target>
+      </trans-unit>
+      <trans-unit id="lpzL089" resname="Email">
+        <source>Email</source>
+        <target>__Email</target>
+      </trans-unit>
+      <trans-unit id="E6FQ4.0" resname="Profession">
+        <source>Profession</source>
+        <target>__Profession</target>
+      </trans-unit>
+      <trans-unit id="eeXPIN4" resname="Adresse">
+        <source>Adresse</source>
+        <target>__Adresse</target>
+      </trans-unit>
+      <trans-unit id="Dr0lo0H" resname="Ville">
+        <source>Ville</source>
+        <target>__Ville</target>
+      </trans-unit>
+      <trans-unit id="N1g94hq" resname="Etat/Province">
+        <source>Etat/Province</source>
+        <target>__Etat/Province</target>
+      </trans-unit>
+      <trans-unit id=".nU._5u" resname="Pays">
+        <source>Pays</source>
+        <target>__Pays</target>
+      </trans-unit>
+      <trans-unit id="MsCS6w4" resname="Autres informations">
+        <source>Autres informations</source>
+        <target>__Autres informations</target>
+      </trans-unit>
+      <trans-unit id="gE_8_Ef" resname="Êtes vous adhérent au Barreau Penal International (BPI)">
+        <source>Êtes vous adhérent au Barreau Penal International (BPI)</source>
+        <target>__Êtes vous adhérent au Barreau Penal International (BPI)</target>
+      </trans-unit>
+      <trans-unit id="n9FPzHr" resname="Souhaitez-vous faire une présentation au congrès">
+        <source>Souhaitez-vous faire une présentation au congrès</source>
+        <target>__Souhaitez-vous faire une présentation au congrès</target>
+      </trans-unit>
+      <trans-unit id="nEtX6Sv" resname="Si oui, veuillez présenter le titre et un résumé de la présentation">
+        <source>Si oui, veuillez présenter le titre et un résumé de la présentation</source>
+        <target>__Si oui, veuillez présenter le titre et un résumé de la présentation</target>
+      </trans-unit>
+      <trans-unit id="iU.VPlM" resname="Informations importantes">
+        <source>Informations importantes</source>
+        <target>__Informations importantes</target>
+      </trans-unit>
+      <trans-unit id="svpxnJy" resname="Date limite pour le titre et le résumé de la présentation">
+        <source>Date limite pour le titre et le résumé de la présentation</source>
+        <target>__Date limite pour le titre et le résumé de la présentation</target>
+      </trans-unit>
+      <trans-unit id="JQqELH9" resname="Acceptation de la présentation. Nous vous contacterons dès que possible">
+        <source>Acceptation de la présentation. Nous vous contacterons dès que possible</source>
+        <target>__Acceptation de la présentation. Nous vous contacterons dès que possible</target>
+      </trans-unit>
+      <trans-unit id="4wpJMKA" resname="Date limite d'inscription (frais de congrès et titre / résumé de la présentation, le cas échéant)">
+        <source>Date limite d'inscription (frais de congrès et titre / résumé de la présentation, le cas échéant)</source>
+        <target>__Date limite d'inscription (frais de congrès et titre / résumé de la présentation, le cas échéant)</target>
+      </trans-unit>
+      <trans-unit id="0wDnRJh" resname="Frais d'inscription">
+        <source>Frais d'inscription</source>
+        <target>__Frais d'inscription</target>
+      </trans-unit>
+      <trans-unit id="TqcaXMf" resname="J'accepte que BPI collecte les données de ce formulaire pour cet événement">
+        <source>J'accepte que BPI collecte les données de ce formulaire pour cet événement</source>
+        <target>__J'accepte que BPI collecte les données de ce formulaire pour cet événement</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

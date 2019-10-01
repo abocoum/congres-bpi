@@ -42,8 +42,9 @@ class ParticipantFormType extends AbstractType
                 'class' => Civilite::class,
                 'choice_label' => 'name',
                 'attr' => [
-                    'class' => 'form-control']
-            ])
+                    'class' => 'form-control'],
+                'choice_translation_domain' => 'messages'
+                ])
             ->add('ville', TextType::class, [
                 'attr' => ['class' => 'form-control']
                 ])
