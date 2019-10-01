@@ -22,11 +22,11 @@
 				<div class="row">
 					<div class="col">
 						<div class="home_content d-flex flex-row align-items-end justify-content-start">
-							<div class="current_page">Agenda du congrès</div>
+							<div class="current_page">{% trans %}Agenda du congrès{% endtrans %}</div>
 							<div class="breadcrumbs ml-auto">
 								<ul>
-									<li><a href="index.html">Accueil</a></li>
-									<li>Agenda</li>
+									<li><a href="{{ path('home') }}">{% trans %}Accueil{% endtrans %}</a></li>
+									<li>{% trans %}Agenda{% endtrans %}</li>
 								</ul>
 							</div>
 						</div>
@@ -63,15 +63,15 @@
 							<div class="col-lg-6 event_col">
 								<div class="event_content">
 									<div class="event_title">
-										Jeudi 14 novembre 2019
+										{% trans %}Programme du jeudi 14 novembre 2019{% endtrans %}
 									</div>
-									<div class="event_location">Ouverture du Congrès</div>
+									<div class="event_location">{% trans %}Ouverture du congrès{% endtrans %}</div>
 									<div class="event_text">
-										<p>Lieu : Centre international de Conférence de Bamako</p>
+										<p>{% trans %}Lieu{% endtrans %} : Centre international de Conférence de Bamako</p>
 									</div>
 									<div class="event_buttons">
-										<div class="button event_button event_button_1"><a href="{{ path('reservation') }}">Inscription</a></div>
-										<div class="button_2 event_button event_button_2"><a href="{{ path('details_1') }}">Plus de details</a></div>
+										<div class="button event_button event_button_1"><a href="{{ path('reservation') }}">{% trans %}Inscription{% endtrans %}</a></div>
+										<div class="button_2 event_button event_button_2"><a href="{{ path('details_1') }}">{% trans %}Plus de détails{% endtrans %}</a></div>
 									</div>
 								</div>
 							</div>
@@ -98,15 +98,15 @@
 							<div class="col-lg-6 event_col">
 								<div class="event_content">
 									<div class="event_title">
-										Vendredi 15 novembre 2019
+										{% trans %}Programme du vendredi 15 novembre 2019{% endtrans %}
 									</div>
-									<div class="event_location">Ouverture du Congrès</div>
+									<div class="event_location">{% trans %}Ouverture du congrès{% endtrans %}</div>
 									<div class="event_text">
-										<p>Lieu : Centre international de Conférence de Bamako</p>
+										<p>{% trans %}Lieu{% endtrans %} : Centre international de Conférence de Bamako</p>
 									</div>
 									<div class="event_buttons">
-										<div class="button event_button event_button_1"><a href="{{ path('reservation') }}">Inscription</a></div>
-										<div class="button_2 event_button event_button_2"><a href="{{ path('details_1') }}">Plus de details</a></div>
+										<div class="button event_button event_button_1"><a href="{{ path('reservation') }}">{% trans %}Inscription{% endtrans %}</a></div>
+										<div class="button_2 event_button event_button_2"><a href="{{ path('details_1') }}">{% trans %}Plus de détails{% endtrans %}</a></div>
 									</div>
 								</div>
 							</div>
@@ -133,15 +133,15 @@
 							<div class="col-lg-6 event_col">
 								<div class="event_content">
 									<div class="event_title">
-										Samedi 16 novembre 2019
+										{% trans %}Programme du samedi 16 novembre 2019{% endtrans %}
 									</div>
-									<div class="event_location">Ouverture du Congrès</div>
+									<div class="event_location">{% trans %}Ouverture du congrès{% endtrans %}</div>
 									<div class="event_text">
-										<p>Lieu : Centre international de Conférence de Bamako</p>
+										<p>{% trans %}Lieu{% endtrans %} : Centre international de Conférence de Bamako</p>
 									</div>
 									<div class="event_buttons">
-										<div class="button event_button event_button_1"><a href="{{ path('reservation') }}">Inscription</a></div>
-										<div class="button_2 event_button event_button_2"><a href="{{ path('details_1') }}">Plus de details</a></div>
+										<div class="button event_button event_button_1"><a href="{{ path('reservation') }}">{% trans %}Inscription{% endtrans %}</a></div>
+										<div class="button_2 event_button event_button_2"><a href="{{ path('details_1') }}">{% trans %}Plus de détails{% endtrans %}</a></div>
 									</div>
 								</div>
 							</div>
@@ -162,7 +162,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="cta_content text-center">
-				        <div class="button cta_button"><a href="{{ path('reservation') }}">Inscrivez-vous au congrès</a></div>
+				        <div class="button cta_button"><a href="{{ path('reservation') }}">{% trans %}Inscrivez-vous au congrès{% endtrans %}</a></div>
 					</div>
 				</div>
 			</div>
