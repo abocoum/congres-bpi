@@ -36,7 +36,8 @@ class ParticipantFormType extends AbstractType
                 'attr' => ['class' => 'form-control']
                 ])
             ->add('profession', TextType::class, [
-                'attr' => ['class' => 'form-control']
+                'attr' => ['class' => 'form-control'],
+                'required' => false
             ])   
             ->add('civilite', EntityType::class, [
                 'class' => Civilite::class,
@@ -49,7 +50,8 @@ class ParticipantFormType extends AbstractType
                 'attr' => ['class' => 'form-control']
                 ])
             ->add('province', TextType::class, [
-                'attr' => ['class' => 'form-control']
+                'attr' => ['class' => 'form-control'],
+                'required' => false
                 ])
             ->add('pays', CountryType::class, [
                 'attr' => ['class' => 'form-control']

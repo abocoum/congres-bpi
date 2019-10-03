@@ -40,20 +40,17 @@ class Participant
     private $email;
 
     /**
-     * @ORM\Column(type="string", length=255)
-     * @Assert\Length(min=2, minMessage="Profession invalide !")
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $profession;
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Assert\Length(min=2, minMessage="Ville invalide !")
      */
     private $ville;
 
     /**
-     * @ORM\Column(type="string", length=255)
-     * @Assert\Length(min=2, minMessage="Province invalide !")
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $province;
 
