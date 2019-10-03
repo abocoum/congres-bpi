@@ -120,7 +120,7 @@
                                                                 <p>{{ participant.email }} </p>
                                                             </div>
                                                         </div>
-
+                                                        {% if participant.profession is not null%}
                                                         <div class="row">
                                                             <div class="col-md-4">
                                                                 <label class="name">{% trans %}Profession{% endtrans %} : </label>
@@ -129,6 +129,7 @@
                                                                 <p>{{ participant.profession }}</p>
                                                             </div>
                                                         </div>
+                                                        {% endif %}
                                                         <div class="row">
                                                             <div class="col-md-4">
                                                                 <label class="name">{% trans %}Ville{% endtrans %} : </label>
@@ -137,6 +138,7 @@
                                                                 <p>{{ participant.ville }}</p>
                                                             </div>
                                                         </div>
+                                                        {% if participant.province is not null%}
                                                         <div class="row">
                                                             <div class="col-md-4">
                                                                 <label class="name">{% trans %}Etat/Province{% endtrans %} : </label>
@@ -145,6 +147,7 @@
                                                                 <p>{{ participant.province }}</p>
                                                             </div>
                                                         </div>
+                                                        {% endif %}
                                                         <div class="row">
                                                             <div class="col-md-4">
                                                                 <label class="name">{% trans %}Pays{% endtrans %} : </label>
