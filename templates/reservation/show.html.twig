@@ -161,24 +161,7 @@
                                                                 <p>{{ participant.estMembreBpi ? 'Oui' : 'Non' }}</p>
                                                             </div>
                                                         </div>
-                                                        <div class="row">
-                                                            <div class="col-md-4">
-                                                                <label class="name">{% trans %}Présentation au congrès{% endtrans %} ? :</label>
-                                                            </div>
-                                                            <div class="col-md-8 form-control-plaintext">
-                                                                <p>{{ participant.estPresentateur ? 'Oui':'Non' }}</p>
-                                                            </div>
-                                                        </div>
-                                                        {% if participant.estPresentateur == true %}
-                                                            <div class="row">
-                                                                <div class="col-md-4">
-                                                                    <label class="name">{% trans %}Titre de la présentation{% endtrans %}: </label>
-                                                                </div>
-                                                                <div class="col-md-8 form-control-plaintext">
-                                                                    <p>{{ participant.titrePresentation }}</p>
-                                                                </div>
-                                                            </div>
-                                                        {% endif %}
+                                                        
                                                     </div>
 
                                                 </div>
