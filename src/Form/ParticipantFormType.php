@@ -60,16 +60,7 @@ class ParticipantFormType extends AbstractType
                     'Oui' => true,
                     'Non' => false,
             ]])
-            ->add('estPresentateur', ChoiceType::class, [
-                'attr' => ['class' => 'form-control'],
-                'choices' => [
-                    'Oui' => true,
-                    'Non' => false,
-            ]])
-            ->add('titrePresentation', TextareaType::class, [
-                'attr' => ['class' => 'form-control'],
-                'required' => false,
-            ])
+            
             ->add('agreeTerms', CheckboxType::class, [
                 'attr' => ['class' => 'form-control'],
                 'mapped' => false

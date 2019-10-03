@@ -68,16 +68,6 @@ class Participant
     private $estMembreBpi;
 
     /**
-     * @ORM\Column(type="boolean")
-     */
-    private $estPresentateur;
-
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
-    private $titrePresentation;
-
-    /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Civilite", inversedBy="participants")
      * @ORM\JoinColumn(nullable=false)
      */
@@ -201,29 +191,6 @@ class Participant
         return $this;
     }
 
-    public function getEstPresentateur()
-    {
-        return $this->estPresentateur;
-    }
-
-    public function setEstPresentateur(bool $estPresentateur): self
-    {
-        $this->estPresentateur = $estPresentateur;
-
-        return $this;
-    }
-
-    public function getTitrePresentation(): ?string
-    {
-        return $this->titrePresentation;
-    }
-
-    public function setTitrePresentation(string $titrePresentation): self
-    {
-        $this->titrePresentation = $titrePresentation;
-
-        return $this;
-    }
 
     public function getCivilite(): ?Civilite
     {
