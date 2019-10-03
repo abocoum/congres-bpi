@@ -29,7 +29,7 @@
 												<div class="logo_image"><div><img src="{{ asset('images/logobpi.png') }}" alt="Logo du Bpi"></div></div>
 												<div class="logo_content">
 													<div class="logo_text logo_text_not_ie">{% trans %}1er Congrès du barreau pénal international en Afrique{% endtrans %}</div>
-							<div class="logo_sub">{% trans %}Du 14 au 16 Novembre 2019{% endtrans %} {% trans %}à l'Hotel Sheraton de Bamako - Mali{% endtrans %}</div>
+							<div class="logo_sub">{% trans %}Du 14 au 16 Novembre 2019{% endtrans %} {% trans %}à l'hôtel Sheraton de Bamako - Mali{% endtrans %}</div>
 												</div>
 											</div>
 										</a>	
@@ -71,7 +71,7 @@
 													<li {% if app.request.attributes.get('_route') == "agenda" %} class="active" {% endif %}><a href="{{ path('agenda')}}">{% trans %}Agenda{% endtrans %}</a></li>
 													<li {% if app.request.attributes.get('_route') == "reservation" %} class="active" {% endif %}><a href="{{ path('reservation')}}">{% trans %}Inscription{% endtrans %}</a></li>
 
-													<li {% if app.request.attributes.get('_route') == "hotel" %} class="active" {% endif %}><a href="{{ path('hotel')}}">{% trans %}Hotels{% endtrans %}</a></li>
+													<li {% if app.request.attributes.get('_route') == "hotel" %} class="active" {% endif %}><a href="{{ path('hotel')}}">{% trans %}Hôtels{% endtrans %}</a></li>
 
 
 													<li class="dropdown {% if app.request.attributes.get('_route') == "information" %} active {% endif %}">
