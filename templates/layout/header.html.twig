@@ -73,10 +73,12 @@
 
 													<li {% if app.request.attributes.get('_route') == "hotel" %} class="active" {% endif %}><a href="{{ path('hotel')}}">{% trans %}Hôtels{% endtrans %}</a></li>
 
+													<li {% if app.request.attributes.get('_route') == "galerie" %} class="active" {% endif %}><a href="{{ path('galerie')}}">{% trans %}Galerie{% endtrans %}</a></li>
+													<li {% if app.request.attributes.get('_route') == "contact" %} class="active" {% endif %}><a href="{{ path('contact')}}">{% trans %}Contact{% endtrans %}</a></li>
 
 													<li class="dropdown {% if app.request.attributes.get('_route') == "information" %} active {% endif %}">
 														<a  class="nav-link dropdown-toggle" href="{{ path('information') }}" id="navbarDropdown"  role="boutton">
-															{% trans %}Informations{% endtrans %}
+															{% trans %}Liens{% endtrans %}
 														</a>
 														<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 															<button class="dropdown-item"></button>
@@ -87,8 +89,7 @@
 															<a class="dropdown-item" href="https://www.barreau.lu/le-barreau/les-commissions/les-commissions-au-sein-du-barreau/cooperation-barreau-du-mali" target="_blank">{% trans %}Barreau du Mali{% endtrans %}</a>
 														</div>
 													</li>
-													<li {% if app.request.attributes.get('_route') == "galerie" %} class="active" {% endif %}><a href="{{ path('galerie')}}">{% trans %}Galerie{% endtrans %}</a></li>
-													<li {% if app.request.attributes.get('_route') == "contact" %} class="active" {% endif %}><a href="{{ path('contact')}}">{% trans %}Contact{% endtrans %}</a></li>
+													
 												</ul>
 											</nav>
 
