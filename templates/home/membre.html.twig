@@ -40,9 +40,9 @@
         <div class="container reset_container">
 
             <!-- Speaker -->
-            <div class="pt-5 pb-5  row row-lg-eq-height justify-content-md-center">
+            <div class="pt-5 pb-5  row row-lg-eq-height justify-content-center">
                 <div class="col-lg-9 order-lg-1 order-2">
-                    <div class=" d-flex flex-column align-items-start justify-content-center">
+                    <div class=" d-flex flex-column align-items-start justify-content-md-center">
                         
                         <div class="speaker_title">{% trans %}Les membres du comité exécutif{% endtrans %}
                         </div>
@@ -50,11 +50,8 @@
 
                             <div class="mt-4 media" style="color: #212529;">
                                 
-                                <a href="{{ asset('images/comite.jpeg') }}">
-                                    <img src="{{ asset('images/comite.jpeg') }}" class="ml-3 rounded float-right img-thumbnail" style="width: 450px; height: 350px; margin-right:20px">
-                                </a>
-
-                                <div class="media-body">
+                      
+                                <div class="media-body" style="margin-left: 50px">
                                     <ul class="list-group">
                                         <li class="list-group-item">Dragos Chilea  <span class="badge  badge-primary h4">President</span></li>
                                         <li class="list-group-item">Abouba Ali Maiga <span class="badge  badge-info h4">Vicepresident</span></li>
@@ -65,20 +62,12 @@
                                         <li class="list-group-item">Nguyen Dang Trung</li>
                                     </ul>
                                 </div>
-                                
-                        
+                                <a href="{{ asset('images/comite.jpeg') }}">
+                                    <img src="{{ asset('images/comite.jpeg') }}" class="ml-3 rounded float-right img-thumbnail">
+                                </a>
                             </div>
-
                             <hr />
-
-                            <p style="text-align: justify; text-justify: inter-word;  color: #212529;">
-                                {% trans %}Le CoEx est chargé de convoquer la célébration de l’Assemblée Générale, avec l’importance que cela entraîne, il devra promouvoir les thèmes à traiter et décider si les questions proposées par les membres individuels seront traités dans l’Assemblée. Le Comité Exécutif doit être formé par sept membres, occupant les figures obligatoires de, Président, Vice-président, Secrétaire et Trésorier. Sur le Comité Exécutif aussi retombe le Pouvoir de Représentation du BPI par trois membres qui agissent en même temps{% endtrans %}.
-                            </p>
-
-                            <hr />
-
-                            <p style="text-align: justify; text-justify: inter-word;  color: #212529;"> Source : {% trans %}BPI{% endtrans %} </p>
-
+                            
                         </div>
 
                     </div>
