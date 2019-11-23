@@ -69,7 +69,16 @@
 													</li>
 		
 													<li {% if app.request.attributes.get('_route') == "agenda" %} class="active" {% endif %}><a href="{{ path('agenda')}}">{% trans %}Agenda{% endtrans %}</a></li>
-													<li {% if app.request.attributes.get('_route') == "reservation" %} class="active" {% endif %}><a href="{{ path('reservation')}}">{% trans %}Inscription{% endtrans %}</a></li>
+													
+													<li class="dropdown">
+														<a  class="nav-link dropdown-toggle" href="" id="navbarDropdown"  role="boutton">
+															{% trans %}Liens{% endtrans %}
+														</a>
+														<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+															<button class="dropdown-item"></button>
+															<a class="dropdown-item" href="declaration-bko.pdf" target="_blank">{% trans %}Bamako{% endtrans %}</a>
+														</div>
+													</li>
 
 													<li {% if app.request.attributes.get('_route') == "hotel" %} class="active" {% endif %}><a href="{{ path('hotel')}}">{% trans %}Hôtels{% endtrans %}</a></li>
 
